@@ -1284,8 +1284,8 @@
     "question": "Что появилось раньше?",
     "left_option": "SpaceX",
     "right_option": "Blue Origin",
-    "correct_option": "left",
-    "explanation": "SpaceX основана в 2002 году, Blue Origin — в 2000 (но SpaceX стала известнее раньше)."
+    "correct_option": "right",
+    "explanation": "Blue Origin основан в 2000 году, SpaceX — в 2002."
   },
   {
     "id": "q162",
@@ -1412,8 +1412,8 @@
     "question": "Что появилось раньше?",
     "left_option": "Western Digital",
     "right_option": "Seagate",
-    "correct_option": "right",
-    "explanation": "Seagate основана в 1979 году, Western Digital — в 1970."
+    "correct_option": "left",
+    "explanation": "Western Digital основан в 1970 году, Seagate — в 1979."
   },
   {
     "id": "q178",
@@ -1604,8 +1604,8 @@
     "question": "Что появилось раньше?",
     "left_option": "Java",
     "right_option": "Python",
-    "correct_option": "left",
-    "explanation": "Java появилась в 1995 году, Python — в 1991 (но стал популярен позже)."
+    "correct_option": "right",
+    "explanation": "Python появился в 1991 году, Java — в 1995."
   },
   {
     "id": "q202",
@@ -1652,8 +1652,8 @@
     "question": "Что появилось раньше?",
     "left_option": "Swift",
     "right_option": "Kotlin",
-    "correct_option": "left",
-    "explanation": "Swift представили в 2014 году, Kotlin — в 2011 (но популярен стал позже)."
+    "correct_option": "right",
+    "explanation": "Kotlin появился в 2011 году, Swift — в 2014."
   },
   {
     "id": "q208",
@@ -1884,8 +1884,8 @@
     "question": "Что появилось раньше?",
     "left_option": "Linux",
     "right_option": "FreeBSD",
-    "correct_option": "right",
-    "explanation": "FreeBSD появилась в 1993 году, Linux — в 1991."
+    "correct_option": "left",
+    "explanation": "Linux появился в 1991 году, FreeBSD — в 1993."
   },
   {
     "id": "q237",
@@ -2196,8 +2196,8 @@
     "question": "Что появилось раньше?",
     "left_option": "Citymapper",
     "right_option": "Moovit",
-    "correct_option": "right",
-    "explanation": "Moovit появился в 2012 году, Citymapper — в 2011."
+    "correct_option": "left",
+    "explanation": "Citymapper появился в 2011 году, Moovit — в 2012."
   },
   {
     "id": "q276",
@@ -2596,8 +2596,8 @@
     "question": "Что появилось раньше?",
     "left_option": "MyFitnessPal",
     "right_option": "Lose It!",
-    "correct_option": "right",
-    "explanation": "Lose It! появился в 2008 году, MyFitnessPal — в 2005."
+    "correct_option": "left",
+    "explanation": "MyFitnessPal появился в 2005 году, Lose It! — в 2008."
   },
   {
     "id": "q326",
@@ -2668,8 +2668,8 @@
     "question": "Что появилось раньше?",
     "left_option": "Groupon",
     "right_option": "LivingSocial",
-    "correct_option": "left",
-    "explanation": "Groupon появился в 2008 году, LivingSocial — в 2007."
+    "correct_option": "right",
+    "explanation": "LivingSocial появился в 2007 году, Groupon — в 2008."
   },
   {
     "id": "q335",
@@ -2684,8 +2684,8 @@
     "question": "Что появилось раньше?",
     "left_option": "MySQL",
     "right_option": "PostgreSQL",
-    "correct_option": "right",
-    "explanation": "PostgreSQL появился в 1996 году, MySQL — в 1995."
+    "correct_option": "left",
+    "explanation": "MySQL появился в 1995 году, PostgreSQL — в 1996."
   },
   {
     "id": "q337",
@@ -2732,8 +2732,8 @@
     "question": "Что появилось раньше?",
     "left_option": "SQLite",
     "right_option": "MySQL",
-    "correct_option": "left",
-    "explanation": "SQLite появился в 2000 году, MySQL — в 1995."
+    "correct_option": "right",
+    "explanation": "MySQL появился в 1995 году, SQLite — в 2000."
   },
   {
     "id": "q343",
@@ -2812,8 +2812,8 @@
     "question": "Что появилось раньше?",
     "left_option": "Prometheus",
     "right_option": "Grafana",
-    "correct_option": "right",
-    "explanation": "Grafana появилась в 2014 году, Prometheus — в 2012."
+    "correct_option": "left",
+    "explanation": "Prometheus появился в 2012 году, Grafana — в 2014."
   },
   {
     "id": "q353",
@@ -2940,8 +2940,8 @@
     "question": "Что появилось раньше?",
     "left_option": "SoundCloud",
     "right_option": "Bandcamp",
-    "correct_option": "right",
-    "explanation": "Bandcamp появился в 2008 году, SoundCloud — в 2007."
+    "correct_option": "left",
+    "explanation": "SoundCloud появился в 2007 году, Bandcamp — в 2008."
   },
   {
     "id": "q369",
@@ -3052,8 +3052,8 @@
     "question": "Что появилось раньше?",
     "left_option": "Blender",
     "right_option": "Maya",
-    "correct_option": "right",
-    "explanation": "Maya появилась в 1998 году, Blender — в 1995."
+    "correct_option": "left",
+    "explanation": "Blender появился в 1995 году, Maya — в 1998."
   },
   {
     "id": "q383",
