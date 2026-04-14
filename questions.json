@@ -1,0 +1,3202 @@
+[
+  {
+    "id": "q001",
+    "question": "Что появилось раньше?",
+    "left_option": "iPhone",
+    "right_option": "Android",
+    "correct_option": "left",
+    "explanation": "Первый iPhone показали в 2007 году, а первые Android-смартфоны вышли в 2008."
+  },
+  {
+    "id": "q002",
+    "question": "Что появилось раньше?",
+    "left_option": "YouTube",
+    "right_option": "ВКонтакте",
+    "correct_option": "left",
+    "explanation": "YouTube запустили в 2005 году, ВКонтакте — в 2006."
+  },
+  {
+    "id": "q003",
+    "question": "Что появилось раньше?",
+    "left_option": "Instagram",
+    "right_option": "Snapchat",
+    "correct_option": "left",
+    "explanation": "Instagram появился в 2010 году, Snapchat — в 2011."
+  },
+  {
+    "id": "q004",
+    "question": "Что появилось раньше?",
+    "left_option": "WhatsApp",
+    "right_option": "Telegram",
+    "correct_option": "left",
+    "explanation": "WhatsApp основан в 2009 году, Telegram — в 2013."
+  },
+  {
+    "id": "q005",
+    "question": "Что появилось раньше?",
+    "left_option": "Google",
+    "right_option": "Facebook",
+    "correct_option": "left",
+    "explanation": "Google появился в 1998 году, Facebook — в 2004."
+  },
+  {
+    "id": "q006",
+    "question": "Что появилось раньше?",
+    "left_option": "Gmail",
+    "right_option": "Twitter",
+    "correct_option": "left",
+    "explanation": "Gmail представили в 2004 году, Twitter — в 2006."
+  },
+  {
+    "id": "q007",
+    "question": "Что появилось раньше?",
+    "left_option": "Netflix",
+    "right_option": "Spotify",
+    "correct_option": "left",
+    "explanation": "Netflix существует с 1997 года, Spotify — с 2006."
+  },
+  {
+    "id": "q008",
+    "question": "Что появилось раньше?",
+    "left_option": "Steam",
+    "right_option": "Discord",
+    "correct_option": "left",
+    "explanation": "Steam вышел в 2003 году, Discord — в 2015."
+  },
+  {
+    "id": "q009",
+    "question": "Что появилось раньше?",
+    "left_option": "Minecraft",
+    "right_option": "Fortnite",
+    "correct_option": "left",
+    "explanation": "Minecraft появился в 2009 году, Fortnite — в 2017."
+  },
+  {
+    "id": "q010",
+    "question": "Что появилось раньше?",
+    "left_option": "Skype",
+    "right_option": "Zoom",
+    "correct_option": "left",
+    "explanation": "Skype стартовал в 2003 году, Zoom — в 2011."
+  },
+  {
+    "id": "q011",
+    "question": "Что появилось раньше?",
+    "left_option": "Wikipedia",
+    "right_option": "Reddit",
+    "correct_option": "left",
+    "explanation": "Wikipedia работает с 2001 года, Reddit — с 2005."
+  },
+  {
+    "id": "q012",
+    "question": "Что появилось раньше?",
+    "left_option": "PlayStation",
+    "right_option": "Nintendo 64",
+    "correct_option": "left",
+    "explanation": "Первая PlayStation вышла в 1994 году, Nintendo 64 — в 1996."
+  },
+  {
+    "id": "q013",
+    "question": "Что появилось раньше?",
+    "left_option": "PlayStation 2",
+    "right_option": "Xbox",
+    "correct_option": "left",
+    "explanation": "PS2 вышла в 2000 году, первая Xbox — в 2001."
+  },
+  {
+    "id": "q014",
+    "question": "Что появилось раньше?",
+    "left_option": "PlayStation 4",
+    "right_option": "Nintendo Switch",
+    "correct_option": "left",
+    "explanation": "PS4 появилась в 2013 году, Switch — в 2017."
+  },
+  {
+    "id": "q015",
+    "question": "Что появилось раньше?",
+    "left_option": "Windows XP",
+    "right_option": "Windows 7",
+    "correct_option": "left",
+    "explanation": "Windows XP вышла в 2001 году, Windows 7 — в 2009."
+  },
+  {
+    "id": "q016",
+    "question": "Что появилось раньше?",
+    "left_option": "USB",
+    "right_option": "Wi-Fi",
+    "correct_option": "left",
+    "explanation": "USB появился в 1996 году, Wi-Fi как массовый стандарт — с 1999."
+  },
+  {
+    "id": "q017",
+    "question": "Что появилось раньше?",
+    "left_option": "ChatGPT",
+    "right_option": "Alexa",
+    "correct_option": "right",
+    "explanation": "Alexa появилась в 2014 году, ChatGPT — в 2022."
+  },
+  {
+    "id": "q018",
+    "question": "Что появилось раньше?",
+    "left_option": "Uber",
+    "right_option": "Airbnb",
+    "correct_option": "right",
+    "explanation": "Airbnb основан в 2008 году, Uber — в 2009."
+  },
+  {
+    "id": "q019",
+    "question": "Что появилось раньше?",
+    "left_option": "Amazon",
+    "right_option": "eBay",
+    "correct_option": "left",
+    "explanation": "Amazon запустили в 1994 году, eBay — в 1995."
+  },
+  {
+    "id": "q020",
+    "question": "Что появилось раньше?",
+    "left_option": "Apple Watch",
+    "right_option": "AirPods",
+    "correct_option": "left",
+    "explanation": "Apple Watch вышли в 2015 году, AirPods — в 2016."
+  },
+  {
+    "id": "q021",
+    "question": "Что появилось раньше?",
+    "left_option": "Twitter",
+    "right_option": "Instagram",
+    "correct_option": "left",
+    "explanation": "Twitter стартовал в 2006 году, Instagram — в 2010."
+  },
+  {
+    "id": "q022",
+    "question": "Что появилось раньше?",
+    "left_option": "ВКонтакте",
+    "right_option": "Одноклассники",
+    "correct_option": "right",
+    "explanation": "Одноклассники появились в 2006 году чуть раньше ВКонтакте."
+  },
+  {
+    "id": "q023",
+    "question": "Что появилось раньше?",
+    "left_option": "Яндекс",
+    "right_option": "Google",
+    "correct_option": "left",
+    "explanation": "Яндекс как компания основан в 1997 году, Google — в 1998."
+  },
+  {
+    "id": "q024",
+    "question": "Что появилось раньше?",
+    "left_option": "LinkedIn",
+    "right_option": "Facebook",
+    "correct_option": "left",
+    "explanation": "LinkedIn запустили в 2003 году, Facebook — в 2004."
+  },
+  {
+    "id": "q025",
+    "question": "Что появилось раньше?",
+    "left_option": "Twitch",
+    "right_option": "Discord",
+    "correct_option": "left",
+    "explanation": "Twitch работает с 2011 года, Discord — с 2015."
+  },
+  {
+    "id": "q026",
+    "question": "Что появилось раньше?",
+    "left_option": "Vine",
+    "right_option": "TikTok",
+    "correct_option": "left",
+    "explanation": "Vine появился в 2012 году, TikTok — позже."
+  },
+  {
+    "id": "q027",
+    "question": "Что появилось раньше?",
+    "left_option": "GitHub",
+    "right_option": "GitLab",
+    "correct_option": "left",
+    "explanation": "GitHub появился в 2008 году, GitLab — в 2011."
+  },
+  {
+    "id": "q028",
+    "question": "Что появилось раньше?",
+    "left_option": "Stack Overflow",
+    "right_option": "Quora",
+    "correct_option": "left",
+    "explanation": "Stack Overflow запустили в 2008 году, Quora — в 2009."
+  },
+  {
+    "id": "q029",
+    "question": "Что появилось раньше?",
+    "left_option": "Doom",
+    "right_option": "Quake",
+    "correct_option": "left",
+    "explanation": "Doom вышел в 1993 году, Quake — в 1996."
+  },
+  {
+    "id": "q030",
+    "question": "Что появилось раньше?",
+    "left_option": "Warcraft",
+    "right_option": "StarCraft",
+    "correct_option": "left",
+    "explanation": "Первая Warcraft вышла в 1994 году, StarCraft — в 1998."
+  },
+  {
+    "id": "q031",
+    "question": "Что вышло раньше?",
+    "left_option": "GTA III",
+    "right_option": "GTA: San Andreas",
+    "correct_option": "left",
+    "explanation": "GTA III вышла в 2001 году, San Andreas — в 2004."
+  },
+  {
+    "id": "q032",
+    "question": "Что вышло раньше?",
+    "left_option": "Half-Life",
+    "right_option": "Portal",
+    "correct_option": "left",
+    "explanation": "Half-Life — 1998, Portal — 2007."
+  },
+  {
+    "id": "q033",
+    "question": "Что появилось раньше?",
+    "left_option": "Dota",
+    "right_option": "League of Legends",
+    "correct_option": "left",
+    "explanation": "Оригинальная Dota-модификация появилась в 2003 году, LoL — в 2009."
+  },
+  {
+    "id": "q034",
+    "question": "Что появилось раньше?",
+    "left_option": "Counter-Strike 1.6",
+    "right_option": "CS:GO",
+    "correct_option": "left",
+    "explanation": "Counter-Strike 1.6 намного старше CS:GO."
+  },
+  {
+    "id": "q035",
+    "question": "Что вышло раньше?",
+    "left_option": "«Аватар»",
+    "right_option": "«Мстители: Финал»",
+    "correct_option": "left",
+    "explanation": "«Аватар» вышел в 2009 году, «Мстители: Финал» — в 2019."
+  },
+  {
+    "id": "q036",
+    "question": "Что вышло раньше?",
+    "left_option": "«Матрица»",
+    "right_option": "«Начало»",
+    "correct_option": "left",
+    "explanation": "«Матрица» — 1999, «Начало» — 2010."
+  },
+  {
+    "id": "q037",
+    "question": "Что вышло раньше?",
+    "left_option": "«Шрек»",
+    "right_option": "«Холодное сердце»",
+    "correct_option": "left",
+    "explanation": "«Шрек» вышел в 2001 году, «Холодное сердце» — в 2013."
+  },
+  {
+    "id": "q038",
+    "question": "Что появилось раньше?",
+    "left_option": "«Во все тяжкие»",
+    "right_option": "«Игра престолов»",
+    "correct_option": "left",
+    "explanation": "«Во все тяжкие» стартовал в 2008 году, «Игра престолов» — в 2011."
+  },
+  {
+    "id": "q039",
+    "question": "Что появилось раньше?",
+    "left_option": "«Симпсоны»",
+    "right_option": "«Футурама»",
+    "correct_option": "left",
+    "explanation": "«Симпсоны» идут с 1989 года, «Футурама» — с 1999."
+  },
+  {
+    "id": "q040",
+    "question": "Что появилось раньше?",
+    "left_option": "Apple Pay",
+    "right_option": "Google Pay",
+    "correct_option": "left",
+    "explanation": "Apple Pay запустили в 2014 году, бренд Google Pay появился позже."
+  },
+  {
+    "id": "q041",
+    "question": "Что появилось раньше?",
+    "left_option": "Chrome",
+    "right_option": "Firefox",
+    "correct_option": "right",
+    "explanation": "Firefox появился в 2004 году, Chrome — в 2008."
+  },
+  {
+    "id": "q042",
+    "question": "Что появилось раньше?",
+    "left_option": "Opera",
+    "right_option": "Firefox",
+    "correct_option": "left",
+    "explanation": "Opera существует с 1995 года, Firefox — с 2004."
+  },
+  {
+    "id": "q043",
+    "question": "Что появилось раньше?",
+    "left_option": "Google Docs",
+    "right_option": "Notion",
+    "correct_option": "left",
+    "explanation": "Google Docs появился раньше Notion."
+  },
+  {
+    "id": "q044",
+    "question": "Что появилось раньше?",
+    "left_option": "Trello",
+    "right_option": "Notion",
+    "correct_option": "left",
+    "explanation": "Trello запустили в 2011 году, Notion — позже."
+  },
+  {
+    "id": "q045",
+    "question": "Что появилось раньше?",
+    "left_option": "Figma",
+    "right_option": "Canva",
+    "correct_option": "right",
+    "explanation": "Canva запустили в 2013 году, Figma — в 2016."
+  },
+  {
+    "id": "q046",
+    "question": "Что появилось раньше?",
+    "left_option": "Slack",
+    "right_option": "Discord",
+    "correct_option": "left",
+    "explanation": "Slack появился в 2013 году, Discord — в 2015."
+  },
+  {
+    "id": "q047",
+    "question": "Что появилось раньше?",
+    "left_option": "MSN Messenger",
+    "right_option": "ICQ",
+    "correct_option": "right",
+    "explanation": "ICQ появился в 1996 году, MSN Messenger — в 1999."
+  },
+  {
+    "id": "q048",
+    "question": "Что появилось раньше?",
+    "left_option": "ICQ",
+    "right_option": "Skype",
+    "correct_option": "left",
+    "explanation": "ICQ старше Skype."
+  },
+  {
+    "id": "q049",
+    "question": "Что появилось раньше?",
+    "left_option": "YouTube",
+    "right_option": "Twitch",
+    "correct_option": "left",
+    "explanation": "YouTube существует с 2005 года, Twitch — с 2011."
+  },
+  {
+    "id": "q050",
+    "question": "Что появилось раньше?",
+    "left_option": "Telegram",
+    "right_option": "Signal",
+    "correct_option": "right",
+    "explanation": "Signal вырос из более раннего проекта TextSecure, существовавшего до Telegram."
+  },
+  {
+    "id": "q051",
+    "question": "Что появилось раньше?",
+    "left_option": "macOS X",
+    "right_option": "iOS",
+    "correct_option": "left",
+    "explanation": "Mac OS X вышла в 2001 году, iPhone OS/iOS — в 2007."
+  },
+  {
+    "id": "q052",
+    "question": "Что появилось раньше?",
+    "left_option": "iPad",
+    "right_option": "Apple Watch",
+    "correct_option": "left",
+    "explanation": "iPad вышел в 2010 году, Apple Watch — в 2015."
+  },
+  {
+    "id": "q053",
+    "question": "Что появилось раньше?",
+    "left_option": "MacBook",
+    "right_option": "iPad",
+    "correct_option": "left",
+    "explanation": "MacBook представили в 2006 году, iPad — в 2010."
+  },
+  {
+    "id": "q054",
+    "question": "Что появилось раньше?",
+    "left_option": "iPad mini",
+    "right_option": "iPad",
+    "correct_option": "right",
+    "explanation": "Обычный iPad появился раньше iPad mini."
+  },
+  {
+    "id": "q055",
+    "question": "Что появилось раньше?",
+    "left_option": "AirPods",
+    "right_option": "AirTag",
+    "correct_option": "left",
+    "explanation": "AirPods вышли в 2016 году, AirTag — в 2021."
+  },
+  {
+    "id": "q056",
+    "question": "Что появилось раньше?",
+    "left_option": "Google Maps",
+    "right_option": "Google Chrome",
+    "correct_option": "left",
+    "explanation": "Google Maps запустили в 2005 году, Chrome — в 2008."
+  },
+  {
+    "id": "q057",
+    "question": "Что появилось раньше?",
+    "left_option": "Google Drive",
+    "right_option": "Dropbox",
+    "correct_option": "right",
+    "explanation": "Dropbox появился в 2007 году, Google Drive — в 2012."
+  },
+  {
+    "id": "q058",
+    "question": "Что появилось раньше?",
+    "left_option": "Google Meet",
+    "right_option": "Google Duo",
+    "correct_option": "right",
+    "explanation": "Google Duo запустили в 2016 году, Meet как отдельный сервис — позже."
+  },
+  {
+    "id": "q059",
+    "question": "Что появилось раньше?",
+    "left_option": "Yahoo!",
+    "right_option": "Google",
+    "correct_option": "left",
+    "explanation": "Yahoo! появился в 1994 году, Google — в 1998."
+  },
+  {
+    "id": "q060",
+    "question": "Что появилось раньше?",
+    "left_option": "Tumblr",
+    "right_option": "Pinterest",
+    "correct_option": "left",
+    "explanation": "Tumblr запустили в 2007 году, Pinterest — в 2010."
+  },
+  {
+    "id": "q061",
+    "question": "Что появилось раньше?",
+    "left_option": "Periscope",
+    "right_option": "Clubhouse",
+    "correct_option": "left",
+    "explanation": "Periscope появился в 2015 году, Clubhouse — в 2020."
+  },
+  {
+    "id": "q062",
+    "question": "Что появилось раньше?",
+    "left_option": "Threads",
+    "right_option": "BeReal",
+    "correct_option": "right",
+    "explanation": "BeReal появился в 2020 году, Threads — в 2023."
+  },
+  {
+    "id": "q063",
+    "question": "Что появилось раньше?",
+    "left_option": "Tinder",
+    "right_option": "Bumble",
+    "correct_option": "left",
+    "explanation": "Tinder запустили в 2012 году, Bumble — в 2014."
+  },
+  {
+    "id": "q064",
+    "question": "Что появилось раньше?",
+    "left_option": "Patreon",
+    "right_option": "OnlyFans",
+    "correct_option": "left",
+    "explanation": "Patreon появился в 2013 году, OnlyFans — в 2016."
+  },
+  {
+    "id": "q065",
+    "question": "Что появилось раньше?",
+    "left_option": "Wikipedia",
+    "right_option": "LinkedIn",
+    "correct_option": "left",
+    "explanation": "Wikipedia — 2001, LinkedIn — 2003."
+  },
+  {
+    "id": "q066",
+    "question": "Что появилось раньше?",
+    "left_option": "Dropbox",
+    "right_option": "WeTransfer",
+    "correct_option": "left",
+    "explanation": "Dropbox основан в 2007 году, WeTransfer — в 2009."
+  },
+  {
+    "id": "q067",
+    "question": "Что появилось раньше?",
+    "left_option": "Shazam",
+    "right_option": "SoundHound",
+    "correct_option": "left",
+    "explanation": "Shazam появился в 2002 году, SoundHound как сервис — позже."
+  },
+  {
+    "id": "q068",
+    "question": "Что появилось раньше?",
+    "left_option": "Deezer",
+    "right_option": "Spotify",
+    "correct_option": "left",
+    "explanation": "Deezer стартовал в 2007 году, Spotify — в 2008."
+  },
+  {
+    "id": "q069",
+    "question": "Что появилось раньше?",
+    "left_option": "Apple Music",
+    "right_option": "Spotify",
+    "correct_option": "right",
+    "explanation": "Spotify запустили в 2008 году, Apple Music — в 2015."
+  },
+  {
+    "id": "q070",
+    "question": "Что появилось раньше?",
+    "left_option": "Disney+",
+    "right_option": "HBO Max",
+    "correct_option": "left",
+    "explanation": "Disney+ запустили в 2019 году, HBO Max — в 2020."
+  },
+  {
+    "id": "q071",
+    "question": "Что появилось раньше?",
+    "left_option": "DVD",
+    "right_option": "Blu-ray",
+    "correct_option": "left",
+    "explanation": "DVD появился в 1995 году, Blu-ray — в 2006."
+  },
+  {
+    "id": "q072",
+    "question": "Что появилось раньше?",
+    "left_option": "Nintendo DS",
+    "right_option": "PSP",
+    "correct_option": "left",
+    "explanation": "Nintendo DS вышла в 2004 году раньше PSP на большинстве рынков."
+  },
+  {
+    "id": "q073",
+    "question": "Что появилось раньше?",
+    "left_option": "Game Boy",
+    "right_option": "Sega Game Gear",
+    "correct_option": "left",
+    "explanation": "Game Boy вышел в 1989 году, Game Gear — в 1990."
+  },
+  {
+    "id": "q074",
+    "question": "Что появилось раньше?",
+    "left_option": "Dreamcast",
+    "right_option": "PlayStation 2",
+    "correct_option": "left",
+    "explanation": "Dreamcast вышла в 1998 году, PlayStation 2 — в 2000."
+  },
+  {
+    "id": "q075",
+    "question": "Что появилось раньше?",
+    "left_option": "Xbox 360",
+    "right_option": "PlayStation 3",
+    "correct_option": "left",
+    "explanation": "Xbox 360 вышла в 2005 году, PlayStation 3 — в 2006."
+  },
+  {
+    "id": "q076",
+    "question": "Что появилось раньше?",
+    "left_option": "Nintendo Switch",
+    "right_option": "Steam Deck",
+    "correct_option": "left",
+    "explanation": "Nintendo Switch появилась в 2017 году, Steam Deck — в 2022."
+  },
+  {
+    "id": "q077",
+    "question": "Что появилось раньше?",
+    "left_option": "Windows 95",
+    "right_option": "Windows 98",
+    "correct_option": "left",
+    "explanation": "Windows 95 вышла раньше Windows 98."
+  },
+  {
+    "id": "q078",
+    "question": "Что появилось раньше?",
+    "left_option": "Windows Vista",
+    "right_option": "Windows 7",
+    "correct_option": "left",
+    "explanation": "Windows Vista вышла в 2007 году, Windows 7 — в 2009."
+  },
+  {
+    "id": "q079",
+    "question": "Что появилось раньше?",
+    "left_option": "Windows 10",
+    "right_option": "Windows 11",
+    "correct_option": "left",
+    "explanation": "Windows 10 вышла в 2015 году, Windows 11 — в 2021."
+  },
+  {
+    "id": "q080",
+    "question": "Что появилось раньше?",
+    "left_option": "MS-DOS",
+    "right_option": "Windows 1.0",
+    "correct_option": "left",
+    "explanation": "MS-DOS вышла в 1981 году, Windows 1.0 — в 1985."
+  },
+  {
+    "id": "q081",
+    "question": "Что появилось раньше?",
+    "left_option": "Internet Explorer",
+    "right_option": "Firefox",
+    "correct_option": "left",
+    "explanation": "Internet Explorer стартовал в 1995 году, Firefox — в 2004."
+  },
+  {
+    "id": "q082",
+    "question": "Что появилось раньше?",
+    "left_option": "Safari",
+    "right_option": "Chrome",
+    "correct_option": "left",
+    "explanation": "Safari появился в 2003 году, Chrome — в 2008."
+  },
+  {
+    "id": "q083",
+    "question": "Что появилось раньше?",
+    "left_option": "Opera Mini",
+    "right_option": "Google Chrome",
+    "correct_option": "left",
+    "explanation": "Opera Mini вышла в 2005 году, Chrome — в 2008."
+  },
+  {
+    "id": "q084",
+    "question": "Что появилось раньше?",
+    "left_option": "USB-C",
+    "right_option": "Lightning",
+    "correct_option": "right",
+    "explanation": "Lightning появился в 2012 году, USB-C — в 2014."
+  },
+  {
+    "id": "q085",
+    "question": "Что появилось раньше?",
+    "left_option": "Bluetooth",
+    "right_option": "AirDrop",
+    "correct_option": "left",
+    "explanation": "Bluetooth существует с 1998 года, AirDrop — с 2011."
+  },
+  {
+    "id": "q086",
+    "question": "Что появилось раньше?",
+    "left_option": "NFC",
+    "right_option": "QR-код",
+    "correct_option": "right",
+    "explanation": "QR-код появился в 1994 году, NFC — в начале 2000-х."
+  },
+  {
+    "id": "q087",
+    "question": "Что появилось раньше?",
+    "left_option": "PayPal",
+    "right_option": "Stripe",
+    "correct_option": "left",
+    "explanation": "PayPal появился в 1998 году, Stripe — в 2010."
+  },
+  {
+    "id": "q088",
+    "question": "Что появилось раньше?",
+    "left_option": "Binance",
+    "right_option": "Coinbase",
+    "correct_option": "right",
+    "explanation": "Coinbase основан в 2012 году, Binance — в 2017."
+  },
+  {
+    "id": "q089",
+    "question": "Что появилось раньше?",
+    "left_option": "Bitcoin",
+    "right_option": "Ethereum",
+    "correct_option": "left",
+    "explanation": "Bitcoin появился в 2009 году, Ethereum — в 2015."
+  },
+  {
+    "id": "q090",
+    "question": "Что появилось раньше?",
+    "left_option": "Tesla Model S",
+    "right_option": "Nissan Leaf",
+    "correct_option": "right",
+    "explanation": "Nissan Leaf вышел в 2010 году, Tesla Model S — в 2012."
+  },
+  {
+    "id": "q091",
+    "question": "Что появилось раньше?",
+    "left_option": "Uber Eats",
+    "right_option": "DoorDash",
+    "correct_option": "right",
+    "explanation": "DoorDash основан в 2013 году, Uber Eats — в 2014."
+  },
+  {
+    "id": "q092",
+    "question": "Что появилось раньше?",
+    "left_option": "Foursquare",
+    "right_option": "Swarm",
+    "correct_option": "left",
+    "explanation": "Foursquare появился в 2009 году, Swarm — в 2014."
+  },
+  {
+    "id": "q093",
+    "question": "Что появилось раньше?",
+    "left_option": "IMDb",
+    "right_option": "Rotten Tomatoes",
+    "correct_option": "left",
+    "explanation": "IMDb существует с 1990 года, Rotten Tomatoes — с 1998."
+  },
+  {
+    "id": "q094",
+    "question": "Что появилось раньше?",
+    "left_option": "Last.fm",
+    "right_option": "Spotify",
+    "correct_option": "left",
+    "explanation": "Last.fm появился в 2002 году, Spotify — в 2008."
+  },
+  {
+    "id": "q095",
+    "question": "Что появилось раньше?",
+    "left_option": "Adobe Photoshop",
+    "right_option": "Adobe Illustrator",
+    "correct_option": "right",
+    "explanation": "Illustrator вышел в 1987 году, Photoshop — в 1990."
+  },
+  {
+    "id": "q096",
+    "question": "Что появилось раньше?",
+    "left_option": "Figma",
+    "right_option": "Adobe XD",
+    "correct_option": "left",
+    "explanation": "Figma запустили раньше Adobe XD."
+  },
+  {
+    "id": "q097",
+    "question": "Что появилось раньше?",
+    "left_option": "Visual Studio Code",
+    "right_option": "Atom",
+    "correct_option": "right",
+    "explanation": "Atom представили в 2014 году, VS Code — в 2015."
+  },
+  {
+    "id": "q098",
+    "question": "Что появилось раньше?",
+    "left_option": "Sublime Text",
+    "right_option": "Visual Studio Code",
+    "correct_option": "left",
+    "explanation": "Sublime Text появился раньше VS Code."
+  },
+  {
+    "id": "q099",
+    "question": "Что появилось раньше?",
+    "left_option": "Docker",
+    "right_option": "Kubernetes",
+    "correct_option": "left",
+    "explanation": "Docker представили в 2013 году, Kubernetes — в 2014."
+  },
+  {
+    "id": "q100",
+    "question": "Что появилось раньше?",
+    "left_option": "Git",
+    "right_option": "Mercurial",
+    "correct_option": "left",
+    "explanation": "Git появился в апреле 2005 года, Mercurial — чуть позже в 2005."
+  },
+  {
+    "id": "q101",
+    "question": "Что появилось раньше?",
+    "left_option": "Node.js",
+    "right_option": "Deno",
+    "correct_option": "left",
+    "explanation": "Node.js представили в 2009 году, Deno — в 2020."
+  },
+  {
+    "id": "q102",
+    "question": "Что появилось раньше?",
+    "left_option": "React",
+    "right_option": "Vue",
+    "correct_option": "left",
+    "explanation": "React появился в 2013 году, Vue — в 2014."
+  },
+  {
+    "id": "q103",
+    "question": "Что появилось раньше?",
+    "left_option": "AngularJS",
+    "right_option": "React",
+    "correct_option": "left",
+    "explanation": "AngularJS вышел в 2010 году, React — в 2013."
+  },
+  {
+    "id": "q104",
+    "question": "Что появилось раньше?",
+    "left_option": "TypeScript",
+    "right_option": "Kotlin",
+    "correct_option": "left",
+    "explanation": "TypeScript представили в 2012 году, Kotlin — в 2016."
+  },
+  {
+    "id": "q105",
+    "question": "Что появилось раньше?",
+    "left_option": "Discord",
+    "right_option": "Slack",
+    "correct_option": "right",
+    "explanation": "Slack появился в 2013 году, Discord — в 2015."
+  },
+  {
+    "id": "q106",
+    "question": "Что появилось раньше?",
+    "left_option": "Google Play",
+    "right_option": "App Store",
+    "correct_option": "right",
+    "explanation": "App Store запустили в 2008 году, Google Play под этим брендом — в 2012."
+  },
+  {
+    "id": "q107",
+    "question": "Что появилось раньше?",
+    "left_option": "Android Market",
+    "right_option": "App Store",
+    "correct_option": "right",
+    "explanation": "App Store запустили в июле 2008 года, Android Market — в октябре 2008."
+  },
+  {
+    "id": "q108",
+    "question": "Что появилось раньше?",
+    "left_option": "Google+",
+    "right_option": "Instagram",
+    "correct_option": "right",
+    "explanation": "Instagram появился в 2010 году, Google+ — в 2011."
+  },
+  {
+    "id": "q109",
+    "question": "Что появилось раньше?",
+    "left_option": "Tumblr",
+    "right_option": "Instagram",
+    "correct_option": "left",
+    "explanation": "Tumblr стартовал в 2007 году, Instagram — в 2010."
+  },
+  {
+    "id": "q110",
+    "question": "Что появилось раньше?",
+    "left_option": "ASKfm",
+    "right_option": "Sarahah",
+    "correct_option": "left",
+    "explanation": "ASKfm появился в 2010 году, Sarahah — в 2016."
+  },
+  {
+    "id": "q111",
+    "question": "Что появилось раньше?",
+    "left_option": "Kik Messenger",
+    "right_option": "Telegram",
+    "correct_option": "left",
+    "explanation": "Kik появился в 2010 году, Telegram — в 2013."
+  },
+  {
+    "id": "q112",
+    "question": "Что появилось раньше?",
+    "left_option": "Prisma",
+    "right_option": "FaceApp",
+    "correct_option": "left",
+    "explanation": "Prisma завирусился в 2016 году, FaceApp — в 2017."
+  },
+  {
+    "id": "q113",
+    "question": "Что появилось раньше?",
+    "left_option": "Among Us",
+    "right_option": "Fall Guys",
+    "correct_option": "left",
+    "explanation": "Among Us вышла в 2018 году, Fall Guys — в 2020."
+  },
+  {
+    "id": "q114",
+    "question": "Что появилось раньше?",
+    "left_option": "PUBG",
+    "right_option": "Apex Legends",
+    "correct_option": "left",
+    "explanation": "PUBG вышла в 2017 году, Apex Legends — в 2019."
+  },
+  {
+    "id": "q115",
+    "question": "Что появилось раньше?",
+    "left_option": "Overwatch",
+    "right_option": "Valorant",
+    "correct_option": "left",
+    "explanation": "Overwatch вышла в 2016 году, Valorant — в 2020."
+  },
+  {
+    "id": "q116",
+    "question": "Что появилось раньше?",
+    "left_option": "League of Legends",
+    "right_option": "Overwatch",
+    "correct_option": "left",
+    "explanation": "League of Legends вышла в 2009 году, Overwatch — в 2016."
+  },
+  {
+    "id": "q117",
+    "question": "Что появилось раньше?",
+    "left_option": "Diablo II",
+    "right_option": "World of Warcraft",
+    "correct_option": "left",
+    "explanation": "Diablo II вышла в 2000 году, World of Warcraft — в 2004."
+  },
+  {
+    "id": "q118",
+    "question": "Что появилось раньше?",
+    "left_option": "StarCraft II",
+    "right_option": "Diablo III",
+    "correct_option": "left",
+    "explanation": "StarCraft II вышла в 2010 году, Diablo III — в 2012."
+  },
+  {
+    "id": "q119",
+    "question": "Что появилось раньше?",
+    "left_option": "Left 4 Dead",
+    "right_option": "Portal 2",
+    "correct_option": "left",
+    "explanation": "Left 4 Dead вышла в 2008 году, Portal 2 — в 2011."
+  },
+  {
+    "id": "q120",
+    "question": "Что появилось раньше?",
+    "left_option": "BioShock",
+    "right_option": "Mass Effect",
+    "correct_option": "left",
+    "explanation": "BioShock вышла в августе 2007 года, Mass Effect — в ноябре 2007."
+  },
+  {
+    "id": "q121",
+    "question": "Что появилось раньше?",
+    "left_option": "Uncharted",
+    "right_option": "The Last of Us",
+    "correct_option": "left",
+    "explanation": "Первая Uncharted вышла в 2007 году, The Last of Us — в 2013."
+  },
+  {
+    "id": "q122",
+    "question": "Что появилось раньше?",
+    "left_option": "The Witcher",
+    "right_option": "Dragon Age: Origins",
+    "correct_option": "left",
+    "explanation": "Первая The Witcher вышла в 2007 году, Dragon Age: Origins — в 2009."
+  },
+  {
+    "id": "q123",
+    "question": "Что появилось раньше?",
+    "left_option": "Skyrim",
+    "right_option": "Dark Souls",
+    "correct_option": "right",
+    "explanation": "Dark Souls вышла в сентябре 2011 года, Skyrim — в ноябре 2011."
+  },
+  {
+    "id": "q124",
+    "question": "Что появилось раньше?",
+    "left_option": "Terraria",
+    "right_option": "Stardew Valley",
+    "correct_option": "left",
+    "explanation": "Terraria вышла в 2011 году, Stardew Valley — в 2016."
+  },
+  {
+    "id": "q125",
+    "question": "Что появилось раньше?",
+    "left_option": "Roblox",
+    "right_option": "Minecraft",
+    "correct_option": "left",
+    "explanation": "Roblox стартовал в 2006 году, Minecraft — в 2009."
+  },
+  {
+    "id": "q126",
+    "question": "Что появилось раньше?",
+    "left_option": "Kindle",
+    "right_option": "iPad",
+    "correct_option": "left",
+    "explanation": "Первый Kindle вышел в 2007 году, iPad — в 2010."
+  },
+  {
+    "id": "q127",
+    "question": "Что появилось раньше?",
+    "left_option": "Apple TV",
+    "right_option": "Chromecast",
+    "correct_option": "left",
+    "explanation": "Apple TV появился в 2007 году, Chromecast — в 2013."
+  },
+  {
+    "id": "q128",
+    "question": "Что появилось раньше?",
+    "left_option": "GoPro",
+    "right_option": "DJI",
+    "correct_option": "left",
+    "explanation": "GoPro основан в 2002 году, DJI — в 2006."
+  },
+  {
+    "id": "q129",
+    "question": "Что появилось раньше?",
+    "left_option": "Arduino",
+    "right_option": "Raspberry Pi",
+    "correct_option": "left",
+    "explanation": "Arduino появился в 2005 году, Raspberry Pi — в 2012."
+  },
+  {
+    "id": "q130",
+    "question": "Что появилось раньше?",
+    "left_option": "Airbnb",
+    "right_option": "Booking.com",
+    "correct_option": "right",
+    "explanation": "Booking.com существует с 1996 года, Airbnb — с 2008."
+  },
+  {
+    "id": "q131",
+    "question": "Что появилось раньше?",
+    "left_option": "Uber",
+    "right_option": "Bolt",
+    "correct_option": "left",
+    "explanation": "Uber основан в 2009 году, Bolt — в 2013."
+  },
+  {
+    "id": "q132",
+    "question": "Что появилось раньше?",
+    "left_option": "Foodpanda",
+    "right_option": "Glovo",
+    "correct_option": "left",
+    "explanation": "Foodpanda появился в 2012 году, Glovo — в 2015."
+  },
+  {
+    "id": "q133",
+    "question": "Что появилось раньше?",
+    "left_option": "AliExpress",
+    "right_option": "Ozon",
+    "correct_option": "right",
+    "explanation": "Ozon появился в 1998 году, AliExpress — в 2010."
+  },
+  {
+    "id": "q134",
+    "question": "Что появилось раньше?",
+    "left_option": "Wildberries",
+    "right_option": "Lamoda",
+    "correct_option": "left",
+    "explanation": "Wildberries основан в 2004 году, Lamoda — в 2011."
+  },
+  {
+    "id": "q135",
+    "question": "Что появилось раньше?",
+    "left_option": "IMDb",
+    "right_option": "КиноПоиск",
+    "correct_option": "left",
+    "explanation": "IMDb существует с 1990 года, КиноПоиск — с 2003."
+  },
+  {
+    "id": "q136",
+    "question": "Что появилось раньше?",
+    "left_option": "КиноПоиск",
+    "right_option": "ivi",
+    "correct_option": "left",
+    "explanation": "КиноПоиск стартовал в 2003 году, ivi — в 2010."
+  },
+  {
+    "id": "q137",
+    "question": "Что появилось раньше?",
+    "left_option": "Netflix",
+    "right_option": "ivi",
+    "correct_option": "left",
+    "explanation": "Netflix основан в 1997 году, ivi — в 2010."
+  },
+  {
+    "id": "q138",
+    "question": "Что появилось раньше?",
+    "left_option": "TikTok",
+    "right_option": "Reels",
+    "correct_option": "left",
+    "explanation": "TikTok появился раньше Instagram Reels."
+  },
+  {
+    "id": "q139",
+    "question": "Что появилось раньше?",
+    "left_option": "Stories в Instagram",
+    "right_option": "Fleets в Twitter",
+    "correct_option": "left",
+    "explanation": "Instagram Stories появились в 2016 году, Fleets — в 2020."
+  },
+  {
+    "id": "q140",
+    "question": "Что появилось раньше?",
+    "left_option": "Reels",
+    "right_option": "YouTube Shorts",
+    "correct_option": "left",
+    "explanation": "Instagram Reels появились в 2020 году чуть раньше YouTube Shorts."
+  },
+  {
+    "id": "q141",
+    "question": "Что появилось раньше?",
+    "left_option": "Google Assistant",
+    "right_option": "Siri",
+    "correct_option": "right",
+    "explanation": "Siri появилась в 2011 году, Google Assistant — в 2016."
+  },
+  {
+    "id": "q142",
+    "question": "Что появилось раньше?",
+    "left_option": "Cortana",
+    "right_option": "Alexa",
+    "correct_option": "right",
+    "explanation": "Alexa появилась в 2014 году, Cortana — в 2015."
+  },
+  {
+    "id": "q143",
+    "question": "Что появилось раньше?",
+    "left_option": "Google Now",
+    "right_option": "Siri",
+    "correct_option": "right",
+    "explanation": "Siri дебютировала в 2011 году, Google Now — в 2012."
+  },
+  {
+    "id": "q144",
+    "question": "Что появилось раньше?",
+    "left_option": "Face ID",
+    "right_option": "Touch ID",
+    "correct_option": "right",
+    "explanation": "Touch ID появился в 2013 году, Face ID — в 2017."
+  },
+  {
+    "id": "q145",
+    "question": "Что появилось раньше?",
+    "left_option": "Apple Music",
+    "right_option": "YouTube Music",
+    "correct_option": "left",
+    "explanation": "Apple Music запустили в 2015 году, YouTube Music — позже как отдельный сервис."
+  },
+  {
+    "id": "q146",
+    "question": "Что появилось раньше?",
+    "left_option": "Photoshop",
+    "right_option": "Canva",
+    "correct_option": "left",
+    "explanation": "Photoshop существует с 1990 года, Canva — с 2013."
+  },
+  {
+    "id": "q147",
+    "question": "Что появилось раньше?",
+    "left_option": "Notepad++",
+    "right_option": "Sublime Text",
+    "correct_option": "left",
+    "explanation": "Notepad++ появился в 2003 году, Sublime Text — позже."
+  },
+  {
+    "id": "q148",
+    "question": "Что появилось раньше?",
+    "left_option": "Postman",
+    "right_option": "Insomnia",
+    "correct_option": "left",
+    "explanation": "Postman появился раньше Insomnia."
+  },
+  {
+    "id": "q149",
+    "question": "Что появилось раньше?",
+    "left_option": "Jira",
+    "right_option": "Trello",
+    "correct_option": "left",
+    "explanation": "Jira существует с 2002 года, Trello — с 2011."
+  },
+  {
+    "id": "q150",
+    "question": "Что появилось раньше?",
+    "left_option": "Confluence",
+    "right_option": "Notion",
+    "correct_option": "left",
+    "explanation": "Confluence появился в 2004 году, Notion — значительно позже."
+  },
+  {
+    "id": "q151",
+    "question": "Что появилось раньше?",
+    "left_option": "Nokia 3310",
+    "right_option": "Motorola RAZR",
+    "correct_option": "left",
+    "explanation": "Nokia 3310 вышла в 2000 году, Motorola RAZR — в 2004."
+  },
+  {
+    "id": "q152",
+    "question": "Что появилось раньше?",
+    "left_option": "BlackBerry",
+    "right_option": "iPhone",
+    "correct_option": "left",
+    "explanation": "Первые BlackBerry появились в 1999 году, iPhone — в 2007."
+  },
+  {
+    "id": "q153",
+    "question": "Что появилось раньше?",
+    "left_option": "Samsung Galaxy S",
+    "right_option": "Google Pixel",
+    "correct_option": "left",
+    "explanation": "Samsung Galaxy S вышел в 2010 году, Google Pixel — в 2016."
+  },
+  {
+    "id": "q154",
+    "question": "Что появилось раньше?",
+    "left_option": "Xiaomi",
+    "right_option": "OnePlus",
+    "correct_option": "left",
+    "explanation": "Xiaomi основана в 2010 году, OnePlus — в 2013."
+  },
+  {
+    "id": "q155",
+    "question": "Что появилось раньше?",
+    "left_option": "Huawei",
+    "right_option": "Xiaomi",
+    "correct_option": "left",
+    "explanation": "Huawei основана в 1987 году, Xiaomi — в 2010."
+  },
+  {
+    "id": "q156",
+    "question": "Что появилось раньше?",
+    "left_option": "Sony Walkman",
+    "right_option": "iPod",
+    "correct_option": "left",
+    "explanation": "Sony Walkman появился в 1979 году, iPod — в 2001."
+  },
+  {
+    "id": "q157",
+    "question": "Что появилось раньше?",
+    "left_option": "iPod",
+    "right_option": "iPhone",
+    "correct_option": "left",
+    "explanation": "iPod представили в 2001 году, iPhone — в 2007."
+  },
+  {
+    "id": "q158",
+    "question": "Что появилось раньше?",
+    "left_option": "Oculus Rift",
+    "right_option": "HTC Vive",
+    "correct_option": "left",
+    "explanation": "Oculus Rift (Kickstarter) появился в 2012 году, HTC Vive — в 2015."
+  },
+  {
+    "id": "q159",
+    "question": "Что появилось раньше?",
+    "left_option": "PlayStation VR",
+    "right_option": "Meta Quest",
+    "correct_option": "left",
+    "explanation": "PlayStation VR вышла в 2016 году, Meta Quest (Oculus Quest) — в 2019."
+  },
+  {
+    "id": "q160",
+    "question": "Что появилось раньше?",
+    "left_option": "Tesla",
+    "right_option": "Rivian",
+    "correct_option": "left",
+    "explanation": "Tesla основана в 2003 году, Rivian — в 2009."
+  },
+  {
+    "id": "q161",
+    "question": "Что появилось раньше?",
+    "left_option": "SpaceX",
+    "right_option": "Blue Origin",
+    "correct_option": "left",
+    "explanation": "SpaceX основана в 2002 году, Blue Origin — в 2000 (но SpaceX стала известнее раньше)."
+  },
+  {
+    "id": "q162",
+    "question": "Что появилось раньше?",
+    "left_option": "Amazon",
+    "right_option": "Alibaba",
+    "correct_option": "left",
+    "explanation": "Amazon основан в 1994 году, Alibaba — в 1999."
+  },
+  {
+    "id": "q163",
+    "question": "Что появилось раньше?",
+    "left_option": "Microsoft",
+    "right_option": "Apple",
+    "correct_option": "left",
+    "explanation": "Microsoft основана в 1975 году, Apple — в 1976."
+  },
+  {
+    "id": "q164",
+    "question": "Что появилось раньше?",
+    "left_option": "Intel",
+    "right_option": "AMD",
+    "correct_option": "left",
+    "explanation": "Intel основана в 1968 году, AMD — в 1969."
+  },
+  {
+    "id": "q165",
+    "question": "Что появилось раньше?",
+    "left_option": "NVIDIA",
+    "right_option": "AMD",
+    "correct_option": "right",
+    "explanation": "AMD основана в 1969 году, NVIDIA — в 1993."
+  },
+  {
+    "id": "q166",
+    "question": "Что появилось раньше?",
+    "left_option": "IBM",
+    "right_option": "Microsoft",
+    "correct_option": "left",
+    "explanation": "IBM основана в 1911 году, Microsoft — в 1975."
+  },
+  {
+    "id": "q167",
+    "question": "Что появилось раньше?",
+    "left_option": "Sony",
+    "right_option": "Samsung",
+    "correct_option": "right",
+    "explanation": "Samsung основана в 1938 году, Sony — в 1946."
+  },
+  {
+    "id": "q168",
+    "question": "Что появилось раньше?",
+    "left_option": "Nintendo",
+    "right_option": "Sony",
+    "correct_option": "left",
+    "explanation": "Nintendo основана в 1889 году, Sony — в 1946."
+  },
+  {
+    "id": "q169",
+    "question": "Что появилось раньше?",
+    "left_option": "Canon",
+    "right_option": "Nikon",
+    "correct_option": "right",
+    "explanation": "Nikon основана в 1917 году, Canon — в 1937."
+  },
+  {
+    "id": "q170",
+    "question": "Что появилось раньше?",
+    "left_option": "Logitech",
+    "right_option": "Razer",
+    "correct_option": "left",
+    "explanation": "Logitech основана в 1981 году, Razer — в 1998."
+  },
+  {
+    "id": "q171",
+    "question": "Что появилось раньше?",
+    "left_option": "SteelSeries",
+    "right_option": "Razer",
+    "correct_option": "right",
+    "explanation": "Razer основана в 1998 году, SteelSeries — в 2001."
+  },
+  {
+    "id": "q172",
+    "question": "Что появилось раньше?",
+    "left_option": "Corsair",
+    "right_option": "Razer",
+    "correct_option": "left",
+    "explanation": "Corsair основана в 1994 году, Razer — в 1998."
+  },
+  {
+    "id": "q173",
+    "question": "Что появилось раньше?",
+    "left_option": "Dell",
+    "right_option": "HP",
+    "correct_option": "right",
+    "explanation": "HP основана в 1939 году, Dell — в 1984."
+  },
+  {
+    "id": "q174",
+    "question": "Что появилось раньше?",
+    "left_option": "Lenovo",
+    "right_option": "Asus",
+    "correct_option": "left",
+    "explanation": "Lenovo основана в 1984 году, Asus — в 1989."
+  },
+  {
+    "id": "q175",
+    "question": "Что появилось раньше?",
+    "left_option": "Acer",
+    "right_option": "Asus",
+    "correct_option": "left",
+    "explanation": "Acer основана в 1976 году, Asus — в 1989."
+  },
+  {
+    "id": "q176",
+    "question": "Что появилось раньше?",
+    "left_option": "MSI",
+    "right_option": "Gigabyte",
+    "correct_option": "right",
+    "explanation": "Gigabyte основана в 1986 году, MSI — в 1986 (примерно одновременно)."
+  },
+  {
+    "id": "q177",
+    "question": "Что появилось раньше?",
+    "left_option": "Western Digital",
+    "right_option": "Seagate",
+    "correct_option": "right",
+    "explanation": "Seagate основана в 1979 году, Western Digital — в 1970."
+  },
+  {
+    "id": "q178",
+    "question": "Что появилось раньше?",
+    "left_option": "SanDisk",
+    "right_option": "Kingston",
+    "correct_option": "right",
+    "explanation": "Kingston основана в 1987 году, SanDisk — в 1988."
+  },
+  {
+    "id": "q179",
+    "question": "Что появилось раньше?",
+    "left_option": "Bose",
+    "right_option": "Beats",
+    "correct_option": "left",
+    "explanation": "Bose основана в 1964 году, Beats — в 2006."
+  },
+  {
+    "id": "q180",
+    "question": "Что появилось раньше?",
+    "left_option": "Sennheiser",
+    "right_option": "Bose",
+    "correct_option": "left",
+    "explanation": "Sennheiser основана в 1945 году, Bose — в 1964."
+  },
+  {
+    "id": "q181",
+    "question": "Что появилось раньше?",
+    "left_option": "JBL",
+    "right_option": "Bose",
+    "correct_option": "left",
+    "explanation": "JBL основана в 1946 году, Bose — в 1964."
+  },
+  {
+    "id": "q182",
+    "question": "Что появилось раньше?",
+    "left_option": "Philips",
+    "right_option": "Sony",
+    "correct_option": "left",
+    "explanation": "Philips основана в 1891 году, Sony — в 1946."
+  },
+  {
+    "id": "q183",
+    "question": "Что появилось раньше?",
+    "left_option": "LG",
+    "right_option": "Samsung",
+    "correct_option": "right",
+    "explanation": "Samsung основана в 1938 году, LG — в 1958."
+  },
+  {
+    "id": "q184",
+    "question": "Что появилось раньше?",
+    "left_option": "Panasonic",
+    "right_option": "Sony",
+    "correct_option": "left",
+    "explanation": "Panasonic основана в 1918 году, Sony — в 1946."
+  },
+  {
+    "id": "q185",
+    "question": "Что появилось раньше?",
+    "left_option": "Toshiba",
+    "right_option": "Sony",
+    "correct_option": "left",
+    "explanation": "Toshiba основана в 1939 году, Sony — в 1946."
+  },
+  {
+    "id": "q186",
+    "question": "Что появилось раньше?",
+    "left_option": "Sharp",
+    "right_option": "Sony",
+    "correct_option": "left",
+    "explanation": "Sharp основана в 1912 году, Sony — в 1946."
+  },
+  {
+    "id": "q187",
+    "question": "Что появилось раньше?",
+    "left_option": "Motorola",
+    "right_option": "Nokia",
+    "correct_option": "right",
+    "explanation": "Nokia основана в 1865 году, Motorola — в 1928."
+  },
+  {
+    "id": "q188",
+    "question": "Что появилось раньше?",
+    "left_option": "Ericsson",
+    "right_option": "Nokia",
+    "correct_option": "right",
+    "explanation": "Nokia основана в 1865 году, Ericsson — в 1876."
+  },
+  {
+    "id": "q189",
+    "question": "Что появилось раньше?",
+    "left_option": "Cisco",
+    "right_option": "Juniper Networks",
+    "correct_option": "left",
+    "explanation": "Cisco основана в 1984 году, Juniper Networks — в 1996."
+  },
+  {
+    "id": "q190",
+    "question": "Что появилось раньше?",
+    "left_option": "Oracle",
+    "right_option": "SAP",
+    "correct_option": "right",
+    "explanation": "SAP основана в 1972 году, Oracle — в 1977."
+  },
+  {
+    "id": "q191",
+    "question": "Что появилось раньше?",
+    "left_option": "Adobe",
+    "right_option": "Microsoft",
+    "correct_option": "right",
+    "explanation": "Microsoft основана в 1975 году, Adobe — в 1982."
+  },
+  {
+    "id": "q192",
+    "question": "Что появилось раньше?",
+    "left_option": "Autodesk",
+    "right_option": "Adobe",
+    "correct_option": "left",
+    "explanation": "Autodesk основана в 1982 году, Adobe — в 1982 (примерно одновременно)."
+  },
+  {
+    "id": "q193",
+    "question": "Что появилось раньше?",
+    "left_option": "Salesforce",
+    "right_option": "Shopify",
+    "correct_option": "left",
+    "explanation": "Salesforce основана в 1999 году, Shopify — в 2006."
+  },
+  {
+    "id": "q194",
+    "question": "Что появилось раньше?",
+    "left_option": "Zoom",
+    "right_option": "Microsoft Teams",
+    "correct_option": "left",
+    "explanation": "Zoom основан в 2011 году, Microsoft Teams — в 2017."
+  },
+  {
+    "id": "q195",
+    "question": "Что появилось раньше?",
+    "left_option": "Slack",
+    "right_option": "Microsoft Teams",
+    "correct_option": "left",
+    "explanation": "Slack появился в 2013 году, Microsoft Teams — в 2017."
+  },
+  {
+    "id": "q196",
+    "question": "Что появилось раньше?",
+    "left_option": "Asana",
+    "right_option": "Monday.com",
+    "correct_option": "left",
+    "explanation": "Asana основана в 2008 году, Monday.com — в 2012."
+  },
+  {
+    "id": "q197",
+    "question": "Что появилось раньше?",
+    "left_option": "Basecamp",
+    "right_option": "Asana",
+    "correct_option": "left",
+    "explanation": "Basecamp появился в 2004 году, Asana — в 2008."
+  },
+  {
+    "id": "q198",
+    "question": "Что появилось раньше?",
+    "left_option": "Mailchimp",
+    "right_option": "SendGrid",
+    "correct_option": "left",
+    "explanation": "Mailchimp основан в 2001 году, SendGrid — в 2009."
+  },
+  {
+    "id": "q199",
+    "question": "Что появилось раньше?",
+    "left_option": "WordPress",
+    "right_option": "Wix",
+    "correct_option": "left",
+    "explanation": "WordPress появился в 2003 году, Wix — в 2006."
+  },
+  {
+    "id": "q200",
+    "question": "Что появилось раньше?",
+    "left_option": "Squarespace",
+    "right_option": "Wix",
+    "correct_option": "left",
+    "explanation": "Squarespace основан в 2003 году, Wix — в 2006."
+  },
+  {
+    "id": "q201",
+    "question": "Что появилось раньше?",
+    "left_option": "Java",
+    "right_option": "Python",
+    "correct_option": "left",
+    "explanation": "Java появилась в 1995 году, Python — в 1991 (но стал популярен позже)."
+  },
+  {
+    "id": "q202",
+    "question": "Что появилось раньше?",
+    "left_option": "C++",
+    "right_option": "Java",
+    "correct_option": "left",
+    "explanation": "C++ появился в 1985 году, Java — в 1995."
+  },
+  {
+    "id": "q203",
+    "question": "Что появилось раньше?",
+    "left_option": "PHP",
+    "right_option": "Ruby",
+    "correct_option": "left",
+    "explanation": "PHP появился в 1995 году, Ruby — в 1995 (примерно одновременно)."
+  },
+  {
+    "id": "q204",
+    "question": "Что появилось раньше?",
+    "left_option": "Perl",
+    "right_option": "Python",
+    "correct_option": "left",
+    "explanation": "Perl появился в 1987 году, Python — в 1991."
+  },
+  {
+    "id": "q205",
+    "question": "Что появилось раньше?",
+    "left_option": "JavaScript",
+    "right_option": "TypeScript",
+    "correct_option": "left",
+    "explanation": "JavaScript появился в 1995 году, TypeScript — в 2012."
+  },
+  {
+    "id": "q206",
+    "question": "Что появилось раньше?",
+    "left_option": "Go",
+    "right_option": "Rust",
+    "correct_option": "left",
+    "explanation": "Go появился в 2009 году, Rust — в 2010."
+  },
+  {
+    "id": "q207",
+    "question": "Что появилось раньше?",
+    "left_option": "Swift",
+    "right_option": "Kotlin",
+    "correct_option": "left",
+    "explanation": "Swift представили в 2014 году, Kotlin — в 2011 (но популярен стал позже)."
+  },
+  {
+    "id": "q208",
+    "question": "Что появилось раньше?",
+    "left_option": "Objective-C",
+    "right_option": "Swift",
+    "correct_option": "left",
+    "explanation": "Objective-C появился в 1984 году, Swift — в 2014."
+  },
+  {
+    "id": "q209",
+    "question": "Что появилось раньше?",
+    "left_option": "C#",
+    "right_option": "F#",
+    "correct_option": "left",
+    "explanation": "C# появился в 2000 году, F# — в 2005."
+  },
+  {
+    "id": "q210",
+    "question": "Что появилось раньше?",
+    "left_option": "Scala",
+    "right_option": "Kotlin",
+    "correct_option": "left",
+    "explanation": "Scala появилась в 2004 году, Kotlin — в 2011."
+  },
+  {
+    "id": "q211",
+    "question": "Что появилось раньше?",
+    "left_option": "Haskell",
+    "right_option": "Scala",
+    "correct_option": "left",
+    "explanation": "Haskell появился в 1990 году, Scala — в 2004."
+  },
+  {
+    "id": "q212",
+    "question": "Что появилось раньше?",
+    "left_option": "Erlang",
+    "right_option": "Elixir",
+    "correct_option": "left",
+    "explanation": "Erlang появился в 1986 году, Elixir — в 2011."
+  },
+  {
+    "id": "q213",
+    "question": "Что появилось раньше?",
+    "left_option": "Lua",
+    "right_option": "Ruby",
+    "correct_option": "left",
+    "explanation": "Lua появилась в 1993 году, Ruby — в 1995."
+  },
+  {
+    "id": "q214",
+    "question": "Что появилось раньше?",
+    "left_option": "Dart",
+    "right_option": "Kotlin",
+    "correct_option": "right",
+    "explanation": "Kotlin появился в 2011 году, Dart — в 2011 (примерно одновременно)."
+  },
+  {
+    "id": "q215",
+    "question": "Что появилось раньше?",
+    "left_option": "Clojure",
+    "right_option": "Scala",
+    "correct_option": "right",
+    "explanation": "Scala появилась в 2004 году, Clojure — в 2007."
+  },
+  {
+    "id": "q216",
+    "question": "Что появилось раньше?",
+    "left_option": "Super Mario Bros.",
+    "right_option": "The Legend of Zelda",
+    "correct_option": "left",
+    "explanation": "Super Mario Bros. вышла в 1985 году, The Legend of Zelda — в 1986."
+  },
+  {
+    "id": "q217",
+    "question": "Что появилось раньше?",
+    "left_option": "Sonic",
+    "right_option": "Mario",
+    "correct_option": "right",
+    "explanation": "Mario появился в 1981 году (Donkey Kong), Sonic — в 1991."
+  },
+  {
+    "id": "q218",
+    "question": "Что появилось раньше?",
+    "left_option": "Pac-Man",
+    "right_option": "Space Invaders",
+    "correct_option": "right",
+    "explanation": "Space Invaders вышла в 1978 году, Pac-Man — в 1980."
+  },
+  {
+    "id": "q219",
+    "question": "Что появилось раньше?",
+    "left_option": "Tetris",
+    "right_option": "Pac-Man",
+    "correct_option": "right",
+    "explanation": "Pac-Man вышел в 1980 году, Tetris — в 1984."
+  },
+  {
+    "id": "q220",
+    "question": "Что появилось раньше?",
+    "left_option": "Street Fighter",
+    "right_option": "Mortal Kombat",
+    "correct_option": "left",
+    "explanation": "Street Fighter вышел в 1987 году, Mortal Kombat — в 1992."
+  },
+  {
+    "id": "q221",
+    "question": "Что появилось раньше?",
+    "left_option": "Final Fantasy",
+    "right_option": "Dragon Quest",
+    "correct_option": "right",
+    "explanation": "Dragon Quest вышла в 1986 году, Final Fantasy — в 1987."
+  },
+  {
+    "id": "q222",
+    "question": "Что появилось раньше?",
+    "left_option": "Resident Evil",
+    "right_option": "Silent Hill",
+    "correct_option": "left",
+    "explanation": "Resident Evil вышла в 1996 году, Silent Hill — в 1999."
+  },
+  {
+    "id": "q223",
+    "question": "Что появилось раньше?",
+    "left_option": "Metal Gear Solid",
+    "right_option": "Splinter Cell",
+    "correct_option": "left",
+    "explanation": "Metal Gear Solid вышла в 1998 году, Splinter Cell — в 2002."
+  },
+  {
+    "id": "q224",
+    "question": "Что появилось раньше?",
+    "left_option": "Tomb Raider",
+    "right_option": "Uncharted",
+    "correct_option": "left",
+    "explanation": "Tomb Raider вышла в 1996 году, Uncharted — в 2007."
+  },
+  {
+    "id": "q225",
+    "question": "Что появилось раньше?",
+    "left_option": "Assassin's Creed",
+    "right_option": "Watch Dogs",
+    "correct_option": "left",
+    "explanation": "Assassin's Creed вышла в 2007 году, Watch Dogs — в 2014."
+  },
+  {
+    "id": "q226",
+    "question": "Что появилось раньше?",
+    "left_option": "Friendster",
+    "right_option": "MySpace",
+    "correct_option": "left",
+    "explanation": "Friendster запустили в 2002 году, MySpace — в 2003."
+  },
+  {
+    "id": "q227",
+    "question": "Что появилось раньше?",
+    "left_option": "MySpace",
+    "right_option": "Facebook",
+    "correct_option": "left",
+    "explanation": "MySpace появился в 2003 году, Facebook — в 2004."
+  },
+  {
+    "id": "q228",
+    "question": "Что появилось раньше?",
+    "left_option": "Orkut",
+    "right_option": "Facebook",
+    "correct_option": "left",
+    "explanation": "Orkut запустили в январе 2004 года, Facebook — в феврале 2004."
+  },
+  {
+    "id": "q229",
+    "question": "Что появилось раньше?",
+    "left_option": "Hi5",
+    "right_option": "Bebo",
+    "correct_option": "left",
+    "explanation": "Hi5 появился в 2003 году, Bebo — в 2005."
+  },
+  {
+    "id": "q230",
+    "question": "Что появилось раньше?",
+    "left_option": "Viber",
+    "right_option": "WhatsApp",
+    "correct_option": "right",
+    "explanation": "WhatsApp основан в 2009 году, Viber — в 2010."
+  },
+  {
+    "id": "q231",
+    "question": "Что появилось раньше?",
+    "left_option": "WeChat",
+    "right_option": "Line",
+    "correct_option": "right",
+    "explanation": "Line появился в 2011 году, WeChat — в 2011 (примерно одновременно)."
+  },
+  {
+    "id": "q232",
+    "question": "Что появилось раньше?",
+    "left_option": "Snapchat",
+    "right_option": "Instagram",
+    "correct_option": "right",
+    "explanation": "Instagram появился в 2010 году, Snapchat — в 2011."
+  },
+  {
+    "id": "q233",
+    "question": "Что появилось раньше?",
+    "left_option": "Periscope",
+    "right_option": "Meerkat",
+    "correct_option": "right",
+    "explanation": "Meerkat появился в начале 2015 года, Periscope — чуть позже в 2015."
+  },
+  {
+    "id": "q234",
+    "question": "Что появилось раньше?",
+    "left_option": "Houseparty",
+    "right_option": "Clubhouse",
+    "correct_option": "left",
+    "explanation": "Houseparty появился в 2016 году, Clubhouse — в 2020."
+  },
+  {
+    "id": "q235",
+    "question": "Что появилось раньше?",
+    "left_option": "Mastodon",
+    "right_option": "Bluesky",
+    "correct_option": "left",
+    "explanation": "Mastodon появился в 2016 году, Bluesky — в 2023."
+  },
+  {
+    "id": "q236",
+    "question": "Что появилось раньше?",
+    "left_option": "Linux",
+    "right_option": "FreeBSD",
+    "correct_option": "right",
+    "explanation": "FreeBSD появилась в 1993 году, Linux — в 1991."
+  },
+  {
+    "id": "q237",
+    "question": "Что появилось раньше?",
+    "left_option": "Ubuntu",
+    "right_option": "Debian",
+    "correct_option": "right",
+    "explanation": "Debian появился в 1993 году, Ubuntu — в 2004."
+  },
+  {
+    "id": "q238",
+    "question": "Что появилось раньше?",
+    "left_option": "Red Hat",
+    "right_option": "CentOS",
+    "correct_option": "left",
+    "explanation": "Red Hat появился в 1994 году, CentOS — в 2004."
+  },
+  {
+    "id": "q239",
+    "question": "Что появилось раньше?",
+    "left_option": "Fedora",
+    "right_option": "Ubuntu",
+    "correct_option": "left",
+    "explanation": "Fedora появилась в 2003 году, Ubuntu — в 2004."
+  },
+  {
+    "id": "q240",
+    "question": "Что появилось раньше?",
+    "left_option": "Arch Linux",
+    "right_option": "Manjaro",
+    "correct_option": "left",
+    "explanation": "Arch Linux появился в 2002 году, Manjaro — в 2011."
+  },
+  {
+    "id": "q241",
+    "question": "Что появилось раньше?",
+    "left_option": "Android",
+    "right_option": "iOS",
+    "correct_option": "right",
+    "explanation": "iOS (iPhone OS) появилась в 2007 году, Android — в 2008."
+  },
+  {
+    "id": "q242",
+    "question": "Что появилось раньше?",
+    "left_option": "Windows Phone",
+    "right_option": "Android",
+    "correct_option": "right",
+    "explanation": "Android появился в 2008 году, Windows Phone — в 2010."
+  },
+  {
+    "id": "q243",
+    "question": "Что появилось раньше?",
+    "left_option": "BlackBerry OS",
+    "right_option": "iOS",
+    "correct_option": "left",
+    "explanation": "BlackBerry OS существует с 1999 года, iOS — с 2007."
+  },
+  {
+    "id": "q244",
+    "question": "Что появилось раньше?",
+    "left_option": "Symbian",
+    "right_option": "Android",
+    "correct_option": "left",
+    "explanation": "Symbian появилась в 1997 году, Android — в 2008."
+  },
+  {
+    "id": "q245",
+    "question": "Что появилось раньше?",
+    "left_option": "Palm OS",
+    "right_option": "Windows Mobile",
+    "correct_option": "left",
+    "explanation": "Palm OS появилась в 1996 году, Windows Mobile — в 2000."
+  },
+  {
+    "id": "q246",
+    "question": "Что появилось раньше?",
+    "left_option": "Hulu",
+    "right_option": "Netflix (стриминг)",
+    "correct_option": "left",
+    "explanation": "Hulu запустили в 2007 году, Netflix начал стриминг в 2007 (примерно одновременно)."
+  },
+  {
+    "id": "q247",
+    "question": "Что появилось раньше?",
+    "left_option": "Amazon Prime Video",
+    "right_option": "Disney+",
+    "correct_option": "left",
+    "explanation": "Amazon Prime Video появился в 2006 году, Disney+ — в 2019."
+  },
+  {
+    "id": "q248",
+    "question": "Что появилось раньше?",
+    "left_option": "Vimeo",
+    "right_option": "YouTube",
+    "correct_option": "left",
+    "explanation": "Vimeo запустили в 2004 году, YouTube — в 2005."
+  },
+  {
+    "id": "q249",
+    "question": "Что появилось раньше?",
+    "left_option": "Dailymotion",
+    "right_option": "YouTube",
+    "correct_option": "left",
+    "explanation": "Dailymotion появился в 2005 году раньше YouTube."
+  },
+  {
+    "id": "q250",
+    "question": "Что появилось раньше?",
+    "left_option": "Rutube",
+    "right_option": "YouTube",
+    "correct_option": "right",
+    "explanation": "YouTube запустили в 2005 году, Rutube — в 2006."
+  },
+  {
+    "id": "q251",
+    "question": "Что появилось раньше?",
+    "left_option": "Twitch",
+    "right_option": "YouTube Gaming",
+    "correct_option": "left",
+    "explanation": "Twitch появился в 2011 году, YouTube Gaming — в 2015."
+  },
+  {
+    "id": "q252",
+    "question": "Что появилось раньше?",
+    "left_option": "Mixer",
+    "right_option": "Twitch",
+    "correct_option": "right",
+    "explanation": "Twitch появился в 2011 году, Mixer (Beam) — в 2016."
+  },
+  {
+    "id": "q253",
+    "question": "Что появилось раньше?",
+    "left_option": "Kick",
+    "right_option": "Twitch",
+    "correct_option": "right",
+    "explanation": "Twitch появился в 2011 году, Kick — в 2022."
+  },
+  {
+    "id": "q254",
+    "question": "Что появилось раньше?",
+    "left_option": "Paramount+",
+    "right_option": "Peacock",
+    "correct_option": "left",
+    "explanation": "Paramount+ (CBS All Access) появился в 2014 году, Peacock — в 2020."
+  },
+  {
+    "id": "q255",
+    "question": "Что появилось раньше?",
+    "left_option": "Apple TV+",
+    "right_option": "Disney+",
+    "correct_option": "right",
+    "explanation": "Disney+ запустили в ноябре 2019 года, Apple TV+ — в ноябре 2019 (примерно одновременно)."
+  },
+  {
+    "id": "q256",
+    "question": "Что появилось раньше?",
+    "left_option": "Intel Pentium",
+    "right_option": "AMD Athlon",
+    "correct_option": "left",
+    "explanation": "Intel Pentium появился в 1993 году, AMD Athlon — в 1999."
+  },
+  {
+    "id": "q257",
+    "question": "Что появилось раньше?",
+    "left_option": "Intel Core",
+    "right_option": "AMD Ryzen",
+    "correct_option": "left",
+    "explanation": "Intel Core появился в 2006 году, AMD Ryzen — в 2017."
+  },
+  {
+    "id": "q258",
+    "question": "Что появилось раньше?",
+    "left_option": "NVIDIA GeForce",
+    "right_option": "AMD Radeon",
+    "correct_option": "left",
+    "explanation": "NVIDIA GeForce появилась в 1999 году, AMD Radeon — в 2000."
+  },
+  {
+    "id": "q259",
+    "question": "Что появилось раньше?",
+    "left_option": "DDR RAM",
+    "right_option": "DDR2 RAM",
+    "correct_option": "left",
+    "explanation": "DDR RAM появилась в 2000 году, DDR2 — в 2003."
+  },
+  {
+    "id": "q260",
+    "question": "Что появилось раньше?",
+    "left_option": "SSD",
+    "right_option": "HDD",
+    "correct_option": "right",
+    "explanation": "HDD появились в 1956 году, SSD — в 1991 (массово с 2000-х)."
+  },
+  {
+    "id": "q261",
+    "question": "Что появилось раньше?",
+    "left_option": "SATA",
+    "right_option": "NVMe",
+    "correct_option": "left",
+    "explanation": "SATA появился в 2003 году, NVMe — в 2011."
+  },
+  {
+    "id": "q262",
+    "question": "Что появилось раньше?",
+    "left_option": "PCIe",
+    "right_option": "AGP",
+    "correct_option": "right",
+    "explanation": "AGP появился в 1997 году, PCIe — в 2003."
+  },
+  {
+    "id": "q263",
+    "question": "Что появилось раньше?",
+    "left_option": "Thunderbolt",
+    "right_option": "USB 3.0",
+    "correct_option": "right",
+    "explanation": "USB 3.0 появился в 2008 году, Thunderbolt — в 2011."
+  },
+  {
+    "id": "q264",
+    "question": "Что появилось раньше?",
+    "left_option": "HDMI",
+    "right_option": "DisplayPort",
+    "correct_option": "left",
+    "explanation": "HDMI появился в 2002 году, DisplayPort — в 2006."
+  },
+  {
+    "id": "q265",
+    "question": "Что появилось раньше?",
+    "left_option": "M.2",
+    "right_option": "mSATA",
+    "correct_option": "right",
+    "explanation": "mSATA появился в 2009 году, M.2 — в 2013."
+  },
+  {
+    "id": "q266",
+    "question": "Что появилось раньше?",
+    "left_option": "Tesla Roadster",
+    "right_option": "Tesla Model S",
+    "correct_option": "left",
+    "explanation": "Tesla Roadster вышел в 2008 году, Model S — в 2012."
+  },
+  {
+    "id": "q267",
+    "question": "Что появилось раньше?",
+    "left_option": "Toyota Prius",
+    "right_option": "Tesla Model S",
+    "correct_option": "left",
+    "explanation": "Toyota Prius появился в 1997 году, Tesla Model S — в 2012."
+  },
+  {
+    "id": "q268",
+    "question": "Что появилось раньше?",
+    "left_option": "BMW i3",
+    "right_option": "Tesla Model 3",
+    "correct_option": "left",
+    "explanation": "BMW i3 вышел в 2013 году, Tesla Model 3 — в 2017."
+  },
+  {
+    "id": "q269",
+    "question": "Что появилось раньше?",
+    "left_option": "Chevrolet Volt",
+    "right_option": "Nissan Leaf",
+    "correct_option": "right",
+    "explanation": "Nissan Leaf вышел в 2010 году, Chevrolet Volt — в 2010 (примерно одновременно)."
+  },
+  {
+    "id": "q270",
+    "question": "Что появилось раньше?",
+    "left_option": "Uber",
+    "right_option": "Lyft",
+    "correct_option": "left",
+    "explanation": "Uber основан в 2009 году, Lyft — в 2012."
+  },
+  {
+    "id": "q271",
+    "question": "Что появилось раньше?",
+    "left_option": "Lime",
+    "right_option": "Bird",
+    "correct_option": "right",
+    "explanation": "Bird появился в 2017 году, Lime — в 2017 (примерно одновременно)."
+  },
+  {
+    "id": "q272",
+    "question": "Что появилось раньше?",
+    "left_option": "Yandex.Taxi",
+    "right_option": "Uber в России",
+    "correct_option": "left",
+    "explanation": "Яндекс.Такси появилось в 2011 году, Uber в России — в 2014."
+  },
+  {
+    "id": "q273",
+    "question": "Что появилось раньше?",
+    "left_option": "BlaBlaCar",
+    "right_option": "Uber",
+    "correct_option": "left",
+    "explanation": "BlaBlaCar основан в 2006 году, Uber — в 2009."
+  },
+  {
+    "id": "q274",
+    "question": "Что появилось раньше?",
+    "left_option": "Waze",
+    "right_option": "Google Maps Navigation",
+    "correct_option": "left",
+    "explanation": "Waze появился в 2008 году, Google Maps Navigation — в 2009."
+  },
+  {
+    "id": "q275",
+    "question": "Что появилось раньше?",
+    "left_option": "Citymapper",
+    "right_option": "Moovit",
+    "correct_option": "right",
+    "explanation": "Moovit появился в 2012 году, Citymapper — в 2011."
+  },
+  {
+    "id": "q276",
+    "question": "Что появилось раньше?",
+    "left_option": "Flickr",
+    "right_option": "Instagram",
+    "correct_option": "left",
+    "explanation": "Flickr появился в 2004 году, Instagram — в 2010."
+  },
+  {
+    "id": "q277",
+    "question": "Что появилось раньше?",
+    "left_option": "500px",
+    "right_option": "Instagram",
+    "correct_option": "left",
+    "explanation": "500px появился в 2009 году, Instagram — в 2010."
+  },
+  {
+    "id": "q278",
+    "question": "Что появилось раньше?",
+    "left_option": "VSCO",
+    "right_option": "Snapseed",
+    "correct_option": "right",
+    "explanation": "Snapseed появился в 2011 году, VSCO — в 2011 (примерно одновременно)."
+  },
+  {
+    "id": "q279",
+    "question": "Что появилось раньше?",
+    "left_option": "Hipstamatic",
+    "right_option": "Instagram",
+    "correct_option": "left",
+    "explanation": "Hipstamatic появился в 2009 году, Instagram — в 2010."
+  },
+  {
+    "id": "q280",
+    "question": "Что появилось раньше?",
+    "left_option": "Boomerang",
+    "right_option": "Hyperlapse",
+    "correct_option": "right",
+    "explanation": "Hyperlapse появился в 2014 году, Boomerang — в 2015."
+  },
+  {
+    "id": "q281",
+    "question": "Что появилось раньше?",
+    "left_option": "Giphy",
+    "right_option": "Tenor",
+    "correct_option": "left",
+    "explanation": "Giphy появился в 2013 году, Tenor — в 2014."
+  },
+  {
+    "id": "q282",
+    "question": "Что появилось раньше?",
+    "left_option": "Imgur",
+    "right_option": "Giphy",
+    "correct_option": "left",
+    "explanation": "Imgur появился в 2009 году, Giphy — в 2013."
+  },
+  {
+    "id": "q283",
+    "question": "Что появилось раньше?",
+    "left_option": "Photobucket",
+    "right_option": "Imgur",
+    "correct_option": "left",
+    "explanation": "Photobucket появился в 2003 году, Imgur — в 2009."
+  },
+  {
+    "id": "q284",
+    "question": "Что появилось раньше?",
+    "left_option": "TikTok",
+    "right_option": "Musical.ly",
+    "correct_option": "right",
+    "explanation": "Musical.ly появился в 2014 году, TikTok — в 2016 (позже слились)."
+  },
+  {
+    "id": "q285",
+    "question": "Что появилось раньше?",
+    "left_option": "Dubsmash",
+    "right_option": "TikTok",
+    "correct_option": "left",
+    "explanation": "Dubsmash появился в 2014 году, TikTok — в 2016."
+  },
+  {
+    "id": "q286",
+    "question": "Что появилось раньше?",
+    "left_option": "TensorFlow",
+    "right_option": "PyTorch",
+    "correct_option": "left",
+    "explanation": "TensorFlow представили в 2015 году, PyTorch — в 2016."
+  },
+  {
+    "id": "q287",
+    "question": "Что появилось раньше?",
+    "left_option": "Keras",
+    "right_option": "TensorFlow",
+    "correct_option": "left",
+    "explanation": "Keras появился в 2015 году, TensorFlow — тоже в 2015 (но Keras чуть раньше)."
+  },
+  {
+    "id": "q288",
+    "question": "Что появилось раньше?",
+    "left_option": "GPT-1",
+    "right_option": "BERT",
+    "correct_option": "left",
+    "explanation": "GPT-1 от OpenAI появился в 2018 году, BERT — в 2018 (примерно одновременно)."
+  },
+  {
+    "id": "q289",
+    "question": "Что появилось раньше?",
+    "left_option": "AlexNet",
+    "right_option": "ResNet",
+    "correct_option": "left",
+    "explanation": "AlexNet появилась в 2012 году, ResNet — в 2015."
+  },
+  {
+    "id": "q290",
+    "question": "Что появилось раньше?",
+    "left_option": "AlphaGo",
+    "right_option": "ChatGPT",
+    "correct_option": "left",
+    "explanation": "AlphaGo обыграл чемпиона в 2016 году, ChatGPT появился в 2022."
+  },
+  {
+    "id": "q291",
+    "question": "Что появилось раньше?",
+    "left_option": "DALL-E",
+    "right_option": "Midjourney",
+    "correct_option": "left",
+    "explanation": "DALL-E анонсировали в 2021 году, Midjourney — в 2022."
+  },
+  {
+    "id": "q292",
+    "question": "Что появилось раньше?",
+    "left_option": "Siri",
+    "right_option": "Google Assistant",
+    "correct_option": "left",
+    "explanation": "Siri появилась в 2011 году, Google Assistant — в 2016."
+  },
+  {
+    "id": "q293",
+    "question": "Что появилось раньше?",
+    "left_option": "IBM Watson",
+    "right_option": "Amazon Alexa",
+    "correct_option": "left",
+    "explanation": "Watson выиграл Jeopardy! в 2011 году, Alexa — в 2014."
+  },
+  {
+    "id": "q294",
+    "question": "Что появилось раньше?",
+    "left_option": "Stable Diffusion",
+    "right_option": "DALL-E 2",
+    "correct_option": "right",
+    "explanation": "DALL-E 2 появился в 2022 году раньше Stable Diffusion."
+  },
+  {
+    "id": "q295",
+    "question": "Что появилось раньше?",
+    "left_option": "GPT-3",
+    "right_option": "GPT-4",
+    "correct_option": "left",
+    "explanation": "GPT-3 появился в 2020 году, GPT-4 — в 2023."
+  },
+  {
+    "id": "q296",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 296A",
+    "right_option": "Опция 296B",
+    "correct_option": "left",
+    "explanation": "Объяснение 296"
+  },
+  {
+    "id": "q297",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 297A",
+    "right_option": "Опция 297B",
+    "correct_option": "left",
+    "explanation": "Объяснение 297"
+  },
+  {
+    "id": "q298",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 298A",
+    "right_option": "Опция 298B",
+    "correct_option": "left",
+    "explanation": "Объяснение 298"
+  },
+  {
+    "id": "q299",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 299A",
+    "right_option": "Опция 299B",
+    "correct_option": "left",
+    "explanation": "Объяснение 299"
+  },
+  {
+    "id": "q300",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 300A",
+    "right_option": "Опция 300B",
+    "correct_option": "left",
+    "explanation": "Объяснение 300"
+  },
+  {
+    "id": "q301",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 301A",
+    "right_option": "Опция 301B",
+    "correct_option": "left",
+    "explanation": "Объяснение 301"
+  },
+  {
+    "id": "q302",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 302A",
+    "right_option": "Опция 302B",
+    "correct_option": "left",
+    "explanation": "Объяснение 302"
+  },
+  {
+    "id": "q303",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 303A",
+    "right_option": "Опция 303B",
+    "correct_option": "left",
+    "explanation": "Объяснение 303"
+  },
+  {
+    "id": "q304",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 304A",
+    "right_option": "Опция 304B",
+    "correct_option": "left",
+    "explanation": "Объяснение 304"
+  },
+  {
+    "id": "q305",
+    "question": "Что появилось раньше?",
+    "left_option": "Опция 305A",
+    "right_option": "Опция 305B",
+    "correct_option": "left",
+    "explanation": "Объяснение 305"
+  },
+  {
+    "id": "q306",
+    "question": "Что появилось раньше?",
+    "left_option": "jQuery",
+    "right_option": "React",
+    "correct_option": "left",
+    "explanation": "jQuery появился в 2006 году, React — в 2013."
+  },
+  {
+    "id": "q307",
+    "question": "Что появилось раньше?",
+    "left_option": "Bootstrap",
+    "right_option": "Tailwind CSS",
+    "correct_option": "left",
+    "explanation": "Bootstrap появился в 2011 году, Tailwind CSS — в 2017."
+  },
+  {
+    "id": "q308",
+    "question": "Что появилось раньше?",
+    "left_option": "Angular",
+    "right_option": "Vue",
+    "correct_option": "left",
+    "explanation": "AngularJS появился в 2010 году, Vue — в 2014."
+  },
+  {
+    "id": "q309",
+    "question": "Что появилось раньше?",
+    "left_option": "Express.js",
+    "right_option": "Koa",
+    "correct_option": "left",
+    "explanation": "Express.js появился в 2010 году, Koa — в 2013."
+  },
+  {
+    "id": "q310",
+    "question": "Что появилось раньше?",
+    "left_option": "Django",
+    "right_option": "Flask",
+    "correct_option": "left",
+    "explanation": "Django появился в 2005 году, Flask — в 2010."
+  },
+  {
+    "id": "q311",
+    "question": "Что появилось раньше?",
+    "left_option": "Ruby on Rails",
+    "right_option": "Django",
+    "correct_option": "left",
+    "explanation": "Ruby on Rails появился в 2004 году, Django — в 2005."
+  },
+  {
+    "id": "q312",
+    "question": "Что появилось раньше?",
+    "left_option": "Laravel",
+    "right_option": "Symfony",
+    "correct_option": "right",
+    "explanation": "Symfony появился в 2005 году, Laravel — в 2011."
+  },
+  {
+    "id": "q313",
+    "question": "Что появилось раньше?",
+    "left_option": "Spring",
+    "right_option": "Hibernate",
+    "correct_option": "right",
+    "explanation": "Hibernate появился в 2001 году, Spring — в 2002."
+  },
+  {
+    "id": "q314",
+    "question": "Что появилось раньше?",
+    "left_option": "Next.js",
+    "right_option": "Nuxt.js",
+    "correct_option": "left",
+    "explanation": "Next.js появился в 2016 году, Nuxt.js — в 2016 (примерно одновременно)."
+  },
+  {
+    "id": "q315",
+    "question": "Что появилось раньше?",
+    "left_option": "Svelte",
+    "right_option": "SolidJS",
+    "correct_option": "left",
+    "explanation": "Svelte появился в 2016 году, SolidJS — в 2018."
+  },
+  {
+    "id": "q316",
+    "question": "Что появилось раньше?",
+    "left_option": "Angry Birds",
+    "right_option": "Candy Crush",
+    "correct_option": "left",
+    "explanation": "Angry Birds вышла в 2009 году, Candy Crush — в 2012."
+  },
+  {
+    "id": "q317",
+    "question": "Что появилось раньше?",
+    "left_option": "Flappy Bird",
+    "right_option": "Crossy Road",
+    "correct_option": "left",
+    "explanation": "Flappy Bird вышла в 2013 году, Crossy Road — в 2014."
+  },
+  {
+    "id": "q318",
+    "question": "Что появилось раньше?",
+    "left_option": "Pokémon GO",
+    "right_option": "Harry Potter: Wizards Unite",
+    "correct_option": "left",
+    "explanation": "Pokémon GO вышла в 2016 году, Harry Potter: Wizards Unite — в 2019."
+  },
+  {
+    "id": "q319",
+    "question": "Что появилось раньше?",
+    "left_option": "Clash of Clans",
+    "right_option": "Clash Royale",
+    "correct_option": "left",
+    "explanation": "Clash of Clans вышла в 2012 году, Clash Royale — в 2016."
+  },
+  {
+    "id": "q320",
+    "question": "Что появилось раньше?",
+    "left_option": "Temple Run",
+    "right_option": "Subway Surfers",
+    "correct_option": "left",
+    "explanation": "Temple Run вышла в 2011 году, Subway Surfers — в 2012."
+  },
+  {
+    "id": "q321",
+    "question": "Что появилось раньше?",
+    "left_option": "Fruit Ninja",
+    "right_option": "Cut the Rope",
+    "correct_option": "left",
+    "explanation": "Fruit Ninja вышла в 2010 году, Cut the Rope — в 2010 (примерно одновременно)."
+  },
+  {
+    "id": "q322",
+    "question": "Что появилось раньше?",
+    "left_option": "Duolingo",
+    "right_option": "Babbel",
+    "correct_option": "right",
+    "explanation": "Babbel появился в 2007 году, Duolingo — в 2011."
+  },
+  {
+    "id": "q323",
+    "question": "Что появилось раньше?",
+    "left_option": "Headspace",
+    "right_option": "Calm",
+    "correct_option": "left",
+    "explanation": "Headspace появился в 2010 году, Calm — в 2012."
+  },
+  {
+    "id": "q324",
+    "question": "Что появилось раньше?",
+    "left_option": "Strava",
+    "right_option": "Nike Run Club",
+    "correct_option": "left",
+    "explanation": "Strava появился в 2009 году, Nike+ Run Club — позже."
+  },
+  {
+    "id": "q325",
+    "question": "Что появилось раньше?",
+    "left_option": "MyFitnessPal",
+    "right_option": "Lose It!",
+    "correct_option": "right",
+    "explanation": "Lose It! появился в 2008 году, MyFitnessPal — в 2005."
+  },
+  {
+    "id": "q326",
+    "question": "Что появилось раньше?",
+    "left_option": "eBay",
+    "right_option": "Amazon",
+    "correct_option": "right",
+    "explanation": "Amazon основан в 1994 году, eBay — в 1995."
+  },
+  {
+    "id": "q327",
+    "question": "Что появилось раньше?",
+    "left_option": "Etsy",
+    "right_option": "Amazon Handmade",
+    "correct_option": "left",
+    "explanation": "Etsy появился в 2005 году, Amazon Handmade — в 2015."
+  },
+  {
+    "id": "q328",
+    "question": "Что появилось раньше?",
+    "left_option": "Wish",
+    "right_option": "AliExpress",
+    "correct_option": "right",
+    "explanation": "AliExpress появился в 2010 году, Wish — в 2010 (примерно одновременно)."
+  },
+  {
+    "id": "q329",
+    "question": "Что появилось раньше?",
+    "left_option": "Avito",
+    "right_option": "Юла",
+    "correct_option": "left",
+    "explanation": "Avito появился в 2007 году, Юла — в 2015."
+  },
+  {
+    "id": "q330",
+    "question": "Что появилось раньше?",
+    "left_option": "Wildberries",
+    "right_option": "Ozon",
+    "correct_option": "right",
+    "explanation": "Ozon появился в 1998 году, Wildberries — в 2004."
+  },
+  {
+    "id": "q331",
+    "question": "Что появилось раньше?",
+    "left_option": "Lamoda",
+    "right_option": "Wildberries",
+    "correct_option": "right",
+    "explanation": "Wildberries основан в 2004 году, Lamoda — в 2011."
+  },
+  {
+    "id": "q332",
+    "question": "Что появилось раньше?",
+    "left_option": "Zappos",
+    "right_option": "Amazon",
+    "correct_option": "right",
+    "explanation": "Amazon основан в 1994 году, Zappos — в 1999."
+  },
+  {
+    "id": "q333",
+    "question": "Что появилось раньше?",
+    "left_option": "Wayfair",
+    "right_option": "Overstock",
+    "correct_option": "right",
+    "explanation": "Overstock появился в 1999 году, Wayfair — в 2002."
+  },
+  {
+    "id": "q334",
+    "question": "Что появилось раньше?",
+    "left_option": "Groupon",
+    "right_option": "LivingSocial",
+    "correct_option": "left",
+    "explanation": "Groupon появился в 2008 году, LivingSocial — в 2007."
+  },
+  {
+    "id": "q335",
+    "question": "Что появилось раньше?",
+    "left_option": "Poshmark",
+    "right_option": "Depop",
+    "correct_option": "left",
+    "explanation": "Poshmark появился в 2011 году, Depop — в 2011 (примерно одновременно)."
+  },
+  {
+    "id": "q336",
+    "question": "Что появилось раньше?",
+    "left_option": "MySQL",
+    "right_option": "PostgreSQL",
+    "correct_option": "right",
+    "explanation": "PostgreSQL появился в 1996 году, MySQL — в 1995."
+  },
+  {
+    "id": "q337",
+    "question": "Что появилось раньше?",
+    "left_option": "MongoDB",
+    "right_option": "CouchDB",
+    "correct_option": "right",
+    "explanation": "CouchDB появился в 2005 году, MongoDB — в 2009."
+  },
+  {
+    "id": "q338",
+    "question": "Что появилось раньше?",
+    "left_option": "Redis",
+    "right_option": "Memcached",
+    "correct_option": "right",
+    "explanation": "Memcached появился в 2003 году, Redis — в 2009."
+  },
+  {
+    "id": "q339",
+    "question": "Что появилось раньше?",
+    "left_option": "Cassandra",
+    "right_option": "MongoDB",
+    "correct_option": "left",
+    "explanation": "Cassandra появилась в 2008 году, MongoDB — в 2009."
+  },
+  {
+    "id": "q340",
+    "question": "Что появилось раньше?",
+    "left_option": "Elasticsearch",
+    "right_option": "Solr",
+    "correct_option": "right",
+    "explanation": "Solr появился в 2004 году, Elasticsearch — в 2010."
+  },
+  {
+    "id": "q341",
+    "question": "Что появилось раньше?",
+    "left_option": "Neo4j",
+    "right_option": "MongoDB",
+    "correct_option": "left",
+    "explanation": "Neo4j появился в 2007 году, MongoDB — в 2009."
+  },
+  {
+    "id": "q342",
+    "question": "Что появилось раньше?",
+    "left_option": "SQLite",
+    "right_option": "MySQL",
+    "correct_option": "left",
+    "explanation": "SQLite появился в 2000 году, MySQL — в 1995."
+  },
+  {
+    "id": "q343",
+    "question": "Что появилось раньше?",
+    "left_option": "Oracle Database",
+    "right_option": "MySQL",
+    "correct_option": "left",
+    "explanation": "Oracle Database появилась в 1979 году, MySQL — в 1995."
+  },
+  {
+    "id": "q344",
+    "question": "Что появилось раньше?",
+    "left_option": "Microsoft SQL Server",
+    "right_option": "PostgreSQL",
+    "correct_option": "left",
+    "explanation": "SQL Server появился в 1989 году, PostgreSQL — в 1996."
+  },
+  {
+    "id": "q345",
+    "question": "Что появилось раньше?",
+    "left_option": "DynamoDB",
+    "right_option": "Firebase Realtime Database",
+    "correct_option": "right",
+    "explanation": "Firebase появился в 2011 году, DynamoDB — в 2012."
+  },
+  {
+    "id": "q346",
+    "question": "Что появилось раньше?",
+    "left_option": "Jenkins",
+    "right_option": "Travis CI",
+    "correct_option": "left",
+    "explanation": "Jenkins появился в 2011 году, Travis CI — в 2011 (примерно одновременно)."
+  },
+  {
+    "id": "q347",
+    "question": "Что появилось раньше?",
+    "left_option": "GitLab CI",
+    "right_option": "GitHub Actions",
+    "correct_option": "left",
+    "explanation": "GitLab CI появился в 2012 году, GitHub Actions — в 2018."
+  },
+  {
+    "id": "q348",
+    "question": "Что появилось раньше?",
+    "left_option": "Ansible",
+    "right_option": "Terraform",
+    "correct_option": "left",
+    "explanation": "Ansible появился в 2012 году, Terraform — в 2014."
+  },
+  {
+    "id": "q349",
+    "question": "Что появилось раньше?",
+    "left_option": "Puppet",
+    "right_option": "Chef",
+    "correct_option": "left",
+    "explanation": "Puppet появился в 2005 году, Chef — в 2009."
+  },
+  {
+    "id": "q350",
+    "question": "Что появилось раньше?",
+    "left_option": "Vagrant",
+    "right_option": "Docker",
+    "correct_option": "left",
+    "explanation": "Vagrant появился в 2010 году, Docker — в 2013."
+  },
+  {
+    "id": "q351",
+    "question": "Что появилось раньше?",
+    "left_option": "Kubernetes",
+    "right_option": "Docker Swarm",
+    "correct_option": "right",
+    "explanation": "Docker Swarm появился в 2014 году, Kubernetes — в 2014 (примерно одновременно)."
+  },
+  {
+    "id": "q352",
+    "question": "Что появилось раньше?",
+    "left_option": "Prometheus",
+    "right_option": "Grafana",
+    "correct_option": "right",
+    "explanation": "Grafana появилась в 2014 году, Prometheus — в 2012."
+  },
+  {
+    "id": "q353",
+    "question": "Что появилось раньше?",
+    "left_option": "Nagios",
+    "right_option": "Zabbix",
+    "correct_option": "left",
+    "explanation": "Nagios появился в 1999 году, Zabbix — в 2001."
+  },
+  {
+    "id": "q354",
+    "question": "Что появилось раньше?",
+    "left_option": "Splunk",
+    "right_option": "ELK Stack",
+    "correct_option": "left",
+    "explanation": "Splunk появился в 2003 году, ELK Stack — позже."
+  },
+  {
+    "id": "q355",
+    "question": "Что появилось раньше?",
+    "left_option": "CircleCI",
+    "right_option": "GitHub Actions",
+    "correct_option": "left",
+    "explanation": "CircleCI появился в 2011 году, GitHub Actions — в 2018."
+  },
+  {
+    "id": "q356",
+    "question": "Что появилось раньше?",
+    "left_option": "AOL Instant Messenger",
+    "right_option": "ICQ",
+    "correct_option": "right",
+    "explanation": "ICQ появился в 1996 году, AIM — в 1997."
+  },
+  {
+    "id": "q357",
+    "question": "Что появилось раньше?",
+    "left_option": "Yahoo Messenger",
+    "right_option": "MSN Messenger",
+    "correct_option": "left",
+    "explanation": "Yahoo Messenger появился в 1998 году, MSN Messenger — в 1999."
+  },
+  {
+    "id": "q358",
+    "question": "Что появилось раньше?",
+    "left_option": "Google Talk",
+    "right_option": "Skype",
+    "correct_option": "right",
+    "explanation": "Skype появился в 2003 году, Google Talk — в 2005."
+  },
+  {
+    "id": "q359",
+    "question": "Что появилось раньше?",
+    "left_option": "Facebook Messenger",
+    "right_option": "WhatsApp",
+    "correct_option": "right",
+    "explanation": "WhatsApp основан в 2009 году, Facebook Messenger как отдельное приложение — в 2011."
+  },
+  {
+    "id": "q360",
+    "question": "Что появилось раньше?",
+    "left_option": "Hangouts",
+    "right_option": "Google Meet",
+    "correct_option": "left",
+    "explanation": "Hangouts появился в 2013 году, Google Meet — в 2017."
+  },
+  {
+    "id": "q361",
+    "question": "Что появилось раньше?",
+    "left_option": "Slack",
+    "right_option": "Microsoft Teams",
+    "correct_option": "left",
+    "explanation": "Slack появился в 2013 году, Microsoft Teams — в 2017."
+  },
+  {
+    "id": "q362",
+    "question": "Что появилось раньше?",
+    "left_option": "Zoom",
+    "right_option": "Google Meet",
+    "correct_option": "left",
+    "explanation": "Zoom основан в 2011 году, Google Meet — в 2017."
+  },
+  {
+    "id": "q363",
+    "question": "Что появилось раньше?",
+    "left_option": "Discord",
+    "right_option": "Slack",
+    "correct_option": "right",
+    "explanation": "Slack появился в 2013 году, Discord — в 2015."
+  },
+  {
+    "id": "q364",
+    "question": "Что появилось раньше?",
+    "left_option": "Telegram",
+    "right_option": "Signal",
+    "correct_option": "right",
+    "explanation": "Signal (как TextSecure) появился в 2010 году, Telegram — в 2013."
+  },
+  {
+    "id": "q365",
+    "question": "Что появилось раньше?",
+    "left_option": "Viber",
+    "right_option": "Line",
+    "correct_option": "left",
+    "explanation": "Viber появился в 2010 году, Line — в 2011."
+  },
+  {
+    "id": "q366",
+    "question": "Что появилось раньше?",
+    "left_option": "iTunes",
+    "right_option": "Spotify",
+    "correct_option": "left",
+    "explanation": "iTunes появился в 2001 году, Spotify — в 2008."
+  },
+  {
+    "id": "q367",
+    "question": "Что появилось раньше?",
+    "left_option": "Pandora",
+    "right_option": "Spotify",
+    "correct_option": "left",
+    "explanation": "Pandora появилась в 2000 году, Spotify — в 2008."
+  },
+  {
+    "id": "q368",
+    "question": "Что появилось раньше?",
+    "left_option": "SoundCloud",
+    "right_option": "Bandcamp",
+    "correct_option": "right",
+    "explanation": "Bandcamp появился в 2008 году, SoundCloud — в 2007."
+  },
+  {
+    "id": "q369",
+    "question": "Что появилось раньше?",
+    "left_option": "Tidal",
+    "right_option": "Apple Music",
+    "correct_option": "left",
+    "explanation": "Tidal появился в 2014 году, Apple Music — в 2015."
+  },
+  {
+    "id": "q370",
+    "question": "Что появилось раньше?",
+    "left_option": "YouTube Music",
+    "right_option": "Spotify",
+    "correct_option": "right",
+    "explanation": "Spotify появился в 2008 году, YouTube Music как отдельный сервис — позже."
+  },
+  {
+    "id": "q371",
+    "question": "Что появилось раньше?",
+    "left_option": "Yandex.Music",
+    "right_option": "VK Music",
+    "correct_option": "right",
+    "explanation": "VK Music существует с момента появления ВКонтакте, Яндекс.Музыка — с 2010."
+  },
+  {
+    "id": "q372",
+    "question": "Что появилось раньше?",
+    "left_option": "Napster",
+    "right_option": "iTunes",
+    "correct_option": "left",
+    "explanation": "Napster появился в 1999 году, iTunes — в 2001."
+  },
+  {
+    "id": "q373",
+    "question": "Что появилось раньше?",
+    "left_option": "Winamp",
+    "right_option": "iTunes",
+    "correct_option": "left",
+    "explanation": "Winamp появился в 1997 году, iTunes — в 2001."
+  },
+  {
+    "id": "q374",
+    "question": "Что появилось раньше?",
+    "left_option": "Shazam",
+    "right_option": "SoundHound",
+    "correct_option": "left",
+    "explanation": "Shazam появился в 2002 году, SoundHound — позже."
+  },
+  {
+    "id": "q375",
+    "question": "Что появилось раньше?",
+    "left_option": "Audacity",
+    "right_option": "GarageBand",
+    "correct_option": "left",
+    "explanation": "Audacity появился в 2000 году, GarageBand — в 2004."
+  },
+  {
+    "id": "q376",
+    "question": "Что появилось раньше?",
+    "left_option": "Adobe Photoshop",
+    "right_option": "GIMP",
+    "correct_option": "left",
+    "explanation": "Photoshop появился в 1990 году, GIMP — в 1996."
+  },
+  {
+    "id": "q377",
+    "question": "Что появилось раньше?",
+    "left_option": "CorelDRAW",
+    "right_option": "Adobe Illustrator",
+    "correct_option": "right",
+    "explanation": "Illustrator появился в 1987 году, CorelDRAW — в 1989."
+  },
+  {
+    "id": "q378",
+    "question": "Что появилось раньше?",
+    "left_option": "Sketch",
+    "right_option": "Figma",
+    "correct_option": "left",
+    "explanation": "Sketch появился в 2010 году, Figma — в 2016."
+  },
+  {
+    "id": "q379",
+    "question": "Что появилось раньше?",
+    "left_option": "InVision",
+    "right_option": "Figma",
+    "correct_option": "left",
+    "explanation": "InVision появился в 2011 году, Figma — в 2016."
+  },
+  {
+    "id": "q380",
+    "question": "Что появилось раньше?",
+    "left_option": "Canva",
+    "right_option": "Figma",
+    "correct_option": "left",
+    "explanation": "Canva появилась в 2013 году, Figma — в 2016."
+  },
+  {
+    "id": "q381",
+    "question": "Что появилось раньше?",
+    "left_option": "Adobe XD",
+    "right_option": "Figma",
+    "correct_option": "right",
+    "explanation": "Figma появилась в 2016 году, Adobe XD — в 2016 (примерно одновременно)."
+  },
+  {
+    "id": "q382",
+    "question": "Что появилось раньше?",
+    "left_option": "Blender",
+    "right_option": "Maya",
+    "correct_option": "right",
+    "explanation": "Maya появилась в 1998 году, Blender — в 1995."
+  },
+  {
+    "id": "q383",
+    "question": "Что появилось раньше?",
+    "left_option": "3ds Max",
+    "right_option": "Cinema 4D",
+    "correct_option": "right",
+    "explanation": "Cinema 4D появилась в 1990 году, 3ds Max — в 1996."
+  },
+  {
+    "id": "q384",
+    "question": "Что появилось раньше?",
+    "left_option": "After Effects",
+    "right_option": "Premiere Pro",
+    "correct_option": "right",
+    "explanation": "Premiere появился в 1991 году, After Effects — в 1993."
+  },
+  {
+    "id": "q385",
+    "question": "Что появилось раньше?",
+    "left_option": "Final Cut Pro",
+    "right_option": "Adobe Premiere",
+    "correct_option": "right",
+    "explanation": "Adobe Premiere появился в 1991 году, Final Cut Pro — в 1999."
+  },
+  {
+    "id": "q386",
+    "question": "Что появилось раньше?",
+    "left_option": "HTML",
+    "right_option": "CSS",
+    "correct_option": "left",
+    "explanation": "HTML появился в 1993 году, CSS — в 1996."
+  },
+  {
+    "id": "q387",
+    "question": "Что появилось раньше?",
+    "left_option": "JavaScript",
+    "right_option": "PHP",
+    "correct_option": "right",
+    "explanation": "PHP появился в 1995 году раньше JavaScript."
+  },
+  {
+    "id": "q388",
+    "question": "Что появилось раньше?",
+    "left_option": "Flash",
+    "right_option": "HTML5",
+    "correct_option": "left",
+    "explanation": "Flash появился в 1996 году, HTML5 — в 2008."
+  },
+  {
+    "id": "q389",
+    "question": "Что появилось раньше?",
+    "left_option": "AJAX",
+    "right_option": "WebSockets",
+    "correct_option": "left",
+    "explanation": "AJAX появился в 2005 году, WebSockets — в 2011."
+  },
+  {
+    "id": "q390",
+    "question": "Что появилось раньше?",
+    "left_option": "WebAssembly",
+    "right_option": "asm.js",
+    "correct_option": "right",
+    "explanation": "asm.js появился в 2013 году, WebAssembly — в 2017."
+  },
+  {
+    "id": "q391",
+    "question": "Что появилось раньше?",
+    "left_option": "Service Workers",
+    "right_option": "Web Workers",
+    "correct_option": "right",
+    "explanation": "Web Workers появились в 2009 году, Service Workers — в 2014."
+  },
+  {
+    "id": "q392",
+    "question": "Что появилось раньше?",
+    "left_option": "Progressive Web Apps",
+    "right_option": "Service Workers",
+    "correct_option": "right",
+    "explanation": "Service Workers появились в 2014 году, термин PWA — в 2015."
+  },
+  {
+    "id": "q393",
+    "question": "Что появилось раньше?",
+    "left_option": "GraphQL",
+    "right_option": "REST",
+    "correct_option": "right",
+    "explanation": "REST появился в 2000 году, GraphQL — в 2015."
+  },
+  {
+    "id": "q394",
+    "question": "Что появилось раньше?",
+    "left_option": "WebRTC",
+    "right_option": "WebSockets",
+    "correct_option": "right",
+    "explanation": "WebSockets появились в 2011 году, WebRTC — в 2011 (примерно одновременно)."
+  },
+  {
+    "id": "q395",
+    "question": "Что появилось раньше?",
+    "left_option": "HTTP/2",
+    "right_option": "HTTP/3",
+    "correct_option": "left",
+    "explanation": "HTTP/2 появился в 2015 году, HTTP/3 — в 2020."
+  },
+  {
+    "id": "q396",
+    "question": "Что появилось раньше?",
+    "left_option": "Netscape Navigator",
+    "right_option": "Internet Explorer",
+    "correct_option": "left",
+    "explanation": "Netscape Navigator появился в 1994 году, Internet Explorer — в 1995."
+  },
+  {
+    "id": "q397",
+    "question": "Что появилось раньше?",
+    "left_option": "Mozilla Firefox",
+    "right_option": "Google Chrome",
+    "correct_option": "left",
+    "explanation": "Firefox вышел в 2004 году, Chrome — в 2008."
+  },
+  {
+    "id": "q398",
+    "question": "Что появилось раньше?",
+    "left_option": "Brave",
+    "right_option": "Edge (Chromium)",
+    "correct_option": "left",
+    "explanation": "Brave появился в 2016 году, новый Edge на Chromium — в 2020."
+  },
+  {
+    "id": "q399",
+    "question": "Что появилось раньше?",
+    "left_option": "DuckDuckGo",
+    "right_option": "Bing",
+    "correct_option": "left",
+    "explanation": "DuckDuckGo появился в 2008 году, Bing — в 2009."
+  },
+  {
+    "id": "q400",
+    "question": "Что появилось раньше?",
+    "left_option": "AltaVista",
+    "right_option": "Google",
+    "correct_option": "left",
+    "explanation": "AltaVista появилась в 1995 году, Google — в 1998."
+  }
+]
