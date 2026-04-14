@@ -928,6 +928,8 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     question = quiz_game.questions_by_id[question_id]
     is_correct = selected_option == question.correct_option
+    
+    # Сохраняем ответ
     saved = quiz_game.storage.record_answer(
         chat_id=chat_id,
         message_id=query.message.message_id,
@@ -938,6 +940,7 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         selected_option=selected_option,
         is_correct=is_correct,
     )
+    
     if not saved:
         await query.answer("Ты уже отвечал на этот вопрос.", show_alert=True)
         return
@@ -956,7 +959,8 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             query.message.message_id,
         )
     else:
-        # В групповом чате закрываем только когда 2+ игрока ответили
+        # В групповом чате закрываем только когда 2+ РАЗНЫХ игрока ответили
+        # Проверяем ПОСЛЕ успешного сохранения ответа
         unique_players = quiz_game.storage.count_unique_players(chat_id, query.message.message_id)
         if unique_players >= 2:
             task = close_tasks.pop(chat_id, None)
