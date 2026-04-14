@@ -398,6 +398,15 @@ class QuizStorage:
                 (chat_id, message_id),
             ).fetchall()
 
+    def count_unique_players(self, chat_id: int, message_id: int) -> int:
+        """Подсчитывает количество уникальных игроков, ответивших на вопрос"""
+        with self._connect() as conn:
+            result = conn.execute(
+                "SELECT COUNT(DISTINCT user_id) as count FROM answers WHERE chat_id = ? AND message_id = ?",
+                (chat_id, message_id),
+            ).fetchone()
+            return result["count"] if result else 0
+
     def inline_used_question_ids(self, chat_instance: str) -> set[str]:
         with self._connect() as conn:
             rows = conn.execute(
@@ -935,6 +944,7 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     await query.answer("Ответ принят.")
 
+    # В приватном чате закрываем сразу
     if query.message.chat.type == ChatType.PRIVATE:
         task = close_tasks.pop(chat_id, None)
         if task is not None:
@@ -945,6 +955,19 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             question_id,
             query.message.message_id,
         )
+    else:
+        # В групповом чате закрываем только когда 2+ игрока ответили
+        unique_players = quiz_game.storage.count_unique_players(chat_id, query.message.message_id)
+        if unique_players >= 2:
+            task = close_tasks.pop(chat_id, None)
+            if task is not None:
+                task.cancel()
+            await close_question_by_ids(
+                context.application,
+                chat_id,
+                question_id,
+                query.message.message_id,
+            )
 
 
 async def answer_inline(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
