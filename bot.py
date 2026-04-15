@@ -771,19 +771,21 @@ async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     )
     quiz_game.storage.set_active_question(chat.id, question.id, sent.message_id)
 
-    old_task = close_tasks.pop(chat.id, None)
-    if old_task is not None:
-        old_task.cancel()
+    # В приватном чате ставим таймаут, в групповом — нет
+    if chat.type == ChatType.PRIVATE:
+        old_task = close_tasks.pop(chat.id, None)
+        if old_task is not None:
+            old_task.cancel()
 
-    close_tasks[chat.id] = asyncio.create_task(
-        schedule_close(
-            context.application,
-            chat.id,
-            question.id,
-            sent.message_id,
-            QUESTION_TIMEOUT_SECONDS,
+        close_tasks[chat.id] = asyncio.create_task(
+            schedule_close(
+                context.application,
+                chat.id,
+                question.id,
+                sent.message_id,
+                QUESTION_TIMEOUT_SECONDS,
+            )
         )
-    )
 
 
 async def mention_start_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -877,7 +879,7 @@ async def next_question_handler(update: Update, context: ContextTypes.DEFAULT_TY
         if question is None:
             await query.answer("Вопросы закончились! Используй /quizreset", show_alert=True)
             return
-        
+
         try:
             await context.application.bot.edit_message_reply_markup(
                 chat_id=chat_id,
@@ -886,29 +888,32 @@ async def next_question_handler(update: Update, context: ContextTypes.DEFAULT_TY
             )
         except:
             pass
-        
+
         sent = await context.application.bot.send_message(
             chat_id=chat_id,
             text=question_text(question),
             parse_mode=ParseMode.HTML,
             reply_markup=question_keyboard(question.id),
         )
-        
+
         quiz_game.storage.set_active_question(chat_id, question.id, sent.message_id)
-        
-        old_task = close_tasks.pop(chat_id, None)
-        if old_task is not None:
-            old_task.cancel()
-        
-        close_tasks[chat_id] = asyncio.create_task(
-            schedule_close(
-                context.application,
-                chat_id,
-                question.id,
-                sent.message_id,
-                QUESTION_TIMEOUT_SECONDS,
+
+        # В приватном чате ставим таймаут, в групповом — нет
+        if query.message.chat.type == ChatType.PRIVATE:
+            old_task = close_tasks.pop(chat_id, None)
+            if old_task is not None:
+                old_task.cancel()
+
+            close_tasks[chat_id] = asyncio.create_task(
+                schedule_close(
+                    context.application,
+                    chat_id,
+                    question.id,
+                    sent.message_id,
+                    QUESTION_TIMEOUT_SECONDS,
+                )
             )
-        )
+
 
 async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     query = update.callback_query
@@ -966,13 +971,7 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             query.message.message_id,
         )
     else:
-        # В групповом чате закрываем только когда 2+ РАЗНЫХ игрока ответили
-        # Проверяем ПОСЛЕ успешного сохранения ответа
-        # Дополнительная проверка: вопрос все еще активен?
-        active_check = quiz_game.storage.get_active_question(chat_id)
-        if not active_check or active_check["is_closed"] == 1:
-            return
-
+        # В групповом чате закрываем когда оба игрока ответили (2 уникальных)
         unique_players = quiz_game.storage.count_unique_players(chat_id, query.message.message_id)
         logger.info(f"Answer recorded: user={query.from_user.id}, chat={chat_id}, msg={query.message.message_id}, unique_players={unique_players}")
         if unique_players >= 2:
