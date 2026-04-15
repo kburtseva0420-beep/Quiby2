@@ -531,13 +531,13 @@ class QuizGame:
         self.questions_by_id = {question.id: question for question in self.questions}
 
     def next_question(self, chat_id: int) -> Optional[Question]:
+        import random
         used_ids = self.storage.used_question_ids(chat_id)
         available = [question for question in self.questions if question.id not in used_ids]
         if not available:
             return None
 
-        index = abs(chat_id * 31 + len(used_ids) * 17) % len(available)
-        question = available[index]
+        question = random.choice(available)
         self.storage.mark_question_asked(chat_id, question.id)
         return question
 
@@ -855,17 +855,24 @@ async def next_question_handler(update: Update, context: ContextTypes.DEFAULT_TY
     if not query:
         logger.error("next_question_handler: no query")
         return
-    
+
     logger.info(f"next_question_handler called: inline={query.inline_message_id}, data={query.data}")
-    
+
     if query.inline_message_id:
         await query.answer("Используй @Quiby_bot для нового вопроса", show_alert=True)
         return
-    
-    await query.answer()
-    
+
     if query.message:
         chat_id = query.message.chat_id
+
+        # Проверяем, нет ли уже активного вопроса
+        active = quiz_game.storage.get_active_question(chat_id)
+        if active and active["is_closed"] == 0:
+            await query.answer("Вопрос уже отправлен, подожди немного", show_alert=True)
+            return
+
+        await query.answer()
+
         question = quiz_game.next_question(chat_id)
         if question is None:
             await query.answer("Вопросы закончились! Используй /quizreset", show_alert=True)
@@ -961,7 +968,13 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     else:
         # В групповом чате закрываем только когда 2+ РАЗНЫХ игрока ответили
         # Проверяем ПОСЛЕ успешного сохранения ответа
+        # Дополнительная проверка: вопрос все еще активен?
+        active_check = quiz_game.storage.get_active_question(chat_id)
+        if not active_check or active_check["is_closed"] == 1:
+            return
+
         unique_players = quiz_game.storage.count_unique_players(chat_id, query.message.message_id)
+        logger.info(f"Answer recorded: user={query.from_user.id}, chat={chat_id}, msg={query.message.message_id}, unique_players={unique_players}")
         if unique_players >= 2:
             task = close_tasks.pop(chat_id, None)
             if task is not None:
