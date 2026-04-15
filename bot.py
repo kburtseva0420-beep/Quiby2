@@ -952,7 +952,7 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         selected_option=selected_option,
         is_correct=is_correct,
     )
-    
+
     if not saved:
         await query.answer("Ты уже отвечал на этот вопрос.", show_alert=True)
         return
@@ -972,8 +972,22 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         )
     else:
         # В групповом чате закрываем когда оба игрока ответили (2 уникальных)
+        # Проверяем, что вопрос все еще активен (защита от race condition)
+        active_check = quiz_game.storage.get_active_question(chat_id)
+        if not active_check or active_check["is_closed"] == 1:
+            return
+
         unique_players = quiz_game.storage.count_unique_players(chat_id, query.message.message_id)
-        logger.info(f"Answer recorded: user={query.from_user.id}, chat={chat_id}, msg={query.message.message_id}, unique_players={unique_players}")
+        logger.info(f"Answer recorded: user={query.from_user.id} ({query.from_user.full_name}), chat={chat_id}, msg={query.message.message_id}, unique_players={unique_players}")
+
+        # Логируем всех ответивших
+        with quiz_game.storage._connect() as conn:
+            all_answers = conn.execute(
+                "SELECT user_id, selected_option FROM answers WHERE chat_id = ? AND message_id = ?",
+                (chat_id, query.message.message_id)
+            ).fetchall()
+            logger.info(f"All answers: {[(a['user_id'], a['selected_option']) for a in all_answers]}")
+
         if unique_players >= 2:
             task = close_tasks.pop(chat_id, None)
             if task is not None:
