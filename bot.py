@@ -782,22 +782,6 @@ async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     )
     quiz_game.storage.set_active_question(chat.id, question.id, sent.message_id)
 
-    # Таймаут только в приватном чате, в групповом закрывается когда 2 игрока ответят
-    if chat.type == ChatType.PRIVATE:
-        old_task = close_tasks.pop(chat.id, None)
-        if old_task is not None:
-            old_task.cancel()
-
-        close_tasks[chat.id] = asyncio.create_task(
-            schedule_close(
-                context.application,
-                chat.id,
-                question.id,
-                sent.message_id,
-                QUESTION_TIMEOUT_SECONDS,
-            )
-        )
-
 
 async def mention_start_quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     message = update.effective_message
@@ -909,22 +893,6 @@ async def next_question_handler(update: Update, context: ContextTypes.DEFAULT_TY
 
         quiz_game.storage.set_active_question(chat_id, question.id, sent.message_id)
 
-        # Таймаут только в приватном чате, в групповом закрывается когда 2 игрока ответят
-        if query.message.chat.type == ChatType.PRIVATE:
-            old_task = close_tasks.pop(chat_id, None)
-            if old_task is not None:
-                old_task.cancel()
-
-            close_tasks[chat_id] = asyncio.create_task(
-                schedule_close(
-                    context.application,
-                    chat_id,
-                    question.id,
-                    sent.message_id,
-                    QUESTION_TIMEOUT_SECONDS,
-                )
-            )
-
 
 async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     query = update.callback_query
@@ -970,8 +938,23 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
 
     await query.answer("Ответ принят.")
 
-    # В приватном чате закрываем сразу
-    if query.message.chat.type == ChatType.PRIVATE:
+    # Закрываем вопрос когда 2 игрока ответили (и в приватном, и в групповом чате)
+    active_check = quiz_game.storage.get_active_question(chat_id)
+    if not active_check or active_check["is_closed"] == 1:
+        return
+
+    unique_players = quiz_game.storage.count_unique_players(chat_id, query.message.message_id)
+    logger.info(f"Answer recorded: user={query.from_user.id} ({query.from_user.full_name}), chat={chat_id}, msg={query.message.message_id}, unique_players={unique_players}")
+
+    # Логируем всех ответивших
+    with quiz_game.storage._connect() as conn:
+        all_answers = conn.execute(
+            "SELECT user_id, selected_option FROM answers WHERE chat_id = ? AND message_id = ?",
+            (chat_id, query.message.message_id)
+        ).fetchall()
+        logger.info(f"All answers: {[(a['user_id'], a['selected_option']) for a in all_answers]}")
+
+    if unique_players >= 2:
         task = close_tasks.pop(chat_id, None)
         if task is not None:
             task.cancel()
@@ -981,34 +964,6 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
             question_id,
             query.message.message_id,
         )
-    else:
-        # В групповом чате закрываем когда оба игрока ответили (2 уникальных)
-        # Проверяем, что вопрос все еще активен (защита от race condition)
-        active_check = quiz_game.storage.get_active_question(chat_id)
-        if not active_check or active_check["is_closed"] == 1:
-            return
-
-        unique_players = quiz_game.storage.count_unique_players(chat_id, query.message.message_id)
-        logger.info(f"Answer recorded: user={query.from_user.id} ({query.from_user.full_name}), chat={chat_id}, msg={query.message.message_id}, unique_players={unique_players}")
-
-        # Логируем всех ответивших
-        with quiz_game.storage._connect() as conn:
-            all_answers = conn.execute(
-                "SELECT user_id, selected_option FROM answers WHERE chat_id = ? AND message_id = ?",
-                (chat_id, query.message.message_id)
-            ).fetchall()
-            logger.info(f"All answers: {[(a['user_id'], a['selected_option']) for a in all_answers]}")
-
-        if unique_players >= 2:
-            task = close_tasks.pop(chat_id, None)
-            if task is not None:
-                task.cancel()
-            await close_question_by_ids(
-                context.application,
-                chat_id,
-                question_id,
-                query.message.message_id,
-            )
 
 
 async def answer_inline(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
