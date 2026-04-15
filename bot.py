@@ -121,6 +121,7 @@ class QuizStorage:
                 CREATE TABLE IF NOT EXISTS inline_asked_questions (
                     chat_instance TEXT NOT NULL,
                     question_id TEXT NOT NULL,
+                    asked_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
                     PRIMARY KEY (chat_instance, question_id)
                 );
 
@@ -175,8 +176,13 @@ class QuizStorage:
 
     def used_question_ids(self, chat_id: int) -> set[str]:
         with self._connect() as conn:
+            # Возвращаем только вопросы, заданные сегодня (с 00:00 UTC)
             rows = conn.execute(
-                "SELECT question_id FROM asked_questions WHERE chat_id = ?",
+                """
+                SELECT question_id FROM asked_questions
+                WHERE chat_id = ?
+                AND date(asked_at) = date('now')
+                """,
                 (chat_id,),
             ).fetchall()
         return {row["question_id"] for row in rows}
@@ -279,66 +285,66 @@ class QuizStorage:
     
     def get_player_stats_today(self, user_id: int) -> tuple[int, int]:
         with self._connect() as conn:
-            # Считаем общее количество ответов за последний час
+            # Считаем общее количество ответов с начала текущего дня UTC (00:00 UTC)
             result = conn.execute(
                 """
                 SELECT COUNT(*) as total
                 FROM answers
-                WHERE user_id = ? 
-                AND answered_at >= datetime('now', '-1 hour')
+                WHERE user_id = ?
+                AND date(answered_at) = date('now')
                 """,
                 (user_id,)
             ).fetchone()
-            
+
             inline_result = conn.execute(
                 """
                 SELECT COUNT(*) as total
                 FROM inline_answers
-                WHERE user_id = ? 
-                AND answered_at >= datetime('now', '-1 hour')
+                WHERE user_id = ?
+                AND date(answered_at) = date('now')
                 """,
                 (user_id,)
             ).fetchone()
-            
-            total_hour = (result["total"] or 0) + (inline_result["total"] or 0)
-            
-            if total_hour == 0:
+
+            total_today = (result["total"] or 0) + (inline_result["total"] or 0)
+
+            if total_today == 0:
                 return (0, 0)
-            
-            # Считаем правильные ответы за последний час, проверяя каждый ответ
+
+            # Считаем правильные ответы за сегодня, проверяя каждый ответ
             correct_count = 0
-            
-            answers_hour = conn.execute(
+
+            answers_today = conn.execute(
                 """
                 SELECT question_id, selected_option
                 FROM answers
-                WHERE user_id = ? 
-                AND answered_at >= datetime('now', '-1 hour')
+                WHERE user_id = ?
+                AND date(answered_at) = date('now')
                 """,
                 (user_id,)
             ).fetchall()
-            
-            for ans in answers_hour:
+
+            for ans in answers_today:
                 question = quiz_game.questions_by_id.get(ans["question_id"])
                 if question and ans["selected_option"] == question.correct_option:
                     correct_count += 1
-            
-            inline_answers_hour = conn.execute(
+
+            inline_answers_today = conn.execute(
                 """
                 SELECT question_id, selected_option
                 FROM inline_answers
-                WHERE user_id = ? 
-                AND answered_at >= datetime('now', '-1 hour')
+                WHERE user_id = ?
+                AND date(answered_at) = date('now')
                 """,
                 (user_id,)
             ).fetchall()
-            
-            for ans in inline_answers_hour:
+
+            for ans in inline_answers_today:
                 question = quiz_game.questions_by_id.get(ans["question_id"])
                 if question and ans["selected_option"] == question.correct_option:
                     correct_count += 1
-            
-            return (correct_count, total_hour)
+
+            return (correct_count, total_today)
 
     def get_chat_top(self, chat_id: int, limit: int = 10) -> list[sqlite3.Row]:
         with self._connect() as conn:
@@ -409,8 +415,13 @@ class QuizStorage:
 
     def inline_used_question_ids(self, chat_instance: str) -> set[str]:
         with self._connect() as conn:
+            # Возвращаем только вопросы, заданные сегодня (с 00:00 UTC)
             rows = conn.execute(
-                "SELECT question_id FROM inline_asked_questions WHERE chat_instance = ?",
+                """
+                SELECT question_id FROM inline_asked_questions
+                WHERE chat_instance = ?
+                AND date(asked_at) = date('now')
+                """,
                 (chat_instance,),
             ).fetchall()
         return {row["question_id"] for row in rows}
@@ -771,7 +782,7 @@ async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     )
     quiz_game.storage.set_active_question(chat.id, question.id, sent.message_id)
 
-    # В приватном чате ставим таймаут, в групповом — нет
+    # Таймаут только в приватном чате, в групповом закрывается когда 2 игрока ответят
     if chat.type == ChatType.PRIVATE:
         old_task = close_tasks.pop(chat.id, None)
         if old_task is not None:
@@ -898,7 +909,7 @@ async def next_question_handler(update: Update, context: ContextTypes.DEFAULT_TY
 
         quiz_game.storage.set_active_question(chat_id, question.id, sent.message_id)
 
-        # В приватном чате ставим таймаут, в групповом — нет
+        # Таймаут только в приватном чате, в групповом закрывается когда 2 игрока ответят
         if query.message.chat.type == ChatType.PRIVATE:
             old_task = close_tasks.pop(chat_id, None)
             if old_task is not None:
