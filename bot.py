@@ -413,6 +413,15 @@ class QuizStorage:
             ).fetchone()
             return result["count"] if result else 0
 
+    def count_unique_inline_players(self, inline_message_id: str) -> int:
+        """Подсчитывает количество уникальных игроков, ответивших на inline вопрос"""
+        with self._connect() as conn:
+            result = conn.execute(
+                "SELECT COUNT(DISTINCT user_id) as count FROM inline_answers WHERE inline_message_id = ?",
+                (inline_message_id,),
+            ).fetchone()
+            return result["count"] if result else 0
+
     def inline_used_question_ids(self, chat_instance: str) -> set[str]:
         with self._connect() as conn:
             # Возвращаем только вопросы, заданные сегодня (с 00:00 UTC)
@@ -564,8 +573,6 @@ class QuizGame:
 
 
 quiz_game = QuizGame()
-close_tasks: dict[int, asyncio.Task] = {}
-inline_close_tasks: dict[str, asyncio.Task] = {}
 
 
 def accuracy(correct_answers: int, total_answers: int) -> str:
@@ -684,11 +691,8 @@ async def schedule_close(
     message_id: int,
     delay_seconds: int,
 ) -> None:
-    try:
-        await asyncio.sleep(delay_seconds)
-        await close_question_by_ids(application, chat_id, question_id, message_id)
-    finally:
-        close_tasks.pop(chat_id, None)
+    await asyncio.sleep(delay_seconds)
+    await close_question_by_ids(application, chat_id, question_id, message_id)
 
 
 async def close_inline_question_by_id(
@@ -719,11 +723,8 @@ async def schedule_inline_close(
     question_id: str,
     delay_seconds: int,
 ) -> None:
-    try:
-        await asyncio.sleep(delay_seconds)
-        await close_inline_question_by_id(application, inline_message_id, question_id)
-    finally:
-        inline_close_tasks.pop(inline_message_id, None)
+    await asyncio.sleep(delay_seconds)
+    await close_inline_question_by_id(application, inline_message_id, question_id)
 
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -759,7 +760,7 @@ async def quiz(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         return
 
     active = quiz_game.storage.get_active_question(chat.id)
-    if active and active["is_closed"] == 0 and chat.id not in close_tasks:
+    if active and active["is_closed"] == 0:
         quiz_game.storage.close_active_question(chat.id)
         active = None
 
@@ -835,16 +836,6 @@ async def chosen_inline_result(update: Update, context: ContextTypes.DEFAULT_TYP
     question_id = result.result_id
     quiz_game.storage.set_inline_active_question(result.inline_message_id, question_id)
     quiz_game.storage.inline_mark_question_asked(result.inline_message_id, question_id)
-    if result.inline_message_id in inline_close_tasks:
-        inline_close_tasks[result.inline_message_id].cancel()
-    inline_close_tasks[result.inline_message_id] = asyncio.create_task(
-        schedule_inline_close(
-            context.application,
-            result.inline_message_id,
-            question_id,
-            QUESTION_TIMEOUT_SECONDS,
-        )
-    )
 
 
 async def next_question_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -955,9 +946,6 @@ async def answer(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         logger.info(f"All answers: {[(a['user_id'], a['selected_option']) for a in all_answers]}")
 
     if unique_players >= 2:
-        task = close_tasks.pop(chat_id, None)
-        if task is not None:
-            task.cancel()
         await close_question_by_ids(
             context.application,
             chat_id,
@@ -976,16 +964,6 @@ async def answer_inline(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
     active = quiz_game.storage.get_inline_active_question(query.inline_message_id)
     if not active:
         quiz_game.storage.set_inline_active_question(query.inline_message_id, question_id)
-        if query.inline_message_id in inline_close_tasks:
-            inline_close_tasks[query.inline_message_id].cancel()
-        inline_close_tasks[query.inline_message_id] = asyncio.create_task(
-            schedule_inline_close(
-                context.application,
-                query.inline_message_id,
-                question_id,
-                QUESTION_TIMEOUT_SECONDS,
-            )
-        )
         active = quiz_game.storage.get_inline_active_question(query.inline_message_id)
     
     if active["is_closed"] == 1:
@@ -1012,21 +990,22 @@ async def answer_inline(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         await query.answer("Ты уже отвечал на этот вопрос.", show_alert=True)
         return
 
-    if is_correct:
-        await query.answer("✅ Правильно!", show_alert=False)
-    else:
-        await query.answer("❌ Неправильно", show_alert=False)
-    
-    if query.inline_message_id in inline_close_tasks:
-        inline_close_tasks[query.inline_message_id].cancel()
-    inline_close_tasks[query.inline_message_id] = asyncio.create_task(
-        schedule_inline_close(
+    await query.answer("Ответ принят.")
+
+    # Закрываем inline вопрос когда 2 игрока ответили
+    active_check = quiz_game.storage.get_inline_active_question(query.inline_message_id)
+    if not active_check or active_check["is_closed"] == 1:
+        return
+
+    unique_players = quiz_game.storage.count_unique_inline_players(query.inline_message_id)
+    logger.info(f"Inline answer recorded: user={query.from_user.id}, inline_msg={query.inline_message_id}, unique_players={unique_players}")
+
+    if unique_players >= 2:
+        await close_inline_question_by_id(
             context.application,
             query.inline_message_id,
             question_id,
-            QUICK_CLOSE_SECONDS,
         )
-    )
 
 
 async def stats(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
