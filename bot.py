@@ -1007,14 +1007,6 @@ async def answer_inline(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         await query.answer("Этот вопрос уже неактуален.", show_alert=True)
         return
 
-    # Проверяем, не был ли этот вопрос уже задан в этом чате
-    used_questions = quiz_game.storage.inline_used_question_ids(query.chat_instance)
-    if question_id in used_questions:
-        await query.answer("Этот вопрос уже был в этом чате! Попробуй вызвать бота снова.", show_alert=True)
-        # Закрываем вопрос, чтобы не принимать ответы
-        quiz_game.storage.close_inline_active_question(query.inline_message_id)
-        return
-
     question = quiz_game.questions_by_id[question_id]
     is_correct = selected_option == question.correct_option
     saved = quiz_game.storage.record_inline_answer(
