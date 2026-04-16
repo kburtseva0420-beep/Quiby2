@@ -25,7 +25,8 @@ from telegram import InlineQueryResultArticle, InputTextMessageContent
 
 
 BASE_DIR = Path(__file__).resolve().parent
-DB_PATH = BASE_DIR / "quiz_bot.db"
+# Используем постоянное хранилище Railway для сохранения истории вопросов
+DB_PATH = Path("/data/quiz_bot.db") if Path("/data").exists() else BASE_DIR / "quiz_bot.db"
 QUESTIONS_PATH = BASE_DIR / "questions.json"
 QUESTION_TIMEOUT_SECONDS = 20
 QUICK_CLOSE_SECONDS = 3
@@ -176,12 +177,11 @@ class QuizStorage:
 
     def used_question_ids(self, chat_id: int) -> set[str]:
         with self._connect() as conn:
-            # Возвращаем только вопросы, заданные сегодня (с 00:00 UTC)
+            # Возвращаем все вопросы, которые когда-либо задавались в этом чате
             rows = conn.execute(
                 """
                 SELECT question_id FROM asked_questions
                 WHERE chat_id = ?
-                AND date(asked_at) = date('now')
                 """,
                 (chat_id,),
             ).fetchall()
@@ -191,12 +191,14 @@ class QuizStorage:
         with self._connect() as conn:
             conn.execute("DELETE FROM asked_questions WHERE chat_id = ?", (chat_id,))
 
-    def mark_question_asked(self, chat_id: int, question_id: str) -> None:
+    def mark_question_asked(self, chat_id: int, question_id: str) -> bool:
+        """Помечает вопрос как использованный. Возвращает True если вопрос был добавлен, False если уже существовал."""
         with self._connect() as conn:
-            conn.execute(
+            cursor = conn.execute(
                 "INSERT OR IGNORE INTO asked_questions (chat_id, question_id) VALUES (?, ?)",
                 (chat_id, question_id),
             )
+            return cursor.rowcount > 0
 
     def set_active_question(self, chat_id: int, question_id: str, message_id: int) -> None:
         with self._connect() as conn:
@@ -424,23 +426,24 @@ class QuizStorage:
 
     def inline_used_question_ids(self, chat_instance: str) -> set[str]:
         with self._connect() as conn:
-            # Возвращаем только вопросы, заданные сегодня (с 00:00 UTC)
+            # Возвращаем все вопросы, которые когда-либо задавались в этом inline-чате
             rows = conn.execute(
                 """
                 SELECT question_id FROM inline_asked_questions
                 WHERE chat_instance = ?
-                AND date(asked_at) = date('now')
                 """,
                 (chat_instance,),
             ).fetchall()
         return {row["question_id"] for row in rows}
 
-    def inline_mark_question_asked(self, chat_instance: str, question_id: str) -> None:
+    def inline_mark_question_asked(self, chat_instance: str, question_id: str) -> bool:
+        """Помечает inline-вопрос как использованный. Возвращает True если вопрос был добавлен, False если уже существовал."""
         with self._connect() as conn:
-            conn.execute(
+            cursor = conn.execute(
                 "INSERT OR IGNORE INTO inline_asked_questions (chat_instance, question_id) VALUES (?, ?)",
                 (chat_instance, question_id),
             )
+            return cursor.rowcount > 0
 
     def set_inline_active_question(self, inline_message_id: str, question_id: str) -> None:
         with self._connect() as conn:
@@ -552,24 +555,50 @@ class QuizGame:
 
     def next_question(self, chat_id: int) -> Optional[Question]:
         import random
-        used_ids = self.storage.used_question_ids(chat_id)
-        available = [question for question in self.questions if question.id not in used_ids]
-        if not available:
-            return None
 
-        question = random.choice(available)
-        self.storage.mark_question_asked(chat_id, question.id)
-        return question
+        # Повторяем до 10 раз, пока не найдем свободный вопрос
+        for attempt in range(10):
+            used_ids = self.storage.used_question_ids(chat_id)
+            available = [question for question in self.questions if question.id not in used_ids]
+            if not available:
+                return None
 
-    def next_inline_question(self, chat_instance: str, seed: int) -> Question:
+            question = random.choice(available)
+
+            # Пытаемся пометить вопрос как использованный
+            # Если вернулось True - вопрос успешно занят нами
+            # Если False - другой запрос уже занял этот вопрос, пробуем снова
+            if self.storage.mark_question_asked(chat_id, question.id):
+                if attempt > 0:
+                    logger.info(f"Question selected after {attempt + 1} attempts (race condition detected)")
+                return question
+
+        # Если за 10 попыток не смогли занять вопрос - что-то не так
+        logger.error(f"Failed to select unique question after 10 attempts for chat {chat_id}")
+        return None
+
+    def next_inline_question(self, chat_instance: str, seed: int) -> Optional[Question]:
         import random
-        used_ids = self.storage.inline_used_question_ids(chat_instance)
-        available = [question for question in self.questions if question.id not in used_ids]
-        if not available:
-            available = list(self.questions)
 
-        random.seed(seed + hash(chat_instance))
-        return random.choice(available)
+        # Повторяем до 10 раз, пока не найдем свободный вопрос
+        for attempt in range(10):
+            used_ids = self.storage.inline_used_question_ids(chat_instance)
+            available = [question for question in self.questions if question.id not in used_ids]
+            if not available:
+                return None
+
+            random.seed(seed + hash(chat_instance) + attempt)
+            question = random.choice(available)
+
+            # Пытаемся пометить вопрос как использованный
+            if self.storage.inline_mark_question_asked(chat_instance, question.id):
+                if attempt > 0:
+                    logger.info(f"Inline question selected after {attempt + 1} attempts (race condition detected)")
+                return question
+
+        # Если за 10 попыток не смогли занять вопрос - что-то не так
+        logger.error(f"Failed to select unique inline question after 10 attempts for chat_instance {chat_instance}")
+        return None
 
 
 quiz_game = QuizGame()
@@ -813,8 +842,11 @@ async def inline_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     if not query or query.from_user is None:
         return
 
-    chat_key = f"{query.chat_type or 'inline'}:{query.from_user.id}:{query.id}"
-    question = quiz_game.next_inline_question(chat_key, query.from_user.id)
+    # Просто показываем случайный вопрос
+    # Проверка использованных вопросов будет в answer_inline, где есть chat_instance
+    import random
+    question = random.choice(quiz_game.questions)
+
     result = InlineQueryResultArticle(
         id=question.id,
         title="Запустить квиз",
@@ -835,7 +867,8 @@ async def chosen_inline_result(update: Update, context: ContextTypes.DEFAULT_TYP
 
     question_id = result.result_id
     quiz_game.storage.set_inline_active_question(result.inline_message_id, question_id)
-    quiz_game.storage.inline_mark_question_asked(result.inline_message_id, question_id)
+    # НЕ сохраняем вопрос здесь, потому что нет chat_instance
+    # Вопрос будет сохранен в answer_inline, когда первый игрок ответит
 
 
 async def next_question_handler(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
@@ -974,6 +1007,14 @@ async def answer_inline(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         await query.answer("Этот вопрос уже неактуален.", show_alert=True)
         return
 
+    # Проверяем, не был ли этот вопрос уже задан в этом чате
+    used_questions = quiz_game.storage.inline_used_question_ids(query.chat_instance)
+    if question_id in used_questions:
+        await query.answer("Этот вопрос уже был в этом чате! Попробуй вызвать бота снова.", show_alert=True)
+        # Закрываем вопрос, чтобы не принимать ответы
+        quiz_game.storage.close_inline_active_question(query.inline_message_id)
+        return
+
     question = quiz_game.questions_by_id[question_id]
     is_correct = selected_option == question.correct_option
     saved = quiz_game.storage.record_inline_answer(
@@ -989,6 +1030,9 @@ async def answer_inline(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
     if not saved:
         await query.answer("Ты уже отвечал на этот вопрос.", show_alert=True)
         return
+
+    # Помечаем вопрос как использованный в этом чате (по chat_instance)
+    quiz_game.storage.inline_mark_question_asked(query.chat_instance, question_id)
 
     await query.answer("Ответ принят.")
 
