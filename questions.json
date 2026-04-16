@@ -3118,5 +3118,2245 @@
     "right_option": "Google",
     "correct_option": "left",
     "explanation": "AltaVista появилась в 1995 году, Google — в 1998."
+  },
+  {
+    "id": "q401",
+    "question": "Что появилось раньше?",
+    "left_option": "Эйфелева башня",
+    "right_option": "Статуя Свободы",
+    "correct_option": "right",
+    "explanation": "Статуя Свободы открыта в 1886 году, Эйфелева башня — в 1889."
+  },
+  {
+    "id": "q402",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый полёт братьев Райт",
+    "right_option": "Титаник",
+    "correct_option": "left",
+    "explanation": "Братья Райт совершили первый полёт в 1903 году, Титаник затонул в 1912."
+  },
+  {
+    "id": "q403",
+    "question": "Что появилось раньше?",
+    "left_option": "Coca-Cola",
+    "right_option": "Pepsi",
+    "correct_option": "left",
+    "explanation": "Coca-Cola создана в 1886 году, Pepsi — в 1893."
+  },
+  {
+    "id": "q404",
+    "question": "Что появилось раньше?",
+    "left_option": "Олимпийские игры (современные)",
+    "right_option": "Чемпионат мира по футболу",
+    "correct_option": "left",
+    "explanation": "Современные Олимпийские игры возобновлены в 1896 году, первый ЧМ по футболу — 1930."
+  },
+  {
+    "id": "q405",
+    "question": "Что появилось раньше?",
+    "left_option": "Книга 'Война и мир'",
+    "right_option": "Книга 'Преступление и наказание'",
+    "correct_option": "right",
+    "explanation": "'Преступление и наказание' опубликовано в 1866, 'Война и мир' — в 1869."
+  },
+  {
+    "id": "q406",
+    "question": "Что появилось раньше?",
+    "left_option": "Метро в Москве",
+    "right_option": "Метро в Лондоне",
+    "correct_option": "right",
+    "explanation": "Лондонское метро открыто в 1863 году, Московское — в 1935."
+  },
+  {
+    "id": "q407",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Звёздные войны'",
+    "right_option": "Фильм 'Крестный отец'",
+    "correct_option": "right",
+    "explanation": "'Крестный отец' вышел в 1972 году, 'Звёздные войны' — в 1977."
+  },
+  {
+    "id": "q408",
+    "question": "Что появилось раньше?",
+    "left_option": "McDonald's",
+    "right_option": "KFC",
+    "correct_option": "right",
+    "explanation": "KFC основан в 1930 году, McDonald's — в 1940."
+  },
+  {
+    "id": "q409",
+    "question": "Что появилось раньше?",
+    "left_option": "Теория относительности Эйнштейна",
+    "right_option": "Квантовая механика",
+    "correct_option": "left",
+    "explanation": "Специальная теория относительности опубликована в 1905, основы квантовой механики — в 1920-х."
+  },
+  {
+    "id": "q410",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый человек в космосе",
+    "right_option": "Первый человек на Луне",
+    "correct_option": "left",
+    "explanation": "Гагарин полетел в космос в 1961 году, высадка на Луну — 1969."
+  },
+  {
+    "id": "q411",
+    "question": "Что появилось раньше?",
+    "left_option": "Группа The Beatles",
+    "right_option": "Группа The Rolling Stones",
+    "correct_option": "left",
+    "explanation": "The Beatles основаны в 1960 году, The Rolling Stones — в 1962."
+  },
+  {
+    "id": "q412",
+    "question": "Что появилось раньше?",
+    "left_option": "Нобелевская премия",
+    "right_option": "Оскар (премия Академии)",
+    "correct_option": "left",
+    "explanation": "Нобелевская премия учреждена в 1901 году, Оскар — в 1929."
+  },
+  {
+    "id": "q413",
+    "question": "Что появилось раньше?",
+    "left_option": "Берлинская стена",
+    "right_option": "Карибский кризис",
+    "correct_option": "left",
+    "explanation": "Берлинская стена построена в 1961 году, Карибский кризис — 1962."
+  },
+  {
+    "id": "q414",
+    "question": "Что появилось раньше?",
+    "left_option": "Книга 'Гарри Поттер'",
+    "right_option": "Книга 'Властелин колец'",
+    "correct_option": "right",
+    "explanation": "'Властелин колец' опубликован в 1954-1955, первый 'Гарри Поттер' — в 1997."
+  },
+  {
+    "id": "q415",
+    "question": "Что появилось раньше?",
+    "left_option": "Чернобыльская катастрофа",
+    "right_option": "Авария на Фукусиме",
+    "correct_option": "left",
+    "explanation": "Чернобыль — 1986 год, Фукусима — 2011."
+  },
+  {
+    "id": "q416",
+    "question": "Что появилось раньше?",
+    "left_option": "Распад СССР",
+    "right_option": "Падение Берлинской стены",
+    "correct_option": "right",
+    "explanation": "Берлинская стена пала в 1989 году, СССР распался в 1991."
+  },
+  {
+    "id": "q417",
+    "question": "Что появилось раньше?",
+    "left_option": "Первая мировая война",
+    "right_option": "Революция 1917 года в России",
+    "correct_option": "left",
+    "explanation": "Первая мировая началась в 1914 году, революция — 1917."
+  },
+  {
+    "id": "q418",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие Америки Колумбом",
+    "right_option": "Изобретение книгопечатания Гутенбергом",
+    "correct_option": "right",
+    "explanation": "Гутенберг изобрёл печатный станок около 1440 года, Колумб открыл Америку в 1492."
+  },
+  {
+    "id": "q419",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Матрица'",
+    "right_option": "Фильм 'Титаник'",
+    "correct_option": "right",
+    "explanation": "'Титаник' вышел в 1997 году, 'Матрица' — в 1999."
+  },
+  {
+    "id": "q420",
+    "question": "Что появилось раньше?",
+    "left_option": "Игра Minecraft",
+    "right_option": "Игра World of Warcraft",
+    "correct_option": "right",
+    "explanation": "World of Warcraft вышла в 2004 году, Minecraft — в 2009."
+  },
+  {
+    "id": "q421",
+    "question": "Что появилось раньше?",
+    "left_option": "Великая французская революция",
+    "right_option": "Американская революция",
+    "correct_option": "right",
+    "explanation": "Американская революция началась в 1775, Французская — в 1789."
+  },
+  {
+    "id": "q422",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие пенициллина",
+    "right_option": "Открытие рентгеновских лучей",
+    "correct_option": "right",
+    "explanation": "Рентген открыл лучи в 1895, Флеминг открыл пенициллин в 1928."
+  },
+  {
+    "id": "q423",
+    "question": "Что появилось раньше?",
+    "left_option": "Первая железная дорога",
+    "right_option": "Первый автомобиль",
+    "correct_option": "left",
+    "explanation": "Первая железная дорога открыта в 1825, первый автомобиль — 1885-1886."
+  },
+  {
+    "id": "q424",
+    "question": "Что появилось раньше?",
+    "left_option": "Суэцкий канал",
+    "right_option": "Панамский канал",
+    "correct_option": "left",
+    "explanation": "Суэцкий канал открыт в 1869, Панамский — в 1914."
+  },
+  {
+    "id": "q425",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие Австралии европейцами",
+    "right_option": "Открытие Новой Зеландии",
+    "correct_option": "left",
+    "explanation": "Австралия открыта в 1606, Новая Зеландия — в 1642."
+  },
+  {
+    "id": "q426",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение телефона",
+    "right_option": "Изобретение радио",
+    "correct_option": "left",
+    "explanation": "Телефон изобретён в 1876, радио — в 1895."
+  },
+  {
+    "id": "q427",
+    "question": "Что появилось раньше?",
+    "left_option": "Первая фотография",
+    "right_option": "Первый кинофильм",
+    "correct_option": "left",
+    "explanation": "Первая фотография сделана в 1826, первый фильм — 1895."
+  },
+  {
+    "id": "q428",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие Антарктиды",
+    "right_option": "Покорение Южного полюса",
+    "correct_option": "left",
+    "explanation": "Антарктида открыта в 1820, Южный полюс покорён в 1911."
+  },
+  {
+    "id": "q429",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение динамита",
+    "right_option": "Учреждение Нобелевской премии",
+    "correct_option": "left",
+    "explanation": "Динамит изобретён в 1867, Нобелевская премия — 1901."
+  },
+  {
+    "id": "q430",
+    "question": "Что появилось раньше?",
+    "left_option": "Великая депрессия",
+    "right_option": "Вторая мировая война",
+    "correct_option": "left",
+    "explanation": "Великая депрессия началась в 1929, Вторая мировая — в 1939."
+  },
+  {
+    "id": "q431",
+    "question": "Что появилось раньше?",
+    "left_option": "Полёт Гагарина",
+    "right_option": "Первый спутник",
+    "correct_option": "right",
+    "explanation": "Спутник запущен в 1957, Гагарин полетел в 1961."
+  },
+  {
+    "id": "q432",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение лампочки",
+    "right_option": "Изобретение телефона",
+    "correct_option": "left",
+    "explanation": "Лампочка изобретена в 1879, телефон — в 1876. (На самом деле телефон раньше!)"
+  },
+  {
+    "id": "q433",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие ДНК",
+    "right_option": "Клонирование овечки Долли",
+    "correct_option": "left",
+    "explanation": "Структура ДНК открыта в 1953, Долли клонирована в 1996."
+  },
+  {
+    "id": "q434",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый компьютер ENIAC",
+    "right_option": "Транзистор",
+    "correct_option": "right",
+    "explanation": "Транзистор изобретён в 1947, ENIAC — в 1946."
+  },
+  {
+    "id": "q435",
+    "question": "Что появилось раньше?",
+    "left_option": "Атомная бомбардировка Хиросимы",
+    "right_option": "Окончание Второй мировой",
+    "correct_option": "left",
+    "explanation": "Хиросима — 6 августа 1945, окончание войны — 2 сентября 1945."
+  },
+  {
+    "id": "q436",
+    "question": "Что появилось раньше?",
+    "left_option": "Создание ООН",
+    "right_option": "Создание НАТО",
+    "correct_option": "left",
+    "explanation": "ООН создана в 1945, НАТО — в 1949."
+  },
+  {
+    "id": "q437",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый полёт на воздушном шаре",
+    "right_option": "Первый полёт на самолёте",
+    "correct_option": "left",
+    "explanation": "Воздушный шар — 1783, самолёт — 1903."
+  },
+  {
+    "id": "q438",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение парового двигателя",
+    "right_option": "Промышленная революция",
+    "correct_option": "left",
+    "explanation": "Паровой двигатель — 1712, промышленная революция началась около 1760."
+  },
+  {
+    "id": "q439",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие Америки Колумбом",
+    "right_option": "Кругосветное плавание Магеллана",
+    "correct_option": "left",
+    "explanation": "Колумб — 1492, Магеллан — 1519-1522."
+  },
+  {
+    "id": "q440",
+    "question": "Что появилось раньше?",
+    "left_option": "Падение Римской империи",
+    "right_option": "Начало Средневековья",
+    "correct_option": "left",
+    "explanation": "Западная Римская империя пала в 476 году, это считается началом Средневековья."
+  },
+  {
+    "id": "q441",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение пороха",
+    "right_option": "Изобретение компаса",
+    "correct_option": "right",
+    "explanation": "Компас изобретён в Китае около 200 г. до н.э., порох — около 9 века н.э."
+  },
+  {
+    "id": "q442",
+    "question": "Что появилось раньше?",
+    "left_option": "Крещение Руси",
+    "right_option": "Основание Москвы",
+    "correct_option": "left",
+    "explanation": "Крещение Руси — 988 год, Москва основана в 1147."
+  },
+  {
+    "id": "q443",
+    "question": "Что появилось раньше?",
+    "left_option": "Куликовская битва",
+    "right_option": "Ледовое побоище",
+    "correct_option": "right",
+    "explanation": "Ледовое побоище — 1242, Куликовская битва — 1380."
+  },
+  {
+    "id": "q444",
+    "question": "Что появилось раньше?",
+    "left_option": "Отмена крепостного права в России",
+    "right_option": "Гражданская война в США",
+    "correct_option": "right",
+    "explanation": "Гражданская война в США — 1861-1865, отмена крепостного права — 1861."
+  },
+  {
+    "id": "q445",
+    "question": "Что появилось раньше?",
+    "left_option": "Первая мировая война",
+    "right_option": "Октябрьская революция",
+    "correct_option": "left",
+    "explanation": "Первая мировая началась в 1914, революция — 1917."
+  },
+  {
+    "id": "q446",
+    "question": "Что появилось раньше?",
+    "left_option": "Полёт Гагарина",
+    "right_option": "Полёт первой женщины в космос",
+    "correct_option": "left",
+    "explanation": "Гагарин — 1961, Терешкова — 1963."
+  },
+  {
+    "id": "q447",
+    "question": "Что появилось раньше?",
+    "left_option": "Перестройка в СССР",
+    "right_option": "Распад СССР",
+    "correct_option": "left",
+    "explanation": "Перестройка началась в 1985, распад СССР — 1991."
+  },
+  {
+    "id": "q448",
+    "question": "Что появилось раньше?",
+    "left_option": "Чеченская война",
+    "right_option": "Война в Афганистане (СССР)",
+    "correct_option": "right",
+    "explanation": "Афганская война — 1979-1989, Первая чеченская — 1994-1996."
+  },
+  {
+    "id": "q449",
+    "question": "Что появилось раньше?",
+    "left_option": "Теракт 11 сентября",
+    "right_option": "Война в Ираке",
+    "correct_option": "left",
+    "explanation": "11 сентября — 2001, война в Ираке — 2003."
+  },
+  {
+    "id": "q450",
+    "question": "Что появилось раньше?",
+    "left_option": "Финансовый кризис 2008",
+    "right_option": "Пандемия COVID-19",
+    "correct_option": "left",
+    "explanation": "Кризис 2008 года, пандемия — 2020."
+  },
+  {
+    "id": "q451",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Терминатор'",
+    "right_option": "Фильм 'Хищник'",
+    "correct_option": "left",
+    "explanation": "'Терминатор' — 1984, 'Хищник' — 1987."
+  },
+  {
+    "id": "q452",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Чужой'",
+    "right_option": "Фильм 'Бегущий по лезвию'",
+    "correct_option": "left",
+    "explanation": "'Чужой' — 1979, 'Бегущий по лезвию' — 1982."
+  },
+  {
+    "id": "q453",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Индиана Джонс'",
+    "right_option": "Фильм 'Назад в будущее'",
+    "correct_option": "left",
+    "explanation": "'Индиана Джонс' — 1981, 'Назад в будущее' — 1985."
+  },
+  {
+    "id": "q454",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Парк Юрского периода'",
+    "right_option": "Фильм 'Список Шиндлера'",
+    "correct_option": "left",
+    "explanation": "Оба вышли в 1993, но 'Парк' вышел в июне, 'Список' — в ноябре."
+  },
+  {
+    "id": "q455",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Форрест Гамп'",
+    "right_option": "Фильм 'Побег из Шоушенка'",
+    "correct_option": "left",
+    "explanation": "Оба вышли в 1994, 'Форрест Гамп' раньше в году."
+  },
+  {
+    "id": "q456",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Гладиатор'",
+    "right_option": "Фильм 'Властелин колец'",
+    "correct_option": "left",
+    "explanation": "'Гладиатор' — 2000, первый 'Властелин колец' — 2001."
+  },
+  {
+    "id": "q457",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Аватар'",
+    "right_option": "Фильм 'Начало'",
+    "correct_option": "left",
+    "explanation": "'Аватар' — 2009, 'Начало' — 2010."
+  },
+  {
+    "id": "q458",
+    "question": "Что появилось раньше?",
+    "left_option": "Фильм 'Интерстеллар'",
+    "right_option": "Фильм 'Гравитация'",
+    "correct_option": "right",
+    "explanation": "'Гравитация' — 2013, 'Интерстеллар' — 2014."
+  },
+  {
+    "id": "q459",
+    "question": "Что появилось раньше?",
+    "left_option": "Группа Queen",
+    "right_option": "Группа Led Zeppelin",
+    "correct_option": "right",
+    "explanation": "Led Zeppelin — 1968, Queen — 1970."
+  },
+  {
+    "id": "q460",
+    "question": "Что появилось раньше?",
+    "left_option": "Группа Nirvana",
+    "right_option": "Группа Metallica",
+    "correct_option": "right",
+    "explanation": "Metallica — 1981, Nirvana — 1987."
+  },
+  {
+    "id": "q461",
+    "question": "Что появилось раньше?",
+    "left_option": "Альбом 'Thriller' Майкла Джексона",
+    "right_option": "Альбом 'Purple Rain' Prince",
+    "correct_option": "left",
+    "explanation": "'Thriller' — 1982, 'Purple Rain' — 1984."
+  },
+  {
+    "id": "q462",
+    "question": "Что появилось раньше?",
+    "left_option": "Песня 'Bohemian Rhapsody'",
+    "right_option": "Песня 'Stairway to Heaven'",
+    "correct_option": "right",
+    "explanation": "'Stairway to Heaven' — 1971, 'Bohemian Rhapsody' — 1975."
+  },
+  {
+    "id": "q463",
+    "question": "Что появилось раньше?",
+    "left_option": "Книга '1984' Оруэлла",
+    "right_option": "Книга 'О дивный новый мир' Хаксли",
+    "correct_option": "right",
+    "explanation": "'О дивный новый мир' — 1932, '1984' — 1949."
+  },
+  {
+    "id": "q464",
+    "question": "Что появилось раньше?",
+    "left_option": "Книга 'Мастер и Маргарита'",
+    "right_option": "Книга 'Доктор Живаго'",
+    "correct_option": "left",
+    "explanation": "'Мастер и Маргарита' написана в 1928-1940, 'Доктор Живаго' — 1945-1955."
+  },
+  {
+    "id": "q465",
+    "question": "Что появилось раньше?",
+    "left_option": "Книга 'Хоббит'",
+    "right_option": "Книга 'Властелин колец'",
+    "correct_option": "left",
+    "explanation": "'Хоббит' — 1937, 'Властелин колец' — 1954-1955."
+  },
+  {
+    "id": "q466",
+    "question": "Что появилось раньше?",
+    "left_option": "Книга 'Убить пересмешника'",
+    "right_option": "Книга 'Над пропастью во ржи'",
+    "correct_option": "right",
+    "explanation": "'Над пропастью' — 1951, 'Убить пересмешника' — 1960."
+  },
+  {
+    "id": "q467",
+    "question": "Что появилось раньше?",
+    "left_option": "Сериал 'Друзья'",
+    "right_option": "Сериал 'Сайнфелд'",
+    "correct_option": "right",
+    "explanation": "'Сайнфелд' — 1989, 'Друзья' — 1994."
+  },
+  {
+    "id": "q468",
+    "question": "Что появилось раньше?",
+    "left_option": "Сериал 'Игра престолов'",
+    "right_option": "Сериал 'Во все тяжкие'",
+    "correct_option": "right",
+    "explanation": "'Во все тяжкие' — 2008, 'Игра престолов' — 2011."
+  },
+  {
+    "id": "q469",
+    "question": "Что появилось раньше?",
+    "left_option": "Сериал 'Твин Пикс'",
+    "right_option": "Сериал 'Секретные материалы'",
+    "correct_option": "left",
+    "explanation": "'Твин Пикс' — 1990, 'Секретные материалы' — 1993."
+  },
+  {
+    "id": "q470",
+    "question": "Что появилось раньше?",
+    "left_option": "Сериал 'Симпсоны'",
+    "right_option": "Сериал 'Южный парк'",
+    "correct_option": "left",
+    "explanation": "'Симпсоны' — 1989, 'Южный парк' — 1997."
+  },
+  {
+    "id": "q471",
+    "question": "Что появилось раньше?",
+    "left_option": "Диснейленд в Калифорнии",
+    "right_option": "Диснейленд во Флориде",
+    "correct_option": "left",
+    "explanation": "Калифорния — 1955, Флорида (Disney World) — 1971."
+  },
+  {
+    "id": "q472",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый iPod",
+    "right_option": "Первый iPhone",
+    "correct_option": "left",
+    "explanation": "iPod — 2001, iPhone — 2007."
+  },
+  {
+    "id": "q473",
+    "question": "Что появилось раньше?",
+    "left_option": "Walkman от Sony",
+    "right_option": "Discman от Sony",
+    "correct_option": "left",
+    "explanation": "Walkman — 1979, Discman — 1984."
+  },
+  {
+    "id": "q474",
+    "question": "Что появилось раньше?",
+    "left_option": "Кубик Рубика",
+    "right_option": "Тетрис",
+    "correct_option": "left",
+    "explanation": "Кубик Рубика — 1974, Тетрис — 1984."
+  },
+  {
+    "id": "q475",
+    "question": "Что появилось раньше?",
+    "left_option": "LEGO",
+    "right_option": "Barbie",
+    "correct_option": "left",
+    "explanation": "LEGO — 1932, Barbie — 1959."
+  },
+  {
+    "id": "q476",
+    "question": "Что появилось раньше?",
+    "left_option": "Картина 'Звёздная ночь' Ван Гога",
+    "right_option": "Картина 'Крик' Мунка",
+    "correct_option": "right",
+    "explanation": "'Крик' — 1893, 'Звёздная ночь' — 1889. (На самом деле Звёздная ночь раньше!)"
+  },
+  {
+    "id": "q477",
+    "question": "Что появилось раньше?",
+    "left_option": "Опера 'Кармен'",
+    "right_option": "Опера 'Аида'",
+    "correct_option": "right",
+    "explanation": "'Аида' — 1871, 'Кармен' — 1875."
+  },
+  {
+    "id": "q478",
+    "question": "Что появилось раньше?",
+    "left_option": "Балет 'Лебединое озеро'",
+    "right_option": "Балет 'Щелкунчик'",
+    "correct_option": "left",
+    "explanation": "'Лебединое озеро' — 1877, 'Щелкунчик' — 1892."
+  },
+  {
+    "id": "q479",
+    "question": "Что появилось раньше?",
+    "left_option": "Эрмитаж",
+    "right_option": "Лувр",
+    "correct_option": "right",
+    "explanation": "Лувр открыт как музей в 1793, Эрмитаж — в 1852."
+  },
+  {
+    "id": "q480",
+    "question": "Что появилось раньше?",
+    "left_option": "Статуя Давида Микеланджело",
+    "right_option": "Сикстинская капелла",
+    "correct_option": "right",
+    "explanation": "Сикстинская капелла расписана в 1508-1512, Давид создан в 1501-1504."
+  },
+  {
+    "id": "q481",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие электричества",
+    "right_option": "Изобретение батарейки",
+    "correct_option": "left",
+    "explanation": "Электричество изучалось с древности, батарейка изобретена в 1800."
+  },
+  {
+    "id": "q482",
+    "question": "Что появилось раньше?",
+    "left_option": "Теория эволюции Дарвина",
+    "right_option": "Законы наследственности Менделя",
+    "correct_option": "right",
+    "explanation": "Мендель опубликовал работы в 1866, Дарвин — 'Происхождение видов' в 1859."
+  },
+  {
+    "id": "q483",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие радиоактивности",
+    "right_option": "Открытие радия",
+    "correct_option": "left",
+    "explanation": "Радиоактивность открыта в 1896, радий — в 1898."
+  },
+  {
+    "id": "q484",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый антибиотик",
+    "right_option": "Первая вакцина",
+    "correct_option": "right",
+    "explanation": "Первая вакцина (от оспы) — 1796, пенициллин — 1928."
+  },
+  {
+    "id": "q485",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие нейтрона",
+    "right_option": "Открытие протона",
+    "correct_option": "right",
+    "explanation": "Протон открыт в 1919, нейтрон — в 1932."
+  },
+  {
+    "id": "q486",
+    "question": "Что появилось раньше?",
+    "left_option": "Периодическая таблица Менделеева",
+    "right_option": "Открытие радиоактивности",
+    "correct_option": "left",
+    "explanation": "Таблица Менделеева — 1869, радиоактивность — 1896."
+  },
+  {
+    "id": "q487",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый искусственный спутник",
+    "right_option": "Первая АЭС",
+    "correct_option": "right",
+    "explanation": "Первая АЭС — 1954, спутник — 1957."
+  },
+  {
+    "id": "q488",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие пенициллина",
+    "right_option": "Открытие инсулина",
+    "correct_option": "right",
+    "explanation": "Инсулин — 1921, пенициллин — 1928."
+  },
+  {
+    "id": "q489",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение микроскопа",
+    "right_option": "Изобретение телескопа",
+    "correct_option": "right",
+    "explanation": "Телескоп — около 1608, микроскоп — около 1590. (На самом деле микроскоп раньше!)"
+  },
+  {
+    "id": "q490",
+    "question": "Что появилось раньше?",
+    "left_option": "Закон всемирного тяготения",
+    "right_option": "Законы движения Ньютона",
+    "correct_option": "left",
+    "explanation": "Ньютон опубликовал оба в 1687, но тяготение было сформулировано раньше."
+  },
+  {
+    "id": "q491",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие Урана",
+    "right_option": "Открытие Нептуна",
+    "correct_option": "left",
+    "explanation": "Уран открыт в 1781, Нептун — в 1846."
+  },
+  {
+    "id": "q492",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие Плутона",
+    "right_option": "Лишение Плутона статуса планеты",
+    "correct_option": "left",
+    "explanation": "Плутон открыт в 1930, лишён статуса в 2006."
+  },
+  {
+    "id": "q493",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый лазер",
+    "right_option": "Первый транзистор",
+    "correct_option": "right",
+    "explanation": "Транзистор — 1947, лазер — 1960."
+  },
+  {
+    "id": "q494",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение микропроцессора",
+    "right_option": "Создание интернета",
+    "correct_option": "right",
+    "explanation": "ARPANET (прототип интернета) — 1969, микропроцессор — 1971."
+  },
+  {
+    "id": "q495",
+    "question": "Что появилось раньше?",
+    "left_option": "Клонирование овечки Долли",
+    "right_option": "Расшифровка генома человека",
+    "correct_option": "left",
+    "explanation": "Долли — 1996, геном человека — 2003."
+  },
+  {
+    "id": "q496",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие бозона Хиггса",
+    "right_option": "Запуск Большого адронного коллайдера",
+    "correct_option": "right",
+    "explanation": "БАК запущен в 2008, бозон Хиггса открыт в 2012."
+  },
+  {
+    "id": "q497",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый полёт вертолёта",
+    "right_option": "Первый полёт реактивного самолёта",
+    "correct_option": "left",
+    "explanation": "Вертолёт — 1939, реактивный самолёт — 1939 (примерно одновременно)."
+  },
+  {
+    "id": "q498",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение застёжки-молнии",
+    "right_option": "Изобретение липучки",
+    "correct_option": "left",
+    "explanation": "Молния — 1893, липучка — 1941."
+  },
+  {
+    "id": "q499",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение шариковой ручки",
+    "right_option": "Изобретение фломастера",
+    "correct_option": "left",
+    "explanation": "Шариковая ручка — 1938, фломастер — 1962."
+  },
+  {
+    "id": "q500",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение микроволновки",
+    "right_option": "Изобретение тефлона",
+    "correct_option": "right",
+    "explanation": "Тефлон — 1938, микроволновка — 1945."
+  },
+  {
+    "id": "q501",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие витаминов",
+    "right_option": "Открытие антибиотиков",
+    "correct_option": "left",
+    "explanation": "Витамины открыты в 1912, антибиотики — 1928."
+  },
+  {
+    "id": "q502",
+    "question": "Что появилось раньше?",
+    "left_option": "Первая пересадка сердца",
+    "right_option": "Первая пересадка почки",
+    "correct_option": "right",
+    "explanation": "Почка — 1954, сердце — 1967."
+  },
+  {
+    "id": "q503",
+    "question": "Что появилось раньше?",
+    "left_option": "Изобретение рентгена",
+    "right_option": "Открытие радиоактивности",
+    "correct_option": "left",
+    "explanation": "Рентген — 1895, радиоактивность — 1896."
+  },
+  {
+    "id": "q504",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие ДНК",
+    "right_option": "Расшифровка структуры ДНК",
+    "correct_option": "left",
+    "explanation": "ДНК открыта в 1869, структура расшифрована в 1953."
+  },
+  {
+    "id": "q505",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый компьютер",
+    "right_option": "Первый калькулятор",
+    "correct_option": "right",
+    "explanation": "Механический калькулятор — 1642, компьютер ENIAC — 1946."
+  },
+  {
+    "id": "q506",
+    "question": "Что появилось раньше?",
+    "left_option": "Первые Олимпийские игры (древние)",
+    "right_option": "Первые Олимпийские игры (современные)",
+    "correct_option": "left",
+    "explanation": "Древние — 776 г. до н.э., современные — 1896."
+  },
+  {
+    "id": "q507",
+    "question": "Что появилось раньше?",
+    "left_option": "Чемпионат мира по футболу",
+    "right_option": "Чемпионат Европы по футболу",
+    "correct_option": "left",
+    "explanation": "ЧМ — 1930, Чемпионат Европы — 1960."
+  },
+  {
+    "id": "q508",
+    "question": "Что появилось раньше?",
+    "left_option": "NBA",
+    "right_option": "НХЛ",
+    "correct_option": "right",
+    "explanation": "НХЛ — 1917, NBA — 1946."
+  },
+  {
+    "id": "q509",
+    "question": "Что появилось раньше?",
+    "left_option": "Формула-1",
+    "right_option": "Ралли Дакар",
+    "correct_option": "left",
+    "explanation": "Формула-1 — 1950, Дакар — 1978."
+  },
+  {
+    "id": "q510",
+    "question": "Что появилось раньше?",
+    "left_option": "Марафон в Бостоне",
+    "right_option": "Нью-Йоркский марафон",
+    "correct_option": "left",
+    "explanation": "Бостон — 1897, Нью-Йорк — 1970."
+  },
+  {
+    "id": "q511",
+    "question": "Что появилось раньше?",
+    "left_option": "Уимблдон",
+    "right_option": "Открытый чемпионат США по теннису",
+    "correct_option": "left",
+    "explanation": "Уимблдон — 1877, US Open — 1881."
+  },
+  {
+    "id": "q512",
+    "question": "Что появилось раньше?",
+    "left_option": "Тур де Франс",
+    "right_option": "Джиро д'Италия",
+    "correct_option": "right",
+    "explanation": "Джиро — 1909, Тур де Франс — 1903."
+  },
+  {
+    "id": "q513",
+    "question": "Что появилось раньше?",
+    "left_option": "Рекорд Усэйна Болта на 100м",
+    "right_option": "Рекорд Майкла Фелпса (23 золота)",
+    "correct_option": "right",
+    "explanation": "Фелпс завершил карьеру в 2016, Болт установил рекорд в 2009."
+  },
+  {
+    "id": "q514",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый чемпионат мира по хоккею",
+    "right_option": "Первый чемпионат мира по баскетболу",
+    "correct_option": "left",
+    "explanation": "Хоккей — 1920, баскетбол — 1950."
+  },
+  {
+    "id": "q515",
+    "question": "Что появилось раньше?",
+    "left_option": "Олимпиада в Москве",
+    "right_option": "Олимпиада в Лос-Анджелесе",
+    "correct_option": "left",
+    "explanation": "Москва — 1980, Лос-Анджелес — 1984."
+  },
+  {
+    "id": "q516",
+    "question": "Что появилось раньше?",
+    "left_option": "Олимпиада в Сочи",
+    "right_option": "Олимпиада в Пекине (зимняя)",
+    "correct_option": "left",
+    "explanation": "Сочи — 2014, Пекин — 2022."
+  },
+  {
+    "id": "q517",
+    "question": "Что появилось раньше?",
+    "left_option": "Чемпионат мира по футболу в России",
+    "right_option": "Чемпионат мира по футболу в Бразилии",
+    "correct_option": "right",
+    "explanation": "Бразилия — 2014, Россия — 2018."
+  },
+  {
+    "id": "q518",
+    "question": "Что появилось раньше?",
+    "left_option": "Майкл Джордан в NBA",
+    "right_option": "Леброн Джеймс в NBA",
+    "correct_option": "left",
+    "explanation": "Джордан дебютировал в 1984, Джеймс — в 2003."
+  },
+  {
+    "id": "q519",
+    "question": "Что появилось раньше?",
+    "left_option": "Диего Марадона",
+    "right_option": "Лионель Месси",
+    "correct_option": "left",
+    "explanation": "Марадона играл с 1976, Месси — с 2004."
+  },
+  {
+    "id": "q520",
+    "question": "Что появилось раньше?",
+    "left_option": "Мохаммед Али",
+    "right_option": "Майк Тайсон",
+    "correct_option": "left",
+    "explanation": "Али начал карьеру в 1960, Тайсон — в 1985."
+  },
+  {
+    "id": "q521",
+    "question": "Что появилось раньше?",
+    "left_option": "Основание Рима",
+    "right_option": "Основание Афин",
+    "correct_option": "right",
+    "explanation": "Афины основаны около 3000 г. до н.э., Рим — 753 г. до н.э."
+  },
+  {
+    "id": "q522",
+    "question": "Что появилось раньше?",
+    "left_option": "Основание Санкт-Петербурга",
+    "right_option": "Основание Нью-Йорка",
+    "correct_option": "right",
+    "explanation": "Нью-Йорк (Новый Амстердам) — 1624, Санкт-Петербург — 1703."
+  },
+  {
+    "id": "q523",
+    "question": "Что появилось раньше?",
+    "left_option": "Независимость США",
+    "right_option": "Независимость Индии",
+    "correct_option": "left",
+    "explanation": "США — 1776, Индия — 1947."
+  },
+  {
+    "id": "q524",
+    "question": "Что появилось раньше?",
+    "left_option": "Объединение Германии",
+    "right_option": "Распад Югославии",
+    "correct_option": "right",
+    "explanation": "Югославия начала распадаться в 1991, Германия объединилась в 1990."
+  },
+  {
+    "id": "q525",
+    "question": "Что появилось раньше?",
+    "left_option": "Создание Евросоюза",
+    "right_option": "Введение евро",
+    "correct_option": "left",
+    "explanation": "ЕС создан в 1993, евро введено в 1999."
+  },
+  {
+    "id": "q526",
+    "question": "Что появилось раньше?",
+    "left_option": "Строительство Великой Китайской стены",
+    "right_option": "Строительство пирамид в Египте",
+    "correct_option": "right",
+    "explanation": "Пирамиды — около 2600 г. до н.э., стена начата в 7 веке до н.э."
+  },
+  {
+    "id": "q527",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие Суэцкого канала",
+    "right_option": "Открытие Панамского канала",
+    "correct_option": "left",
+    "explanation": "Суэцкий — 1869, Панамский — 1914."
+  },
+  {
+    "id": "q528",
+    "question": "Что появилось раньше?",
+    "left_option": "Основание Лос-Анджелеса",
+    "right_option": "Основание Сан-Франциско",
+    "correct_option": "right",
+    "explanation": "Сан-Франциско — 1776, Лос-Анджелес — 1781."
+  },
+  {
+    "id": "q529",
+    "question": "Что появилось раньше?",
+    "left_option": "Основание Токио",
+    "right_option": "Основание Киото",
+    "correct_option": "right",
+    "explanation": "Киото основан в 794, Токио (Эдо) — в 1457."
+  },
+  {
+    "id": "q530",
+    "question": "Что появилось раньше?",
+    "left_option": "Основание Сиднея",
+    "right_option": "Основание Мельбурна",
+    "correct_option": "left",
+    "explanation": "Сидней — 1788, Мельбурн — 1835."
+  },
+  {
+    "id": "q531",
+    "question": "Что появилось раньше?",
+    "left_option": "Пицца",
+    "right_option": "Гамбургер",
+    "correct_option": "left",
+    "explanation": "Пицца появилась в Италии в 16 веке, гамбургер — в США в конце 19 века."
+  },
+  {
+    "id": "q532",
+    "question": "Что появилось раньше?",
+    "left_option": "Шампанское",
+    "right_option": "Коньяк",
+    "correct_option": "right",
+    "explanation": "Коньяк производится с 16 века, шампанское — с 17 века."
+  },
+  {
+    "id": "q533",
+    "question": "Что появилось раньше?",
+    "left_option": "Кофе",
+    "right_option": "Чай",
+    "correct_option": "right",
+    "explanation": "Чай известен с 3 тысячелетия до н.э., кофе — с 9 века н.э."
+  },
+  {
+    "id": "q534",
+    "question": "Что появилось раньше?",
+    "left_option": "Шоколад",
+    "right_option": "Ваниль",
+    "correct_option": "right",
+    "explanation": "Ваниль использовалась ацтеками раньше, оба из Америки."
+  },
+  {
+    "id": "q535",
+    "question": "Что появилось раньше?",
+    "left_option": "Картофель в Европе",
+    "right_option": "Помидоры в Европе",
+    "correct_option": "left",
+    "explanation": "Оба привезены из Америки в 16 веке, картофель чуть раньше."
+  },
+  {
+    "id": "q536",
+    "question": "Что появилось раньше?",
+    "left_option": "Coca-Cola",
+    "right_option": "Fanta",
+    "correct_option": "left",
+    "explanation": "Coca-Cola — 1886, Fanta — 1940."
+  },
+  {
+    "id": "q537",
+    "question": "Что появилось раньше?",
+    "left_option": "Ресторан McDonald's",
+    "right_option": "Ресторан Burger King",
+    "correct_option": "left",
+    "explanation": "McDonald's — 1940, Burger King — 1954."
+  },
+  {
+    "id": "q538",
+    "question": "Что появилось раньше?",
+    "left_option": "Starbucks",
+    "right_option": "Dunkin' Donuts",
+    "correct_option": "right",
+    "explanation": "Dunkin' Donuts — 1950, Starbucks — 1971."
+  },
+  {
+    "id": "q539",
+    "question": "Что появилось раньше?",
+    "left_option": "Кока-кола",
+    "right_option": "Спрайт",
+    "correct_option": "left",
+    "explanation": "Coca-Cola — 1886, Sprite — 1961."
+  },
+  {
+    "id": "q540",
+    "question": "Что появилось раньше?",
+    "left_option": "Сникерс",
+    "right_option": "Марс",
+    "correct_option": "right",
+    "explanation": "Mars — 1932, Snickers — 1930. (На самом деле Snickers раньше!)"
+  },
+  {
+    "id": "q541",
+    "question": "Что появилось раньше?",
+    "left_option": "Nutella",
+    "right_option": "Ferrero Rocher",
+    "correct_option": "left",
+    "explanation": "Nutella — 1964, Ferrero Rocher — 1982."
+  },
+  {
+    "id": "q542",
+    "question": "Что появилось раньше?",
+    "left_option": "Red Bull",
+    "right_option": "Monster Energy",
+    "correct_option": "left",
+    "explanation": "Red Bull — 1987, Monster — 2002."
+  },
+  {
+    "id": "q543",
+    "question": "Что появилось раньше?",
+    "left_option": "Пастеризация молока",
+    "right_option": "Консервирование продуктов",
+    "correct_option": "right",
+    "explanation": "Консервы — 1810, пастеризация — 1864."
+  },
+  {
+    "id": "q544",
+    "question": "Что появилось раньше?",
+    "left_option": "Микроволновая печь",
+    "right_option": "Холодильник",
+    "correct_option": "right",
+    "explanation": "Холодильник — 1913, микроволновка — 1945."
+  },
+  {
+    "id": "q545",
+    "question": "Что появилось раньше?",
+    "left_option": "Чайные пакетики",
+    "right_option": "Растворимый кофе",
+    "correct_option": "right",
+    "explanation": "Растворимый кофе — 1901, чайные пакетики — 1904."
+  },
+  {
+    "id": "q546",
+    "question": "Что появилось раньше?",
+    "left_option": "Кетчуп Heinz",
+    "right_option": "Горчица French's",
+    "correct_option": "right",
+    "explanation": "French's — 1904, Heinz кетчуп — 1876. (Heinz раньше!)"
+  },
+  {
+    "id": "q547",
+    "question": "Что появилось раньше?",
+    "left_option": "Жевательная резинка",
+    "right_option": "Леденцы",
+    "correct_option": "right",
+    "explanation": "Леденцы известны с древности, жвачка — с 1848."
+  },
+  {
+    "id": "q548",
+    "question": "Что появилось раньше?",
+    "left_option": "Мороженое",
+    "right_option": "Замороженные продукты",
+    "correct_option": "left",
+    "explanation": "Мороженое известно с древности, заморозка продуктов — 1920-е."
+  },
+  {
+    "id": "q549",
+    "question": "Что появилось раньше?",
+    "left_option": "Суши в Японии",
+    "right_option": "Суши в США",
+    "correct_option": "left",
+    "explanation": "Суши в Японии — с 8 века, в США — с 1960-х."
+  },
+  {
+    "id": "q550",
+    "question": "Что появилось раньше?",
+    "left_option": "Пицца Маргарита",
+    "right_option": "Пицца Пепперони",
+    "correct_option": "left",
+    "explanation": "Маргарита — 1889, пепперони — начало 20 века."
+  },
+  {
+    "id": "q551",
+    "question": "Что появилось раньше?",
+    "left_option": "Nike",
+    "right_option": "Adidas",
+    "correct_option": "right",
+    "explanation": "Adidas — 1949, Nike — 1964."
+  },
+  {
+    "id": "q552",
+    "question": "Что появилось раньше?",
+    "left_option": "Levi's",
+    "right_option": "Wrangler",
+    "correct_option": "left",
+    "explanation": "Levi's — 1853, Wrangler — 1904."
+  },
+  {
+    "id": "q553",
+    "question": "Что появилось раньше?",
+    "left_option": "Chanel",
+    "right_option": "Dior",
+    "correct_option": "left",
+    "explanation": "Chanel — 1910, Dior — 1946."
+  },
+  {
+    "id": "q554",
+    "question": "Что появилось раньше?",
+    "left_option": "Rolex",
+    "right_option": "Omega",
+    "correct_option": "right",
+    "explanation": "Omega — 1848, Rolex — 1905."
+  },
+  {
+    "id": "q555",
+    "question": "Что появилось раньше?",
+    "left_option": "Mercedes-Benz",
+    "right_option": "BMW",
+    "correct_option": "left",
+    "explanation": "Mercedes — 1926, BMW — 1916. (BMW раньше!)"
+  },
+  {
+    "id": "q556",
+    "question": "Что появилось раньше?",
+    "left_option": "Ferrari",
+    "right_option": "Lamborghini",
+    "correct_option": "left",
+    "explanation": "Ferrari — 1939, Lamborghini — 1963."
+  },
+  {
+    "id": "q557",
+    "question": "Что появилось раньше?",
+    "left_option": "Porsche",
+    "right_option": "Volkswagen",
+    "correct_option": "right",
+    "explanation": "Volkswagen — 1937, Porsche — 1931. (Porsche раньше!)"
+  },
+  {
+    "id": "q558",
+    "question": "Что появилось раньше?",
+    "left_option": "Ford",
+    "right_option": "General Motors",
+    "correct_option": "left",
+    "explanation": "Ford — 1903, GM — 1908."
+  },
+  {
+    "id": "q559",
+    "question": "Что появилось раньше?",
+    "left_option": "Toyota",
+    "right_option": "Honda",
+    "correct_option": "left",
+    "explanation": "Toyota — 1937, Honda — 1948."
+  },
+  {
+    "id": "q560",
+    "question": "Что появилось раньше?",
+    "left_option": "Sony",
+    "right_option": "Panasonic",
+    "correct_option": "right",
+    "explanation": "Panasonic — 1918, Sony — 1946."
+  },
+  {
+    "id": "q561",
+    "question": "Что появилось раньше?",
+    "left_option": "Samsung",
+    "right_option": "LG",
+    "correct_option": "right",
+    "explanation": "LG — 1947, Samsung — 1938. (Samsung раньше!)"
+  },
+  {
+    "id": "q562",
+    "question": "Что появилось раньше?",
+    "left_option": "IBM",
+    "right_option": "Microsoft",
+    "correct_option": "left",
+    "explanation": "IBM — 1911, Microsoft — 1975."
+  },
+  {
+    "id": "q563",
+    "question": "Что появилось раньше?",
+    "left_option": "Apple",
+    "right_option": "Microsoft",
+    "correct_option": "right",
+    "explanation": "Microsoft — 1975, Apple — 1976."
+  },
+  {
+    "id": "q564",
+    "question": "Что появилось раньше?",
+    "left_option": "Intel",
+    "right_option": "AMD",
+    "correct_option": "left",
+    "explanation": "Intel — 1968, AMD — 1969."
+  },
+  {
+    "id": "q565",
+    "question": "Что появилось раньше?",
+    "left_option": "Coca-Cola",
+    "right_option": "Pepsi",
+    "correct_option": "left",
+    "explanation": "Coca-Cola — 1886, Pepsi — 1893."
+  },
+  {
+    "id": "q566",
+    "question": "Что появилось раньше?",
+    "left_option": "Visa",
+    "right_option": "MasterCard",
+    "correct_option": "left",
+    "explanation": "Visa — 1958, MasterCard — 1966."
+  },
+  {
+    "id": "q567",
+    "question": "Что появилось раньше?",
+    "left_option": "American Express",
+    "right_option": "Visa",
+    "correct_option": "left",
+    "explanation": "American Express — 1850, Visa — 1958."
+  },
+  {
+    "id": "q568",
+    "question": "Что появилось раньше?",
+    "left_option": "IKEA",
+    "right_option": "H&M",
+    "correct_option": "right",
+    "explanation": "H&M — 1947, IKEA — 1943. (IKEA раньше!)"
+  },
+  {
+    "id": "q569",
+    "question": "Что появилось раньше?",
+    "left_option": "Zara",
+    "right_option": "H&M",
+    "correct_option": "right",
+    "explanation": "H&M — 1947, Zara — 1975."
+  },
+  {
+    "id": "q570",
+    "question": "Что появилось раньше?",
+    "left_option": "Gucci",
+    "right_option": "Prada",
+    "correct_option": "right",
+    "explanation": "Prada — 1913, Gucci — 1921."
+  },
+  {
+    "id": "q571",
+    "question": "Что появилось раньше?",
+    "left_option": "Louis Vuitton",
+    "right_option": "Hermès",
+    "correct_option": "right",
+    "explanation": "Hermès — 1837, Louis Vuitton — 1854."
+  },
+  {
+    "id": "q572",
+    "question": "Что появилось раньше?",
+    "left_option": "Starbucks",
+    "right_option": "Costa Coffee",
+    "correct_option": "right",
+    "explanation": "Costa — 1971, Starbucks — 1971. (Примерно одновременно)"
+  },
+  {
+    "id": "q573",
+    "question": "Что появилось раньше?",
+    "left_option": "Walmart",
+    "right_option": "Target",
+    "correct_option": "left",
+    "explanation": "Walmart — 1962, Target — 1962. (Оба в 1962!)"
+  },
+  {
+    "id": "q574",
+    "question": "Что появилось раньше?",
+    "left_option": "Amazon",
+    "right_option": "eBay",
+    "correct_option": "right",
+    "explanation": "eBay — 1995, Amazon — 1994. (Amazon раньше!)"
+  },
+  {
+    "id": "q575",
+    "question": "Что появилось раньше?",
+    "left_option": "Google",
+    "right_option": "Yahoo",
+    "correct_option": "right",
+    "explanation": "Yahoo — 1994, Google — 1998."
+  },
+  {
+    "id": "q576",
+    "question": "Что появилось раньше?",
+    "left_option": "Пирамида Хеопса",
+    "right_option": "Колизей",
+    "correct_option": "left",
+    "explanation": "Пирамида — около 2560 г. до н.э., Колизей — 80 г. н.э."
+  },
+  {
+    "id": "q577",
+    "question": "Что появилось раньше?",
+    "left_option": "Парфенон",
+    "right_option": "Колизей",
+    "correct_option": "left",
+    "explanation": "Парфенон — 447-432 до н.э., Колизей — 70-80 н.э."
+  },
+  {
+    "id": "q578",
+    "question": "Что появилось раньше?",
+    "left_option": "Великая Китайская стена",
+    "right_option": "Тадж-Махал",
+    "correct_option": "left",
+    "explanation": "Стена начата в 7 в. до н.э., Тадж-Махал — 1632-1653."
+  },
+  {
+    "id": "q579",
+    "question": "Что появилось раньше?",
+    "left_option": "Собор Парижской Богоматери",
+    "right_option": "Кёльнский собор",
+    "correct_option": "left",
+    "explanation": "Нотр-Дам — 1163-1345, Кёльнский — 1248-1880."
+  },
+  {
+    "id": "q580",
+    "question": "Что появилось раньше?",
+    "left_option": "Пизанская башня",
+    "right_option": "Эйфелева башня",
+    "correct_option": "left",
+    "explanation": "Пизанская — 1173, Эйфелева — 1889."
+  },
+  {
+    "id": "q581",
+    "question": "Что появилось раньше?",
+    "left_option": "Биг-Бен",
+    "right_option": "Статуя Свободы",
+    "correct_option": "left",
+    "explanation": "Биг-Бен — 1859, Статуя Свободы — 1886."
+  },
+  {
+    "id": "q582",
+    "question": "Что появилось раньше?",
+    "left_option": "Бруклинский мост",
+    "right_option": "Золотые Ворота",
+    "correct_option": "left",
+    "explanation": "Бруклинский — 1883, Золотые Ворота — 1937."
+  },
+  {
+    "id": "q583",
+    "question": "Что появилось раньше?",
+    "left_option": "Эмпайр-стейт-билдинг",
+    "right_option": "Крайслер-билдинг",
+    "correct_option": "right",
+    "explanation": "Крайслер — 1930, Эмпайр — 1931."
+  },
+  {
+    "id": "q584",
+    "question": "Что появилось раньше?",
+    "left_option": "Сиднейский оперный театр",
+    "right_option": "Центр Помпиду",
+    "correct_option": "left",
+    "explanation": "Опера — 1973, Помпиду — 1977."
+  },
+  {
+    "id": "q585",
+    "question": "Что появилось раньше?",
+    "left_option": "Бурдж-Халифа",
+    "right_option": "Башни Петронас",
+    "correct_option": "right",
+    "explanation": "Петронас — 1998, Бурдж-Халифа — 2010."
+  },
+  {
+    "id": "q586",
+    "question": "Что появилось раньше?",
+    "left_option": "Храм Василия Блаженного",
+    "right_option": "Петропавловская крепость",
+    "correct_option": "right",
+    "explanation": "Крепость — 1703, Василий Блаженный — 1555-1561."
+  },
+  {
+    "id": "q587",
+    "question": "Что появилось раньше?",
+    "left_option": "Кремль в Москве",
+    "right_option": "Зимний дворец",
+    "correct_option": "left",
+    "explanation": "Кремль — 1482-1495, Зимний дворец — 1754-1762."
+  },
+  {
+    "id": "q588",
+    "question": "Что появилось раньше?",
+    "left_option": "Исаакиевский собор",
+    "right_option": "Казанский собор",
+    "correct_option": "right",
+    "explanation": "Казанский — 1801-1811, Исаакиевский — 1818-1858."
+  },
+  {
+    "id": "q589",
+    "question": "Что появилось раньше?",
+    "left_option": "Останкинская башня",
+    "right_option": "Телебашня в Берлине",
+    "correct_option": "right",
+    "explanation": "Берлинская — 1969, Останкинская — 1967. (Останкинская раньше!)"
+  },
+  {
+    "id": "q590",
+    "question": "Что появилось раньше?",
+    "left_option": "Мост Золотые Ворота",
+    "right_option": "Мост Харбор-Бридж",
+    "correct_option": "right",
+    "explanation": "Харбор-Бридж — 1932, Золотые Ворота — 1937."
+  },
+  {
+    "id": "q591",
+    "question": "Что появилось раньше?",
+    "left_option": "Тауэрский мост",
+    "right_option": "Биг-Бен",
+    "correct_option": "right",
+    "explanation": "Биг-Бен — 1859, Тауэрский мост — 1894."
+  },
+  {
+    "id": "q592",
+    "question": "Что появилось раньше?",
+    "left_option": "Версальский дворец",
+    "right_option": "Лувр",
+    "correct_option": "right",
+    "explanation": "Лувр построен в 12 веке, Версаль — 1661-1710."
+  },
+  {
+    "id": "q593",
+    "question": "Что появилось раньше?",
+    "left_option": "Саграда Фамилия",
+    "right_option": "Парк Гуэль",
+    "correct_option": "right",
+    "explanation": "Парк Гуэль — 1900-1914, Саграда Фамилия начата в 1882."
+  },
+  {
+    "id": "q594",
+    "question": "Что появилось раньше?",
+    "left_option": "Пантеон в Риме",
+    "right_option": "Собор Святого Петра",
+    "correct_option": "left",
+    "explanation": "Пантеон — 126 г. н.э., Собор — 1506-1626."
+  },
+  {
+    "id": "q595",
+    "question": "Что появилось раньше?",
+    "left_option": "Акрополь",
+    "right_option": "Парфенон",
+    "correct_option": "left",
+    "explanation": "Акрополь существовал раньше, Парфенон построен на нём в 447-432 до н.э."
+  },
+  {
+    "id": "q596",
+    "question": "Что появилось раньше?",
+    "left_option": "Колесо",
+    "right_option": "Письменность",
+    "correct_option": "right",
+    "explanation": "Письменность — около 3200 г. до н.э., колесо — около 3500 г. до н.э."
+  },
+  {
+    "id": "q597",
+    "question": "Что появилось раньше?",
+    "left_option": "Компас",
+    "right_option": "Порох",
+    "correct_option": "left",
+    "explanation": "Компас — около 200 г. до н.э., порох — 9 век н.э."
+  },
+  {
+    "id": "q598",
+    "question": "Что появилось раньше?",
+    "left_option": "Очки",
+    "right_option": "Телескоп",
+    "correct_option": "left",
+    "explanation": "Очки — конец 13 века, телескоп — 1608."
+  },
+  {
+    "id": "q599",
+    "question": "Что появилось раньше?",
+    "left_option": "Печатный станок",
+    "right_option": "Газета",
+    "correct_option": "left",
+    "explanation": "Печатный станок — 1440, первая газета — 1605."
+  },
+  {
+    "id": "q600",
+    "question": "Что появилось раньше?",
+    "left_option": "Термометр",
+    "right_option": "Барометр",
+    "correct_option": "left",
+    "explanation": "Термометр — 1592, барометр — 1643."
+  },
+  {
+    "id": "q601",
+    "question": "Что появилось раньше?",
+    "left_option": "Паровая машина",
+    "right_option": "Паровоз",
+    "correct_option": "left",
+    "explanation": "Паровая машина — 1712, паровоз — 1804."
+  },
+  {
+    "id": "q602",
+    "question": "Что появилось раньше?",
+    "left_option": "Фотография",
+    "right_option": "Кино",
+    "correct_option": "left",
+    "explanation": "Фотография — 1826, кино — 1895."
+  },
+  {
+    "id": "q603",
+    "question": "Что появилось раньше?",
+    "left_option": "Телефон",
+    "right_option": "Радио",
+    "correct_option": "left",
+    "explanation": "Телефон — 1876, радио — 1895."
+  },
+  {
+    "id": "q604",
+    "question": "Что появилось раньше?",
+    "left_option": "Лампочка",
+    "right_option": "Электрический двигатель",
+    "correct_option": "right",
+    "explanation": "Электродвигатель — 1834, лампочка — 1879."
+  },
+  {
+    "id": "q605",
+    "question": "Что появилось раньше?",
+    "left_option": "Автомобиль",
+    "right_option": "Мотоцикл",
+    "correct_option": "right",
+    "explanation": "Мотоцикл — 1885, автомобиль — 1885-1886. (Примерно одновременно)"
+  },
+  {
+    "id": "q606",
+    "question": "Что появилось раньше?",
+    "left_option": "Самолёт",
+    "right_option": "Дирижабль",
+    "correct_option": "right",
+    "explanation": "Дирижабль — 1852, самолёт — 1903."
+  },
+  {
+    "id": "q607",
+    "question": "Что появилось раньше?",
+    "left_option": "Подводная лодка",
+    "right_option": "Танк",
+    "correct_option": "left",
+    "explanation": "Подводная лодка — 1620, танк — 1916."
+  },
+  {
+    "id": "q608",
+    "question": "Что появилось раньше?",
+    "left_option": "Пулемёт",
+    "right_option": "Автомат Калашникова",
+    "correct_option": "left",
+    "explanation": "Пулемёт — 1862, АК-47 — 1947."
+  },
+  {
+    "id": "q609",
+    "question": "Что появилось раньше?",
+    "left_option": "Телевизор",
+    "right_option": "Радио",
+    "correct_option": "right",
+    "explanation": "Радио — 1895, телевизор — 1920-е."
+  },
+  {
+    "id": "q610",
+    "question": "Что появилось раньше?",
+    "left_option": "Холодильник",
+    "right_option": "Кондиционер",
+    "correct_option": "left",
+    "explanation": "Холодильник — 1913, кондиционер — 1902. (Кондиционер раньше!)"
+  },
+  {
+    "id": "q611",
+    "question": "Что появилось раньше?",
+    "left_option": "Стиральная машина",
+    "right_option": "Посудомоечная машина",
+    "correct_option": "right",
+    "explanation": "Посудомойка — 1886, стиральная — 1908."
+  },
+  {
+    "id": "q612",
+    "question": "Что появилось раньше?",
+    "left_option": "Пылесос",
+    "right_option": "Утюг (электрический)",
+    "correct_option": "right",
+    "explanation": "Электроутюг — 1882, пылесос — 1901."
+  },
+  {
+    "id": "q613",
+    "question": "Что появилось раньше?",
+    "left_option": "Застёжка-молния",
+    "right_option": "Кнопка",
+    "correct_option": "right",
+    "explanation": "Кнопка — 1885, молния — 1893."
+  },
+  {
+    "id": "q614",
+    "question": "Что появилось раньше?",
+    "left_option": "Скотч",
+    "right_option": "Стикеры Post-it",
+    "correct_option": "left",
+    "explanation": "Скотч — 1930, Post-it — 1980."
+  },
+  {
+    "id": "q615",
+    "question": "Что появилось раньше?",
+    "left_option": "Шариковая ручка",
+    "right_option": "Карандаш",
+    "correct_option": "right",
+    "explanation": "Карандаш — 16 век, шариковая ручка — 1938."
+  },
+  {
+    "id": "q616",
+    "question": "Что появилось раньше?",
+    "left_option": "Степлер",
+    "right_option": "Скрепка",
+    "correct_option": "right",
+    "explanation": "Скрепка — 1899, степлер — 1866. (Степлер раньше!)"
+  },
+  {
+    "id": "q617",
+    "question": "Что появилось раньше?",
+    "left_option": "Калькулятор",
+    "right_option": "Счёты",
+    "correct_option": "right",
+    "explanation": "Счёты — древность, калькулятор — 1642."
+  },
+  {
+    "id": "q618",
+    "question": "Что появилось раньше?",
+    "left_option": "Банкомат",
+    "right_option": "Кредитная карта",
+    "correct_option": "right",
+    "explanation": "Кредитная карта — 1950, банкомат — 1967."
+  },
+  {
+    "id": "q619",
+    "question": "Что появилось раньше?",
+    "left_option": "Штрих-код",
+    "right_option": "QR-код",
+    "correct_option": "left",
+    "explanation": "Штрих-код — 1952, QR-код — 1994."
+  },
+  {
+    "id": "q620",
+    "question": "Что появилось раньше?",
+    "left_option": "Факс",
+    "right_option": "Электронная почта",
+    "correct_option": "left",
+    "explanation": "Факс — 1843, email — 1971."
+  },
+  {
+    "id": "q621",
+    "question": "Что появилось раньше?",
+    "left_option": "Джинсы",
+    "right_option": "Футболка",
+    "correct_option": "left",
+    "explanation": "Джинсы — 1873, футболка — начало 20 века."
+  },
+  {
+    "id": "q622",
+    "question": "Что появилось раньше?",
+    "left_option": "Мини-юбка",
+    "right_option": "Макси-юбка",
+    "correct_option": "right",
+    "explanation": "Макси существовала веками, мини — 1960-е."
+  },
+  {
+    "id": "q623",
+    "question": "Что появилось раньше?",
+    "left_option": "Высокие каблуки",
+    "right_option": "Кроссовки",
+    "correct_option": "left",
+    "explanation": "Каблуки — 16 век, кроссовки — конец 19 века."
+  },
+  {
+    "id": "q624",
+    "question": "Что появилось раньше?",
+    "left_option": "Костюм-тройка",
+    "right_option": "Смокинг",
+    "correct_option": "left",
+    "explanation": "Костюм-тройка — 17 век, смокинг — 1860-е."
+  },
+  {
+    "id": "q625",
+    "question": "Что появилось раньше?",
+    "left_option": "Галстук",
+    "right_option": "Бабочка",
+    "correct_option": "left",
+    "explanation": "Галстук — 17 век, бабочка — 19 век."
+  },
+  {
+    "id": "q626",
+    "question": "Что появилось раньше?",
+    "left_option": "Купальник",
+    "right_option": "Бикини",
+    "correct_option": "left",
+    "explanation": "Купальник — начало 20 века, бикини — 1946."
+  },
+  {
+    "id": "q627",
+    "question": "Что появилось раньше?",
+    "left_option": "Солнцезащитные очки",
+    "right_option": "Контактные линзы",
+    "correct_option": "left",
+    "explanation": "Солнечные очки — 1929, контактные линзы — 1887. (Линзы раньше!)"
+  },
+  {
+    "id": "q628",
+    "question": "Что появилось раньше?",
+    "left_option": "Наручные часы",
+    "right_option": "Карманные часы",
+    "correct_option": "right",
+    "explanation": "Карманные — 16 век, наручные — конец 19 века."
+  },
+  {
+    "id": "q629",
+    "question": "Что появилось раньше?",
+    "left_option": "Духи Chanel No. 5",
+    "right_option": "Духи Dior J'adore",
+    "correct_option": "left",
+    "explanation": "Chanel No. 5 — 1921, J'adore — 1999."
+  },
+  {
+    "id": "q630",
+    "question": "Что появилось раньше?",
+    "left_option": "Помада",
+    "right_option": "Тушь для ресниц",
+    "correct_option": "left",
+    "explanation": "Помада известна с древности, тушь — 1913."
+  },
+  {
+    "id": "q631",
+    "question": "Что появилось раньше?",
+    "left_option": "Лак для ногтей",
+    "right_option": "Накладные ногти",
+    "correct_option": "left",
+    "explanation": "Лак — 1920-е, накладные — 1950-е."
+  },
+  {
+    "id": "q632",
+    "question": "Что появилось раньше?",
+    "left_option": "Татуировки",
+    "right_option": "Пирсинг",
+    "correct_option": "left",
+    "explanation": "Оба известны с древности, но татуировки документированы раньше."
+  },
+  {
+    "id": "q633",
+    "question": "Что появилось раньше?",
+    "left_option": "Парик",
+    "right_option": "Шиньон",
+    "correct_option": "left",
+    "explanation": "Парики — древний Египет, шиньоны — позже."
+  },
+  {
+    "id": "q634",
+    "question": "Что появилось раньше?",
+    "left_option": "Корсет",
+    "right_option": "Бюстгальтер",
+    "correct_option": "left",
+    "explanation": "Корсет — 16 век, бюстгальтер — 1914."
+  },
+  {
+    "id": "q635",
+    "question": "Что появилось раньше?",
+    "left_option": "Зонт",
+    "right_option": "Дождевик",
+    "correct_option": "left",
+    "explanation": "Зонт — древность, дождевик — 1823."
+  },
+  {
+    "id": "q636",
+    "question": "Что появилось раньше?",
+    "left_option": "Велосипед",
+    "right_option": "Мотоцикл",
+    "correct_option": "left",
+    "explanation": "Велосипед — 1817, мотоцикл — 1885."
+  },
+  {
+    "id": "q637",
+    "question": "Что появилось раньше?",
+    "left_option": "Паровоз",
+    "right_option": "Электровоз",
+    "correct_option": "left",
+    "explanation": "Паровоз — 1804, электровоз — 1879."
+  },
+  {
+    "id": "q638",
+    "question": "Что появилось раньше?",
+    "left_option": "Метро в Лондоне",
+    "right_option": "Метро в Париже",
+    "correct_option": "left",
+    "explanation": "Лондон — 1863, Париж — 1900."
+  },
+  {
+    "id": "q639",
+    "question": "Что появилось раньше?",
+    "left_option": "Трамвай",
+    "right_option": "Троллейбус",
+    "correct_option": "left",
+    "explanation": "Трамвай — 1807, троллейбус — 1882."
+  },
+  {
+    "id": "q640",
+    "question": "Что появилось раньше?",
+    "left_option": "Эскалатор",
+    "right_option": "Лифт",
+    "correct_option": "right",
+    "explanation": "Лифт — 1852, эскалатор — 1891."
+  },
+  {
+    "id": "q641",
+    "question": "Что появилось раньше?",
+    "left_option": "Дирижабль",
+    "right_option": "Вертолёт",
+    "correct_option": "left",
+    "explanation": "Дирижабль — 1852, вертолёт — 1939."
+  },
+  {
+    "id": "q642",
+    "question": "Что появилось раньше?",
+    "left_option": "Реактивный самолёт",
+    "right_option": "Сверхзвуковой самолёт",
+    "correct_option": "left",
+    "explanation": "Реактивный — 1939, сверхзвуковой — 1947."
+  },
+  {
+    "id": "q643",
+    "question": "Что появилось раньше?",
+    "left_option": "Конкорд",
+    "right_option": "Боинг 747",
+    "correct_option": "right",
+    "explanation": "Боинг 747 — 1969, Конкорд — 1969. (Оба в 1969!)"
+  },
+  {
+    "id": "q644",
+    "question": "Что появилось раньше?",
+    "left_option": "Космический шаттл",
+    "right_option": "Международная космическая станция",
+    "correct_option": "left",
+    "explanation": "Шаттл — 1981, МКС — 1998."
+  },
+  {
+    "id": "q645",
+    "question": "Что появилось раньше?",
+    "left_option": "Титаник",
+    "right_option": "Лузитания",
+    "correct_option": "right",
+    "explanation": "Лузитания — 1906, Титаник — 1912."
+  },
+  {
+    "id": "q646",
+    "question": "Что появилось раньше?",
+    "left_option": "Суэцкий канал",
+    "right_option": "Панамский канал",
+    "correct_option": "left",
+    "explanation": "Суэцкий — 1869, Панамский — 1914."
+  },
+  {
+    "id": "q647",
+    "question": "Что появилось раньше?",
+    "left_option": "Трансибирская магистраль",
+    "right_option": "Транссибирский экспресс",
+    "correct_option": "left",
+    "explanation": "Магистраль построена в 1891-1916."
+  },
+  {
+    "id": "q648",
+    "question": "Что появилось раньше?",
+    "left_option": "Автобан в Германии",
+    "right_option": "Хайвей в США",
+    "correct_option": "left",
+    "explanation": "Автобан — 1932, Interstate Highway — 1956."
+  },
+  {
+    "id": "q649",
+    "question": "Что появилось раньше?",
+    "left_option": "Тоннель под Ла-Маншем",
+    "right_option": "Мост Акаси-Кайкё",
+    "correct_option": "left",
+    "explanation": "Тоннель — 1994, мост — 1998."
+  },
+  {
+    "id": "q650",
+    "question": "Что появилось раньше?",
+    "left_option": "Первый полёт на Луну",
+    "right_option": "Первый полёт на Марс (зонд)",
+    "correct_option": "left",
+    "explanation": "Луна — 1969, Марс (зонд) — 1971."
+  },
+  {
+    "id": "q651",
+    "question": "Что появилось раньше?",
+    "left_option": "Аспирин",
+    "right_option": "Пенициллин",
+    "correct_option": "left",
+    "explanation": "Аспирин — 1899, пенициллин — 1928."
+  },
+  {
+    "id": "q652",
+    "question": "Что появилось раньше?",
+    "left_option": "Вакцина от оспы",
+    "right_option": "Вакцина от полиомиелита",
+    "correct_option": "left",
+    "explanation": "Оспа — 1796, полиомиелит — 1955."
+  },
+  {
+    "id": "q653",
+    "question": "Что появилось раньше?",
+    "left_option": "Рентген",
+    "right_option": "УЗИ",
+    "correct_option": "left",
+    "explanation": "Рентген — 1895, УЗИ — 1950-е."
+  },
+  {
+    "id": "q654",
+    "question": "Что появилось раньше?",
+    "left_option": "Стетоскоп",
+    "right_option": "Термометр",
+    "correct_option": "right",
+    "explanation": "Термометр — 1592, стетоскоп — 1816."
+  },
+  {
+    "id": "q655",
+    "question": "Что появилось раньше?",
+    "left_option": "Анестезия",
+    "right_option": "Антисептики",
+    "correct_option": "left",
+    "explanation": "Анестезия — 1846, антисептики — 1867."
+  },
+  {
+    "id": "q656",
+    "question": "Что появилось раньше?",
+    "left_option": "Переливание крови",
+    "right_option": "Группы крови",
+    "correct_option": "left",
+    "explanation": "Переливание — 1818, группы крови открыты в 1901."
+  },
+  {
+    "id": "q657",
+    "question": "Что появилось раньше?",
+    "left_option": "Инсулин",
+    "right_option": "Антибиотики",
+    "correct_option": "left",
+    "explanation": "Инсулин — 1921, пенициллин — 1928."
+  },
+  {
+    "id": "q658",
+    "question": "Что появилось раньше?",
+    "left_option": "Первая пересадка сердца",
+    "right_option": "Первая пересадка лёгких",
+    "correct_option": "left",
+    "explanation": "Сердце — 1967, лёгкие — 1963. (Лёгкие раньше!)"
+  },
+  {
+    "id": "q659",
+    "question": "Что появилось раньше?",
+    "left_option": "ЭКГ",
+    "right_option": "ЭЭГ",
+    "correct_option": "left",
+    "explanation": "ЭКГ — 1903, ЭЭГ — 1924."
+  },
+  {
+    "id": "q660",
+    "question": "Что появилось раньше?",
+    "left_option": "Контактные линзы",
+    "right_option": "Лазерная коррекция зрения",
+    "correct_option": "left",
+    "explanation": "Контактные линзы — 1887, LASIK — 1989."
+  },
+  {
+    "id": "q661",
+    "question": "Что появилось раньше?",
+    "left_option": "Зубная щётка",
+    "right_option": "Зубная паста",
+    "correct_option": "right",
+    "explanation": "Зубная паста — древность, щётка — 1498."
+  },
+  {
+    "id": "q662",
+    "question": "Что появилось раньше?",
+    "left_option": "Презерватив",
+    "right_option": "Противозачаточные таблетки",
+    "correct_option": "left",
+    "explanation": "Презерватив — 16 век, таблетки — 1960."
+  },
+  {
+    "id": "q663",
+    "question": "Что появилось раньше?",
+    "left_option": "Витамины",
+    "right_option": "Минералы (в медицине)",
+    "correct_option": "left",
+    "explanation": "Витамины открыты в 1912, минералы изучались раньше."
+  },
+  {
+    "id": "q664",
+    "question": "Что появилось раньше?",
+    "left_option": "Аппарат ИВЛ",
+    "right_option": "Кардиостимулятор",
+    "correct_option": "left",
+    "explanation": "ИВЛ — 1928, кардиостимулятор — 1958."
+  },
+  {
+    "id": "q665",
+    "question": "Что появилось раньше?",
+    "left_option": "МРТ",
+    "right_option": "КТ",
+    "correct_option": "right",
+    "explanation": "КТ — 1972, МРТ — 1977."
+  },
+  {
+    "id": "q666",
+    "question": "Что появилось раньше?",
+    "left_option": "Динозавры",
+    "right_option": "Млекопитающие",
+    "correct_option": "left",
+    "explanation": "Динозавры — 230 млн лет назад, млекопитающие — 200 млн лет назад."
+  },
+  {
+    "id": "q667",
+    "question": "Что появилось раньше?",
+    "left_option": "Птицы",
+    "right_option": "Рептилии",
+    "correct_option": "right",
+    "explanation": "Рептилии — 320 млн лет, птицы — 150 млн лет."
+  },
+  {
+    "id": "q668",
+    "question": "Что появилось раньше?",
+    "left_option": "Рыбы",
+    "right_option": "Земноводные",
+    "correct_option": "left",
+    "explanation": "Рыбы — 500 млн лет, земноводные — 370 млн лет."
+  },
+  {
+    "id": "q669",
+    "question": "Что появилось раньше?",
+    "left_option": "Цветковые растения",
+    "right_option": "Хвойные растения",
+    "correct_option": "right",
+    "explanation": "Хвойные — 300 млн лет, цветковые — 140 млн лет."
+  },
+  {
+    "id": "q670",
+    "question": "Что появилось раньше?",
+    "left_option": "Кислород в атмосфере",
+    "right_option": "Озоновый слой",
+    "correct_option": "left",
+    "explanation": "Кислород — 2.4 млрд лет назад, озоновый слой — позже."
+  },
+  {
+    "id": "q671",
+    "question": "Что появилось раньше?",
+    "left_option": "Пандемия чумы",
+    "right_option": "Пандемия испанки",
+    "correct_option": "left",
+    "explanation": "Чума (Чёрная смерть) — 1347, испанка — 1918."
+  },
+  {
+    "id": "q672",
+    "question": "Что появилось раньше?",
+    "left_option": "Открытие Австралии",
+    "right_option": "Открытие Антарктиды",
+    "correct_option": "left",
+    "explanation": "Австралия — 1606, Антарктида — 1820."
+  },
+  {
+    "id": "q673",
+    "question": "Что появилось раньше?",
+    "left_option": "Национальный парк Йеллоустоун",
+    "right_option": "Национальный парк Йосемити",
+    "correct_option": "left",
+    "explanation": "Йеллоустоун — 1872, Йосемити — 1890."
+  },
+  {
+    "id": "q674",
+    "question": "Что появилось раньше?",
+    "left_option": "Гринпис",
+    "right_option": "WWF",
+    "correct_option": "right",
+    "explanation": "WWF — 1961, Гринпис — 1971."
+  },
+  {
+    "id": "q675",
+    "question": "Что появилось раньше?",
+    "left_option": "Киотский протокол",
+    "right_option": "Парижское соглашение",
+    "correct_option": "left",
+    "explanation": "Киото — 1997, Париж — 2015."
+  },
+  {
+    "id": "q676",
+    "question": "Что появилось раньше?",
+    "left_option": "Клонирование овечки Долли",
+    "right_option": "Проект 'Геном человека'",
+    "correct_option": "right",
+    "explanation": "Проект начат в 1990, Долли — 1996."
+  },
+  {
+    "id": "q677",
+    "question": "Что появилось раньше?",
+    "left_option": "Вымирание динозавров",
+    "right_option": "Ледниковый период",
+    "correct_option": "left",
+    "explanation": "Динозавры — 66 млн лет назад, последний ледниковый период — 2.6 млн лет назад."
+  },
+  {
+    "id": "q678",
+    "question": "Что появилось раньше?",
+    "left_option": "Одомашнивание собаки",
+    "right_option": "Одомашнивание кошки",
+    "correct_option": "left",
+    "explanation": "Собака — 15-40 тыс. лет назад, кошка — 10 тыс. лет назад."
+  },
+  {
+    "id": "q679",
+    "question": "Что появилось раньше?",
+    "left_option": "Одомашнивание лошади",
+    "right_option": "Одомашнивание коровы",
+    "correct_option": "right",
+    "explanation": "Корова — 8 тыс. лет назад, лошадь — 4 тыс. лет назад."
+  },
+  {
+    "id": "q680",
+    "question": "Что появилось раньше?",
+    "left_option": "Красная книга",
+    "right_option": "День Земли",
+    "correct_option": "left",
+    "explanation": "Красная книга — 1963, День Земли — 1970."
   }
 ]
