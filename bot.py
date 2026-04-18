@@ -635,8 +635,7 @@ class QuizGame:
             if not available:
                 return None
 
-            rng = random.Random(f"{chat_instance}:{seed}:{attempt}")
-            question = rng.choice(available)
+            question = random.choice(available)
 
             # Пытаемся пометить вопрос как использованный
             if self.storage.inline_mark_question_asked(chat_instance, question.id):
