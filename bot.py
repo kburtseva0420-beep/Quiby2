@@ -142,6 +142,21 @@ class QuizStorage:
                 );
                 """
             )
+            inline_answer_pk = conn.execute(
+                """
+                SELECT name FROM pragma_table_info('inline_answers')
+                WHERE pk > 0
+                ORDER BY pk
+                """
+            ).fetchall()
+            inline_answer_pk_names = [row["name"] for row in inline_answer_pk]
+            if inline_answer_pk_names and inline_answer_pk_names != [
+                "inline_message_id",
+                "question_id",
+                "user_id",
+            ]:
+                conn.execute("DROP TABLE inline_answers")
+
             conn.execute("DROP TABLE IF EXISTS answers")
             conn.execute(
                 """
@@ -164,7 +179,7 @@ class QuizStorage:
                     user_id INTEGER NOT NULL,
                     selected_option TEXT NOT NULL,
                     answered_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-                    PRIMARY KEY (inline_message_id, user_id)
+                    PRIMARY KEY (inline_message_id, question_id, user_id)
                 )
                 """
             )
