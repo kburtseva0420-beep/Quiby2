@@ -133,6 +133,13 @@ class QuizStorage:
                     correct_answers INTEGER NOT NULL DEFAULT 0,
                     PRIMARY KEY (chat_instance, user_id)
                 );
+
+                CREATE TABLE IF NOT EXISTS inline_user_seen_questions (
+                    user_id INTEGER NOT NULL,
+                    question_id TEXT NOT NULL,
+                    shown_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+                    PRIMARY KEY (user_id, question_id)
+                );
                 """
             )
             conn.execute("DROP TABLE IF EXISTS answers")
@@ -436,6 +443,28 @@ class QuizStorage:
             ).fetchall()
         return {row["question_id"] for row in rows}
 
+    def inline_seen_question_ids(self, user_id: int) -> set[str]:
+        with self._connect() as conn:
+            rows = conn.execute(
+                """
+                SELECT question_id FROM inline_user_seen_questions
+                WHERE user_id = ?
+                """,
+                (user_id,),
+            ).fetchall()
+        return {row["question_id"] for row in rows}
+
+    def mark_inline_question_seen(self, user_id: int, question_id: str) -> bool:
+        with self._connect() as conn:
+            cursor = conn.execute(
+                """
+                INSERT OR IGNORE INTO inline_user_seen_questions (user_id, question_id)
+                VALUES (?, ?)
+                """,
+                (user_id, question_id),
+            )
+            return cursor.rowcount > 0
+
     def inline_mark_question_asked(self, chat_instance: str, question_id: str) -> bool:
         """Помечает inline-вопрос как использованный. Возвращает True если вопрос был добавлен, False если уже существовал."""
         with self._connect() as conn:
@@ -587,8 +616,8 @@ class QuizGame:
             if not available:
                 return None
 
-            random.seed(seed + hash(chat_instance) + attempt)
-            question = random.choice(available)
+            rng = random.Random(f"{chat_instance}:{seed}:{attempt}")
+            question = rng.choice(available)
 
             # Пытаемся пометить вопрос как использованный
             if self.storage.inline_mark_question_asked(chat_instance, question.id):
@@ -599,6 +628,16 @@ class QuizGame:
         # Если за 10 попыток не смогли занять вопрос - что-то не так
         logger.error(f"Failed to select unique inline question after 10 attempts for chat_instance {chat_instance}")
         return None
+
+    def inline_query_question(self, user_id: int) -> Optional[Question]:
+        import random
+
+        seen_ids = self.storage.inline_seen_question_ids(user_id)
+        available = [question for question in self.questions if question.id not in seen_ids]
+        if not available:
+            return None
+
+        return random.choice(available)
 
 
 quiz_game = QuizGame()
@@ -642,6 +681,15 @@ def question_text(question: Question) -> str:
     )
 
 
+def question_text_plain(question: Question) -> str:
+    return (
+        f"{question.question}\n\n"
+        f"1. {question.left_option}\n"
+        f"2. {question.right_option}\n\n"
+        "Выбери вариант ниже."
+    )
+
+
 def question_keyboard(question_id: str) -> InlineKeyboardMarkup:
     return InlineKeyboardMarkup(
         [[
@@ -667,6 +715,17 @@ def build_result_text(question: Question, answer_stats: sqlite3.Row) -> str:
     )
 
 
+def build_result_text_plain(question: Question, answer_stats: sqlite3.Row) -> str:
+    correct_num = "1" if question.correct_option == "left" else "2"
+    correct_value = question.left_option if question.correct_option == "left" else question.right_option
+
+    return (
+        f"{question.question}\n\n"
+        f"Правильный ответ: {correct_num}. {correct_value}\n\n"
+        f"{question.explanation}"
+    )
+
+
 def build_players_result_block(question: Question, round_answers: list[sqlite3.Row], chat_id: int = None, inline_message_id: str = None) -> str:
     if not round_answers:
         return "\n\n👥 Никто не ответил."
@@ -684,6 +743,25 @@ def build_players_result_block(question: Question, round_answers: list[sqlite3.R
             results.append(f"❌ {escape(name)} : 0 (текущий: {correct_hour}/{total_hour})")
 
     return "\n\n👥 <b>Результаты:</b>\n" + "\n".join(results)
+
+
+def build_players_result_block_plain(question: Question, round_answers: list[sqlite3.Row]) -> str:
+    if not round_answers:
+        return "\n\n👥 Никто не ответил."
+
+    results: list[str] = []
+    for row in round_answers:
+        name = row["full_name"]
+        user_id = row["user_id"]
+
+        correct_hour, total_hour = quiz_game.storage.get_player_stats_today(user_id)
+
+        if row["selected_option"] == question.correct_option:
+            results.append(f"✅ {name} : +1 (текущий: {correct_hour}/{total_hour})")
+        else:
+            results.append(f"❌ {name} : 0 (текущий: {correct_hour}/{total_hour})")
+
+    return "\n\n👥 Результаты:\n" + "\n".join(results)
 
 
 async def close_question_by_ids(
@@ -737,12 +815,12 @@ async def close_inline_question_by_id(
     question = quiz_game.questions_by_id[question_id]
     answer_stats = quiz_game.storage.get_inline_question_answer_stats(inline_message_id)
     round_answers = quiz_game.storage.get_inline_round_answers(inline_message_id)
-    result_text = build_result_text(question, answer_stats) + build_players_result_block(question, round_answers)
+    result_text = build_result_text_plain(question, answer_stats) + build_players_result_block_plain(question, round_answers)
 
     await application.bot.edit_message_text(
         inline_message_id=inline_message_id,
         text=result_text,
-        parse_mode=ParseMode.HTML,
+        reply_markup=next_question_keyboard(),
     )
 
 
@@ -842,18 +920,17 @@ async def inline_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     if not query or query.from_user is None:
         return
 
-    # Просто показываем случайный вопрос
-    # Проверка использованных вопросов будет в answer_inline, где есть chat_instance
-    import random
-    question = random.choice(quiz_game.questions)
+    question = quiz_game.inline_query_question(query.from_user.id)
+    if question is None:
+        await query.answer([], cache_time=0, is_personal=True)
+        return
 
     result = InlineQueryResultArticle(
         id=question.id,
         title="Запустить квиз",
         description="Нажми, чтобы отправить вопрос в чат",
         input_message_content=InputTextMessageContent(
-            question_text(question),
-            parse_mode=ParseMode.HTML,
+            question_text_plain(question),
         ),
         reply_markup=question_keyboard(question.id),
     )
@@ -862,10 +939,11 @@ async def inline_query(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 async def chosen_inline_result(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     result = update.chosen_inline_result
-    if not result or not result.inline_message_id:
+    if not result or not result.inline_message_id or not result.from_user:
         return
 
     question_id = result.result_id
+    quiz_game.storage.mark_inline_question_seen(result.from_user.id, question_id)
     quiz_game.storage.set_inline_active_question(result.inline_message_id, question_id)
     # НЕ сохраняем вопрос здесь, потому что нет chat_instance
     # Вопрос будет сохранен в answer_inline, когда первый игрок ответит
@@ -880,7 +958,27 @@ async def next_question_handler(update: Update, context: ContextTypes.DEFAULT_TY
     logger.info(f"next_question_handler called: inline={query.inline_message_id}, data={query.data}")
 
     if query.inline_message_id:
-        await query.answer("Используй @Quiby_bot для нового вопроса", show_alert=True)
+        if not query.chat_instance:
+            await query.answer("Не удалось определить inline-чат", show_alert=True)
+            return
+
+        active = quiz_game.storage.get_inline_active_question(query.inline_message_id)
+        if active and active["is_closed"] == 0:
+            await query.answer("Этот вопрос еще активен", show_alert=True)
+            return
+
+        question = quiz_game.next_inline_question(query.chat_instance, query.from_user.id)
+        if question is None:
+            await query.answer("Вопросы закончились! Используй /quizreset в обычном чате", show_alert=True)
+            return
+
+        await query.answer()
+        await context.application.bot.edit_message_text(
+            inline_message_id=query.inline_message_id,
+            text=question_text_plain(question),
+            reply_markup=question_keyboard(question.id),
+        )
+        quiz_game.storage.set_inline_active_question(query.inline_message_id, question.id)
         return
 
     if query.message:
