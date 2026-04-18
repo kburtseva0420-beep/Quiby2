@@ -428,7 +428,7 @@
     "question": "Что появилось раньше?",
     "left_option": "iPad mini",
     "right_option": "iPad",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "Обычный iPad появился раньше iPad mini."
   },
   {
@@ -3724,7 +3724,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Картина 'Звёздная ночь' Ван Гога",
     "right_option": "Картина 'Крик' Мунка",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "'Крик' — 1893, 'Звёздная ночь' — 1889. (На самом деле Звёздная ночь раньше!)"
   },
   {
@@ -3828,7 +3828,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Изобретение микроскопа",
     "right_option": "Изобретение телескопа",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "Телескоп — около 1608, микроскоп — около 1590. (На самом деле микроскоп раньше!)"
   },
   {
@@ -4236,7 +4236,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Сникерс",
     "right_option": "Марс",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "Mars — 1932, Snickers — 1930. (На самом деле Snickers раньше!)"
   },
   {
@@ -4284,7 +4284,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Кетчуп Heinz",
     "right_option": "Горчица French's",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "French's — 1904, Heinz кетчуп — 1876. (Heinz раньше!)"
   },
   {
@@ -4356,7 +4356,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Mercedes-Benz",
     "right_option": "BMW",
-    "correct_option": "left",
+    "correct_option": "right",
     "explanation": "Mercedes — 1926, BMW — 1916. (BMW раньше!)"
   },
   {
@@ -4372,7 +4372,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Porsche",
     "right_option": "Volkswagen",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "Volkswagen — 1937, Porsche — 1931. (Porsche раньше!)"
   },
   {
@@ -4404,7 +4404,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Samsung",
     "right_option": "LG",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "LG — 1947, Samsung — 1938. (Samsung раньше!)"
   },
   {
@@ -4460,7 +4460,7 @@
     "question": "Что появилось раньше?",
     "left_option": "IKEA",
     "right_option": "H&M",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "H&M — 1947, IKEA — 1943. (IKEA раньше!)"
   },
   {
@@ -4508,7 +4508,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Amazon",
     "right_option": "eBay",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "eBay — 1995, Amazon — 1994. (Amazon раньше!)"
   },
   {
@@ -4628,7 +4628,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Останкинская башня",
     "right_option": "Телебашня в Берлине",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "Берлинская — 1969, Останкинская — 1967. (Останкинская раньше!)"
   },
   {
@@ -4660,7 +4660,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Саграда Фамилия",
     "right_option": "Парк Гуэль",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "Парк Гуэль — 1900-1914, Саграда Фамилия начата в 1882."
   },
   {
@@ -4796,7 +4796,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Холодильник",
     "right_option": "Кондиционер",
-    "correct_option": "left",
+    "correct_option": "right",
     "explanation": "Холодильник — 1913, кондиционер — 1902. (Кондиционер раньше!)"
   },
   {
@@ -4844,7 +4844,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Степлер",
     "right_option": "Скрепка",
-    "correct_option": "right",
+    "correct_option": "left",
     "explanation": "Скрепка — 1899, степлер — 1866. (Степлер раньше!)"
   },
   {
@@ -4932,7 +4932,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Солнцезащитные очки",
     "right_option": "Контактные линзы",
-    "correct_option": "left",
+    "correct_option": "right",
     "explanation": "Солнечные очки — 1929, контактные линзы — 1887. (Линзы раньше!)"
   },
   {
@@ -5180,7 +5180,7 @@
     "question": "Что появилось раньше?",
     "left_option": "Первая пересадка сердца",
     "right_option": "Первая пересадка лёгких",
-    "correct_option": "left",
+    "correct_option": "right",
     "explanation": "Сердце — 1967, лёгкие — 1963. (Лёгкие раньше!)"
   },
   {
