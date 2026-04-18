@@ -437,12 +437,16 @@ class QuizStorage:
             ).fetchone()
             return result["count"] if result else 0
 
-    def count_unique_inline_players(self, inline_message_id: str) -> int:
+    def count_unique_inline_players(self, inline_message_id: str, question_id: str) -> int:
         """Подсчитывает количество уникальных игроков, ответивших на inline вопрос"""
         with self._connect() as conn:
             result = conn.execute(
-                "SELECT COUNT(DISTINCT user_id) as count FROM inline_answers WHERE inline_message_id = ?",
-                (inline_message_id,),
+                """
+                SELECT COUNT(DISTINCT user_id) as count
+                FROM inline_answers
+                WHERE inline_message_id = ? AND question_id = ?
+                """,
+                (inline_message_id, question_id),
             ).fetchone()
             return result["count"] if result else 0
 
@@ -560,7 +564,7 @@ class QuizStorage:
             )
         return True
 
-    def get_inline_question_answer_stats(self, inline_message_id: str) -> sqlite3.Row:
+    def get_inline_question_answer_stats(self, inline_message_id: str, question_id: str) -> sqlite3.Row:
         with self._connect() as conn:
             return conn.execute(
                 """
@@ -569,12 +573,12 @@ class QuizStorage:
                     SUM(CASE WHEN selected_option = 'left' THEN 1 ELSE 0 END) AS left_answers,
                     SUM(CASE WHEN selected_option = 'right' THEN 1 ELSE 0 END) AS right_answers
                 FROM inline_answers
-                WHERE inline_message_id = ?
+                WHERE inline_message_id = ? AND question_id = ?
                 """,
-                (inline_message_id,),
+                (inline_message_id, question_id),
             ).fetchone()
 
-    def get_inline_round_answers(self, inline_message_id: str) -> list[sqlite3.Row]:
+    def get_inline_round_answers(self, inline_message_id: str, question_id: str) -> list[sqlite3.Row]:
         with self._connect() as conn:
             return conn.execute(
                 """
@@ -584,10 +588,10 @@ class QuizStorage:
                     p.full_name
                 FROM inline_answers ia
                 JOIN players p ON p.user_id = ia.user_id
-                WHERE ia.inline_message_id = ?
+                WHERE ia.inline_message_id = ? AND ia.question_id = ?
                 ORDER BY ia.answered_at ASC, p.full_name ASC
                 """,
-                (inline_message_id,),
+                (inline_message_id, question_id),
             ).fetchall()
 
 
@@ -828,8 +832,8 @@ async def close_inline_question_by_id(
 
     quiz_game.storage.close_inline_active_question(inline_message_id)
     question = quiz_game.questions_by_id[question_id]
-    answer_stats = quiz_game.storage.get_inline_question_answer_stats(inline_message_id)
-    round_answers = quiz_game.storage.get_inline_round_answers(inline_message_id)
+    answer_stats = quiz_game.storage.get_inline_question_answer_stats(inline_message_id, question_id)
+    round_answers = quiz_game.storage.get_inline_round_answers(inline_message_id, question_id)
     result_text = build_result_text_plain(question, answer_stats) + build_players_result_block_plain(question, round_answers)
 
     await application.bot.edit_message_text(
@@ -1146,7 +1150,7 @@ async def answer_inline(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
     if not active_check or active_check["is_closed"] == 1:
         return
 
-    unique_players = quiz_game.storage.count_unique_inline_players(query.inline_message_id)
+    unique_players = quiz_game.storage.count_unique_inline_players(query.inline_message_id, question_id)
     logger.info(f"Inline answer recorded: user={query.from_user.id}, inline_msg={query.inline_message_id}, unique_players={unique_players}")
 
     if unique_players >= 2:
